@@ -1,1 +1,3 @@
-Jo ik ben een text file
+Test repository
+
+Dit is gewoon een test om te kijken hoe git werkt
