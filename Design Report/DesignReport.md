@@ -3,6 +3,7 @@
 ## Abstract
 
 ## Index
+Hallo Hallo Hallo
 
 ## Introduction
 The urban upmarket healthclub **[name]** gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly. 
@@ -50,5 +51,6 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4ODIyNTczLDE5MTA4OTYxOTFdfQ==
+eyJoaXN0b3J5IjpbMTgzMzYzMDI0MywxNTg4MjI1NzMsMTkxMD
+g5NjE5MV19
 -->
