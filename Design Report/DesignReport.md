@@ -13,7 +13,7 @@ GeekySolutions has been asked to design and program the NAO so it can act as a r
 The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.  
 
   
-The structure of this report is as follows. the first chapter allpreparations are made
+The structure of this report is as follows. In the first chapter allpreparations are made. Chapter 2 
 
 
 
@@ -25,7 +25,7 @@ The structure of this report is as follows. the first chapter allpreparations ar
 ### Set of requirements (finished)
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
 |:-------------:|:------------------------------------------------------------------------------------------------------------|----------|-------|----------|-------|
-|             |      x     | NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
+             |      x     || NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
 |             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
 |             |      x     | NAO confirms with the user if the exercise is clear.                                                       |   x   |          |       |
 |      x      |            | Certain functions and conversations can be performed through a 3rd party speech recognition API.           |       |          |   x   |
@@ -72,7 +72,7 @@ The structure of this report is as follows. the first chapter allpreparations ar
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Nzk1NTU0MSw0MzY3MjMwOTYsMTU1Mj
-Q1NjMzMiwtMTQ3MjI0NjgzNiw4MTkxNTg3MCwtOTYyMTMwNTY2
-LDE4MzM2MzAyNDNdfQ==
+eyJoaXN0b3J5IjpbMTc5ODk4NTIyMSwtNTg3OTU1NTQxLDE1NT
+I0NTYzMzIsLTE0NzIyNDY4MzYsODE5MTU4NzAsLTk2MjEzMDU2
+NiwxODMzNjMwMjQzXX0=
 -->
