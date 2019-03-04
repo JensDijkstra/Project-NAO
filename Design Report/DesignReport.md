@@ -24,8 +24,8 @@ e preparations are made for th
 ### Function Analysis 
 
 ### Set of requirements (finished)
-```markdown
-| ManufactureFunctionalRequirements|                                                                                               Fixed|| Variable|| Extra  |
+
+| Manufacture | Functional | Requirements                                                                                               | Fixed|  Variable|  Extra |
 |-------------|------------|------------------------------------------------------------------------------------------------------------|-------|----------|-------|
 |             |      x     | NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
 |             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
@@ -38,8 +38,7 @@ e preparations are made for th
 |             |      x     | The vision software is able to measure the distance from the camera to the user.                           |       |     x    |       |
 |             |      x     | NAO can demonstrate the postures of the Tai Chi 10-form.                                                   |   x   |          |       |
 |      x      |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
-|             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       
-`
+|             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |      
 
 ### Researched topics 
 #### Vision
@@ -76,7 +75,7 @@ e preparations are made for th
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0ODA3NjMwNCwxNDgzNjA1OTEzLDE1NT
+eyJoaXN0b3J5IjpbMTU0MzA1NTAwMSwtNTQ4MDc2MzA0LDE1NT
 I0NTYzMzIsLTE0NzIyNDY4MzYsODE5MTU4NzAsLTk2MjEzMDU2
 NiwxODMzNjMwMjQzXX0=
 -->
