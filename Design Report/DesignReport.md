@@ -24,7 +24,7 @@ The structure of this report is as follows. In the first chapter all preparation
 
 ### Set of requirements (finished)
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
-|-------------|------------|-------------------------------------------------------------------------------------:|:|----------------------------|----------|------|
+|:-------------:|:------------:|-------------------------------------------------------------------------------------|:----------------------------:|:----------:|:------:|
 |             |      x     | NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
 |             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
 |             |      x     | NAO confirms with the user if the exercise is clear.                                                       |   x   |          |       |
@@ -72,7 +72,7 @@ The structure of this report is as follows. In the first chapter all preparation
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMzkxMTA1NSwxMjc4ODA4NTM4LDUyNj
+eyJoaXN0b3J5IjpbMTUwODExMzU0OSwxMjc4ODA4NTM4LDUyNj
 c4NDA4NywtMTY4NjM1NTgsLTExNDUyNTE2MzEsMTU1MjQ1NjMz
 MiwtMTQ3MjI0NjgzNiw4MTkxNTg3MCwtOTYyMTMwNTY2LDE4Mz
 M2MzAyNDNdfQ==
