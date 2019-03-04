@@ -5,6 +5,7 @@
 
 <p># NAO Design report</p>
 <h2 id="abstract">Abstract</h2>
+<p>Hi</p>
 <h2 id="index">Index</h2>
 <h2 id="introduction">Introduction</h2>
 <p>The urban upmarket healthclub <strong>[name]</strong> gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu can correct individuals on their poses. At home however, there is nobody to check if you’re doing everything correctly.<br>
