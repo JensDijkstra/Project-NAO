@@ -14,7 +14,7 @@ The idea is that students take a NAO home so after the live classes they can pra
 
   
 The structurefirst part of this report is as follows. First thare 
-
+e preparations are made for th
 
 
 
@@ -25,7 +25,7 @@ The structurefirst part of this report is as follows. First thare
 
 ### Set of requirements (finished)
 ```markdown
-| ManufactureFunctionalRequirements|                                                                                               Fixed|| Variable|| Extra  
+| ManufactureFunctionalRequirements|                                                                                               Fixed|| Variable|| Extra  |
 |-------------|------------|------------------------------------------------------------------------------------------------------------|-------|----------|-------|
 |             |      x     | NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
 |             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
@@ -38,8 +38,8 @@ The structurefirst part of this report is as follows. First thare
 |             |      x     | The vision software is able to measure the distance from the camera to the user.                           |       |     x    |       |
 |             |      x     | NAO can demonstrate the postures of the Tai Chi 10-form.                                                   |   x   |          |       |
 |      x      |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
-|             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
-```
+|             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       
+`
 
 ### Researched topics 
 #### Vision
@@ -76,7 +76,7 @@ The structurefirst part of this report is as follows. First thare
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MzYwNTkxMywtMjA2MzEzMjU4LDE1NT
+eyJoaXN0b3J5IjpbLTU0ODA3NjMwNCwxNDgzNjA1OTEzLDE1NT
 I0NTYzMzIsLTE0NzIyNDY4MzYsODE5MTU4NzAsLTk2MjEzMDU2
 NiwxODMzNjMwMjQzXX0=
 -->
