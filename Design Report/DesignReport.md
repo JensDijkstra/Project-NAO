@@ -6,7 +6,6 @@
 
 ## Introduction
 
-    ```
 <div style="text-align: right"> your-text-here </div>
 
 ```
@@ -15,7 +14,11 @@ The urban upmarket healthclub **[name]** gives Tai Chi lessons. When performing 
 A NAO robot by SolidBank is a great solution to this problem. NAO is able to move like a human and has the ability to provide live feedback to the user. 
 
 GeekySolutions has been asked to design and program the NAO so it can act as a real Tai Chi Sifu. Not only will it be able to move like a human, it will also be programmed to have meaningful interactions with the user. These interactions could be grading and correcting the user's pose, give additional information about Tai Chi and interact with the user in a personal way. 
-The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home. 
+The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.  
+
+
+
+
 
 
 ## Preparation
@@ -64,6 +67,6 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1Njg1MzY3MywxNTE3NzIxNjA4LDE4Mz
-M2MzAyNDNdfQ==
+eyJoaXN0b3J5IjpbNDc3Njc4MDkxLDEzNTY4NTM2NzMsMTgzMz
+YzMDI0M119
 -->
