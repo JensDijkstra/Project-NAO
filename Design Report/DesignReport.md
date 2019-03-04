@@ -51,6 +51,5 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMzYzMDI0MywxNTg4MjI1NzMsMTkxMD
-g5NjE5MV19
+eyJoaXN0b3J5IjpbMTgzMzYzMDI0M119
 -->
