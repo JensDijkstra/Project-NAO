@@ -46,3 +46,6 @@ The idea is that students take a NAO home so after the live classes they can pra
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references">References</h2>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTU3MjYxMzY4OV19
+-->
