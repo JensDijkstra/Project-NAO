@@ -13,7 +13,7 @@ GeekySolutions has been asked to design and program the NAO so it can act as a r
 The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.  
 
   
-The structure of this report is as follows. In the first chapter all preparations are made. Chapter 2 is all the research done to come up with concepts which are 
+The structure of this report is as follows. In the first chapter all preparations are made. Chapter 2 is all the research done to come up with concepts which are elaborated in chapter 3. 
 
 
 
@@ -24,7 +24,7 @@ The structure of this report is as follows. In the first chapter all preparation
 
 ### Set of requirements (finished)
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
-|-------------|------------|------------------------------------------------------------------------------------------------------------|-------|----------|-------|
+|-:------------|------------|------------------------------------------------------------------------------------------------------------|-------|----------|-------|
 |             |      x     | NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
 |             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
 |             |      x     | NAO confirms with the user if the exercise is clear.                                                       |   x   |          |       |
@@ -72,7 +72,7 @@ The structure of this report is as follows. In the first chapter all preparation
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODYzNTU4LDg2MDM2MDU1MywtMTE0NT
+eyJoaXN0b3J5IjpbMjY3MzY3NTkwLC0xNjg2MzU1OCwtMTE0NT
 I1MTYzMSwxNTUyNDU2MzMyLC0xNDcyMjQ2ODM2LDgxOTE1ODcw
 LC05NjIxMzA1NjYsMTgzMzYzMDI0M119
 -->
