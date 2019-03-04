@@ -26,7 +26,7 @@ The structure of this report is as follows. In the first chapter all preparation
 ```
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
 |:-------------:|:------------:|-------------------------------------------------------------------------------------|:----------------------------:---:|:-----|
-|             |      x     | NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
+|             |      x     | NAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
 |             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
 |             |      x     | NAO confirms with the user if the exercise is clear.                                                       |   x   |          |       |
 |      x      |            | Certain functions and conversations can be performed through a 3rd party speech recognition API.           |       |          |   x   |
@@ -74,8 +74,8 @@ The structure of this report is as follows. In the first chapter all preparation
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzYyNjk2OSwxMDAwNTY4NDA1LDEyNz
-g4MDg1MzgsNTI2Nzg0MDg3LC0xNjg2MzU1OCwtMTE0NTI1MTYz
-MSwxNTUyNDU2MzMyLC0xNDcyMjQ2ODM2LDgxOTE1ODcwLC05Nj
-IxMzA1NjYsMTgzMzYzMDI0M119
+eyJoaXN0b3J5IjpbMTgzODg0ODY0NywtNDMzNjI2OTY5LDEwMD
+A1Njg0MDUsMTI3ODgwODUzOCw1MjY3ODQwODcsLTE2ODYzNTU4
+LC0xMTQ1MjUxNjMxLDE1NTI0NTYzMzIsLTE0NzIyNDY4MzYsOD
+E5MTU4NzAsLTk2MjEzMDU2NiwxODMzNjMwMjQzXX0=
 -->
