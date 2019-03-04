@@ -45,8 +45,9 @@ The idea is that students take a NAO home so after the live classes they can pra
 ### Considerations
 ### Scores
 ### Final concept
+#### System Diagrams
 ## Conclusion
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE4NTI2NDJdfQ==
+eyJoaXN0b3J5IjpbMTkxMDg5NjE5MV19
 -->
