@@ -18,8 +18,9 @@ The idea is that students take a NAO home so after the live classes they can pra
 
 ### Set of requirements (finished)
 |Manufacture|Functional|Requirements|Fixed|Variable|Extra  |  |
-|--|--|-
-|  |  |
+|--|--|--|--|--|--|
+||X|NAO is able to recognize pre-defined speech patterns.|X||
+||X|
 
 ### Researched topics 
 #### Vision
@@ -56,6 +57,6 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkwMjYyNzI0LDg2MzM1MzgyLDE4MzM2Mz
-AyNDNdfQ==
+eyJoaXN0b3J5IjpbLTEzNzQ2MDUzNjQsODkwMjYyNzI0LDE4Mz
+M2MzAyNDNdfQ==
 -->
