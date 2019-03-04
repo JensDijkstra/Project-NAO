@@ -48,6 +48,10 @@ The idea is that students take a NAO home so after the live classes they can pra
 #### System Diagrams
 ## Conclusion
 ## References
+| dkjsdfkjsdfk | ksjdfjsdlfk |
+|--|--|
+|klsjdlflkjsdf	  |  |
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMDg5NjE5MV19
+eyJoaXN0b3J5IjpbLTk1OTM4OTM2NiwxOTEwODk2MTkxXX0=
 -->
