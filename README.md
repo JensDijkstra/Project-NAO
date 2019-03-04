@@ -1,7 +1,7 @@
-## repository project NAO
+# repository project NAO
 
-# Diagrams
+## Diagrams
 In the Diagrams map you can find all the system diagrams
 
-# Design report
+## Design report
 In The Design Report you can find all the information about the Design proces of the NAO
