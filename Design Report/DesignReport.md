@@ -13,7 +13,7 @@ GeekySolutions has been asked to design and program the NAO so it can act as a r
 The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.  
 
   
-The structurefirst part of this report is as follows. First preparations are made.
+The structure of this report is as follows. First preparations are made.
 
 
 
@@ -72,7 +72,7 @@ The structurefirst part of this report is as follows. First preparations are mad
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUyMTg0NTM5LDE1ODQ5MjQ3NzEsMTU1Mj
-Q1NjMzMiwtMTQ3MjI0NjgzNiw4MTkxNTg3MCwtOTYyMTMwNTY2
-LDE4MzM2MzAyNDNdfQ==
+eyJoaXN0b3J5IjpbLTEyMTU3NzM2MDIsOTUyMTg0NTM5LDE1NT
+I0NTYzMzIsLTE0NzIyNDY4MzYsODE5MTU4NzAsLTk2MjEzMDU2
+NiwxODMzNjMwMjQzXX0=
 -->
