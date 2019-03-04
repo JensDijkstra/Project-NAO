@@ -27,7 +27,7 @@ The idea is that students take a NAO home so after the live classes they can pra
 ||X|NAO is able to recognize pre-defined speech patterns.|X||
 ||X|NAO can have at least three different social conversations with the user.||X||
 ||X|NAO confirms with the user if the exercise is clear.|X||
-|X|
+|X||
 
 ### Researched topics 
 #### Vision
@@ -64,6 +64,6 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNDAwMDk3OCwtMTQ3MjI0NjgzNiw4MT
+eyJoaXN0b3J5IjpbMTU1MjQ1NjMzMiwtMTQ3MjI0NjgzNiw4MT
 kxNTg3MCwtOTYyMTMwNTY2LDE4MzM2MzAyNDNdfQ==
 -->
