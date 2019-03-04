@@ -6,7 +6,8 @@
 
 ## Introduction
 
-<div style="text-align: right"> your-text-here </div>
+
+<div style="text-align: right">  </div>
 
 ```
 
@@ -67,6 +68,6 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjEzMDU2Niw0Nzc2NzgwOTEsMTgzMz
-YzMDI0M119
+eyJoaXN0b3J5IjpbODE5MTU4NzAsLTk2MjEzMDU2NiwxODMzNj
+MwMjQzXX0=
 -->
