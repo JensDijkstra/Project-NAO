@@ -14,6 +14,9 @@ The idea is that students take a NAO home so after the live classes they can pra
 ### Function Analysis 
 
 ### Set of requirements (finished)
+|  |  |
+|--|--|
+|  |  |
 
 ### Researched topics 
 #### Vision
@@ -50,5 +53,5 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4ODIyNTczLDE4MzM2MzAyNDNdfQ==
+eyJoaXN0b3J5IjpbMTczMTY4OTE4NywxODMzNjMwMjQzXX0=
 -->
