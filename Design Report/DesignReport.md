@@ -23,6 +23,7 @@ The structure of this report is as follows. In the first chapter all preparation
 ### Function Analysis 
 
 ### Set of requirements (finished)
+```
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
 |:-------------:|:------------:|-------------------------------------------------------------------------------------|:----------------------------:|:----------:|:------:|
 |             |      x     | NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
@@ -37,6 +38,7 @@ The structure of this report is as follows. In the first chapter all preparation
 |             |      x     | NAO can demonstrate the postures of the Tai Chi 10-form.                                                   |   x   |          |       |
 |      x      |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
 |             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
+```
 ### Researched topics 
 #### Vision
 ##### Choregraph
@@ -72,7 +74,7 @@ The structure of this report is as follows. In the first chapter all preparation
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwODExMzU0OSwxMjc4ODA4NTM4LDUyNj
+eyJoaXN0b3J5IjpbMTAwMDU2ODQwNSwxMjc4ODA4NTM4LDUyNj
 c4NDA4NywtMTY4NjM1NTgsLTExNDUyNTE2MzEsMTU1MjQ1NjMz
 MiwtMTQ3MjI0NjgzNiw4MTkxNTg3MCwtOTYyMTMwNTY2LDE4Mz
 M2MzAyNDNdfQ==
