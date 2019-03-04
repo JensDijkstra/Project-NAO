@@ -23,10 +23,9 @@ The structurefirst part of this report is as follows. First preparations are mad
 ### Function Analysis 
 
 ### Set of requirements (finished)
-
-| Manufacture | Functional | Requirements                                                                                               | Fixed|  Variable|  Extra |
+| Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
 |-------------|------------|------------------------------------------------------------------------------------------------------------|-------|----------|-------|
-|             |      x     | NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
+|             |           | NAONAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
 |             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
 |             |      x     | NAO confirms with the user if the exercise is clear.                                                       |   x   |          |       |
 |      x      |            | Certain functions and conversations can be performed through a 3rd party speech recognition API.           |       |          |   x   |
@@ -38,8 +37,7 @@ The structurefirst part of this report is as follows. First preparations are mad
 |             |      x     | NAO can demonstrate the postures of the Tai Chi 10-form.                                                   |   x   |          |       |
 |      x      |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
 |             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |      
-
-### Researched topics 
+ |### Researched topics 
 #### Vision
 ##### Choregraph
 ##### Kinect
@@ -74,7 +72,7 @@ The structurefirst part of this report is as follows. First preparations are mad
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDkyNDc3MSwxNTQzMDU1MDAxLDE1NT
-I0NTYzMzIsLTE0NzIyNDY4MzYsODE5MTU4NzAsLTk2MjEzMDU2
-NiwxODMzNjMwMjQzXX0=
+eyJoaXN0b3J5IjpbOTUyMTg0NTM5LDE1ODQ5MjQ3NzEsMTU1Mj
+Q1NjMzMiwtMTQ3MjI0NjgzNiw4MTkxNTg3MCwtOTYyMTMwNTY2
+LDE4MzM2MzAyNDNdfQ==
 -->
