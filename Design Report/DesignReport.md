@@ -25,8 +25,9 @@ The idea is that students take a NAO home so after the live classes they can pra
 |Manufacture|Functional|Requirements|Fixed|Variable|Extra  |
 |--|--|--|--|--|--|
 ||X|NAO is able to recognize pre-defined speech patterns.|X||
-||X|NAO can have at least three different social conversations with the user.||--|--|
-
+||X|NAO can have at least three different social conversations with the user.||X||
+||X|NAO confirms with the user if the exercise is clear.|X||
+|X|
 
 ### Researched topics 
 #### Vision
@@ -63,6 +64,6 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDk5MjE5OTIsLTE0NzIyNDY4MzYsOD
-E5MTU4NzAsLTk2MjEzMDU2NiwxODMzNjMwMjQzXX0=
+eyJoaXN0b3J5IjpbMTEwNDAwMDk3OCwtMTQ3MjI0NjgzNiw4MT
+kxNTg3MCwtOTYyMTMwNTY2LDE4MzM2MzAyNDNdfQ==
 -->
