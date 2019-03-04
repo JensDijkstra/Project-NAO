@@ -5,6 +5,12 @@
 ## Index
 
 ## Introduction
+
+    ```
+<div style="text-align: right"> your-text-here </div>
+
+```
+
 The urban upmarket healthclub **[name]** gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly. 
 A NAO robot by SolidBank is a great solution to this problem. NAO is able to move like a human and has the ability to provide live feedback to the user. 
 
@@ -57,6 +63,6 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzQ2MDUzNjQsODkwMjYyNzI0LDE4Mz
-M2MzAyNDNdfQ==
+eyJoaXN0b3J5IjpbMTUxNzcyMTYwOCwtMTM3NDYwNTM2NCwxOD
+MzNjMwMjQzXX0=
 -->
