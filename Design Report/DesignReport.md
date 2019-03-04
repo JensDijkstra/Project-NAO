@@ -14,8 +14,8 @@ The idea is that students take a NAO home so after the live classes they can pra
 ### Function Analysis 
 
 ### Set of requirements (finished)
-|  |  |
-|--|--|
+|Manufacture|Functional|Requirements|Fixed|Variable|Extra
+|--|--|-
 |  |  |
 
 ### Researched topics 
@@ -53,5 +53,5 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMTY4OTE4NywxODMzNjMwMjQzXX0=
+eyJoaXN0b3J5IjpbODYzMzUzODIsMTgzMzYzMDI0M119
 -->
