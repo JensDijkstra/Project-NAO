@@ -12,7 +12,7 @@ A NAO robot by SolidBank is a great solution to this problem. NAO is able to mov
 GeekySolutions has been asked to design and program the NAO so it can act as a real Tai Chi Sifu. Not only will it be able to move like a human, it will also be programmed to have meaningful interactions with the user. These interactions could be grading and correcting the user's pose, give additional information about Tai Chi and interact with the user in a personal way. 
 The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.  
 
-
+The first part of this report are 
 
 
 
@@ -65,7 +65,7 @@ The idea is that students take a NAO home so after the live classes they can pra
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTA4ODEwMiwxNTUyNDU2MzMyLC0xND
+eyJoaXN0b3J5IjpbMTU2Mzc0ODkwNSwxNTUyNDU2MzMyLC0xND
 cyMjQ2ODM2LDgxOTE1ODcwLC05NjIxMzA1NjYsMTgzMzYzMDI0
 M119
 -->
