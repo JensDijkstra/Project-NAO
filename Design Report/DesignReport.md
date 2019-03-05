@@ -58,7 +58,7 @@ NAO has a few touch sensors wich when touched make the robot treact in different
 ```
 ### Researched topics
 #### Vision
-There are a veriaty of different ways to make a vision program. The NAO robot will need to recognice faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
+There are a vriaty of different ways to make a vision program. The NAO robot will need to recognie faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
 ##### Choregraph
 The robot has its own cameras. The software to program these cameras are also very easy to use. there are already basic functions for face learning and recognicion build into the software. this will thus be very easy to program. Tracking movements with these cameras is a litle harder. There is no build in function for this so this will need to be made from scratch. the cameras also have no 3D vision. making calculations using these cameras will thus be a lot harder.
 ##### Kinect
@@ -94,9 +94,9 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwOTcyMTAzNiwyMDMzMzIyNjg0LC03OT
-k1OTI2MjUsMzg5MjUyMzEsMTgzODg0ODY0NywtNDMzNjI2OTY5
-LDEwMDA1Njg0MDUsMTI3ODgwODUzOCw1MjY3ODQwODcsLTE2OD
-YzNTU4LC0xMTQ1MjUxNjMxLDE1NTI0NTYzMzIsLTE0NzIyNDY4
-MzYsODE5MTU4NzAsLTk2MjEzMDU2NiwxODMzNjMwMjQzXX0=
+eyJoaXN0b3J5IjpbNjI5MDUyMDU0LDIwMDk3MjEwMzYsLTc5OT
+U5MjYyNSwzODkyNTIzMSwxODM4ODQ4NjQ3LC00MzM2MjY5Njks
+MTAwMDU2ODQwNSwxMjc4ODA4NTM4LDUyNjc4NDA4NywtMTY4Nj
+M1NTgsLTExNDUyNTE2MzEsMTU1MjQ1NjMzMiwtMTQ3MjI0Njgz
+Niw4MTkxNTg3MCwtOTYyMTMwNTY2LDE4MzM2MzAyNDNdfQ==
 -->
