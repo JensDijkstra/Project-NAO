@@ -36,7 +36,7 @@ N will always try to look at the users face. This makes the robot seem a bit mor
 #### Hear
 N can recognize certain words and phrases and then respond the them.
 #### Talk
-N can talk with the user about their training, give 
+N can talk with the user about their training,  Chi and have social conversations. 
 #### Feel
 NAO has a few touch sensors which when touched make the robot react in different ways.
 ### Set of requirements
@@ -94,10 +94,10 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTk2NTg1OTcsMzEzNjA3MzcwLC05Nj
-I1MjQyNzksMTgwNzg2OTg1LDIwMDk3MjEwMzYsLTc5OTU5MjYy
-NSwzODkyNTIzMSwxODM4ODQ4NjQ3LC00MzM2MjY5NjksMTAwMD
-U2ODQwNSwxMjc4ODA4NTM4LDUyNjc4NDA4NywtMTY4NjM1NTgs
-LTExNDUyNTE2MzEsMTU1MjQ1NjMzMiwtMTQ3MjI0NjgzNiw4MT
-kxNTg3MCwtOTYyMTMwNTY2LDE4MzM2MzAyNDNdfQ==
+eyJoaXN0b3J5IjpbMTAyMTkwOTc3OCwtMTg5OTY1ODU5NywtOT
+YyNTI0Mjc5LDE4MDc4Njk4NSwyMDA5NzIxMDM2LC03OTk1OTI2
+MjUsMzg5MjUyMzEsMTgzODg0ODY0NywtNDMzNjI2OTY5LDEwMD
+A1Njg0MDUsMTI3ODgwODUzOCw1MjY3ODQwODcsLTE2ODYzNTU4
+LC0xMTQ1MjUxNjMxLDE1NTI0NTYzMzIsLTE0NzIyNDY4MzYsOD
+E5MTU4NzAsLTk2MjEzMDU2NiwxODMzNjMwMjQzXX0=
 -->
