@@ -14,15 +14,9 @@ GeekySolutions has been asked to design and program the NAO so it can act as a r
 The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.  
 The structure of this report is as follows. In the first chapter all preparations are made. Chapter 2 is all the research done to come up with concepts which are elaborated in chapter 3. Then in chapter 4 considerations between all concepts are made. Finally in chapter 5 a definite concept is chosen which suits the best with the clients wishes. This chapter also shows some global system diagrams.
 
-<<<<<<< HEAD
 
 
 
-=======
-
-
-
->>>>>>> 235564fca208904b212ba83f772b9f23e94f8651
 ## Preparation
 
 ### Function Analysis
@@ -34,11 +28,7 @@ The robot will be able to track the users movements and calculate the angles in 
 #### Comment on poses
 With the information about the angles NAO determines if all the limbs are in a certain margin of accuracy. NAO will then determine an appropriate comment on the users movements.
 #### Learn faces
-<<<<<<< HEAD
 When NAO first meets the user it asks personal information about the user. During the 'meeting phase' it will try to learn and save the users face so that it can recognize the user later.
-=======
-When NAO first meets the user ionalgi about the user and during that time it will try to learn and save the users face so that it can recognize the user later.
->>>>>>> 235564fca208904b212ba83f772b9f23e94f8651
 #### Recognize faces
 Once a users face is saved it can recognize the user at any time and only respond when the correct user is found.
 #### Track faces
@@ -46,11 +36,7 @@ N will always try to look at the users face. This makes the robot seem a bit mor
 #### Hear
 N can recognize certain words and phrases and then respond the them.
 #### Talk
-<<<<<<< HEAD
 N can talk with the user about their training,  Tai Chi and have social conversations.
-=======
-N can talk with the user about their training,  Tai Chi and have social conversations. 
->>>>>>> 235564fca208904b212ba83f772b9f23e94f8651
 #### Feel
 NAO has a few touch sensors which when touched make the robot react in different ways.
 ### Set of requirements
@@ -62,14 +48,9 @@ NAO has a few touch sensors which when touched make the robot react in different
 |             |      x     | NAO confirms with the user if the exercise is clear.                                                       |   x   |          |       |
 |      x      |            | Certain functions and conversations can be performed through a 3rd party speech recognition API.           |       |          |   x   |
 |             |      x     | If the user does not interact with NAO for 30-60 seconds, it will ask if the user still needs its service. |   x   |          |       |
-<<<<<<< HEAD
-|             |      x     | Users movements can be evaluated and then corrected by the NAO.                                            |       |     x    |       |
-|             |      x     | NAO can remember and recognize the users face.                                                             |   x   |          |       |
-=======
 |             |      x     | Gegevens worden opgehaald. Wacht een paar seconden en knip of kopieer vervolgens opnieuw.                  |       |          |   x   |
 |             |      x     | Users movements can be evaluated and then corrected by the NAO.                                            |       |     x    |       |
 |             |      x     | NAO can remember and recognice the users face.                                                             |   x   |          |       |
->>>>>>> 235564fca208904b212ba83f772b9f23e94f8651
 |             |      x     | The vision software is able to measure the distance from the camera to the user.                           |       |     x    |       |
 |             |      x     | NAO can demonstrate the postures of the Tai Chi 10-form.                                                   |   x   |          |       |
 |      x      |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
@@ -77,19 +58,11 @@ NAO has a few touch sensors which when touched make the robot react in different
 ```
 ### Researched topics
 #### Vision
-<<<<<<< HEAD
-There are variant different ways to make a vision program. The NAO robot will need to recognize faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
+There areriantfferent ways to make a vision program. The NAO robot will need to recognize faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
 ##### Choregraph
 The robot has its own cameras. The software to program these cameras are also very easy to use. there are already basic functions for face learning and recognition build into the software. this will thus be very easy to program. Tracking movements with these cameras is a little harder. There is no build in function for this so this will need to be made from scratch. the cameras also have no 3D vision. making calculations using these cameras will thus be a lot harder.
 ##### Kinect
-The Kinect sensor made by Microsoft for the Xbox console is specifically made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faces using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
-=======
-There areriantfferent ways to make a vision program. The NAO robot will need to recognize faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
-##### Choregraph
-The robot has its own cameras. The software to program these cameras are also very easy to use. there are already basic functions for face learning and recognition build into the software. this will thus be very easy to program. Tracking movements with these cameras is a little harder. There is no build in function for this so this will need to be made from scratch. the cameras also have no 3D vision. making calculations using these cameras will thus be a lot harder. 
-##### Kinect
 The Kinect sensor made by Microsoft for the Xbox console is specificlaly made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faes using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
->>>>>>> 235564fca208904b212ba83f772b9f23e94f8651
 ##### Others
 There are some other options as well, such as using an external 3D camera. These however are usually very expensive and they are usually not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
 #### Speech
@@ -119,8 +92,6 @@ There are some other options as well, such as using an external 3D camera. These
 #### System Diagrams
 ## Conclusion
 ## References
-<<<<<<< HEAD
-=======
 
 <!--stackedit_data:
 <<<<<<< HEAD
@@ -138,7 +109,6 @@ A1Njg0MDUsMTI3ODgwODUzOCw1MjY3ODQwODcsLTE2ODYzNTU4
 LC0xMTQ1MjUxNjMxLDE1NTI0NTYzMzIsLTE0NzIyNDY4MzYsOD
 E5MTU4NzAsLTk2MjEzMDU2NiwxODMzNjMwMjQzXX0=
 -->
->>>>>>> 235564fca208904b212ba83f772b9f23e94f8651
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEzODk4OTI0MTddfQ==
 -->
