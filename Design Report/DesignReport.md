@@ -42,7 +42,7 @@ NAO has a few touch sensors wich when touched make the robot treact in different
 ### Set of requirements
 ```
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
-|:-------------:|:------------:|-------------------------------------------------------------------------------------|:----------------------------:---:|:-----|
+|:-------------:|:------------:|-------------------------------------------------------------------------------------|:-------------------------------:|:-----:|
 |             |      x     | NAO is able to recognize pre-defined speech patterns.                                                   |   x   |          |       |
 |             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
 |             |      x     | NAO confirms with the user if the exercise is clear.                                                       |   x   |          |       |
@@ -94,9 +94,9 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzMyMjY4NCwtNzk5NTkyNjI1LDM4OT
-I1MjMxLDE4Mzg4NDg2NDcsLTQzMzYyNjk2OSwxMDAwNTY4NDA1
-LDEyNzg4MDg1MzgsNTI2Nzg0MDg3LC0xNjg2MzU1OCwtMTE0NT
-I1MTYzMSwxNTUyNDU2MzMyLC0xNDcyMjQ2ODM2LDgxOTE1ODcw
-LC05NjIxMzA1NjYsMTgzMzYzMDI0M119
+eyJoaXN0b3J5IjpbMjAwOTcyMTAzNiwyMDMzMzIyNjg0LC03OT
+k1OTI2MjUsMzg5MjUyMzEsMTgzODg0ODY0NywtNDMzNjI2OTY5
+LDEwMDA1Njg0MDUsMTI3ODgwODUzOCw1MjY3ODQwODcsLTE2OD
+YzNTU4LC0xMTQ1MjUxNjMxLDE1NTI0NTYzMzIsLTE0NzIyNDY4
+MzYsODE5MTU4NzAsLTk2MjEzMDU2NiwxODMzNjMwMjQzXX0=
 -->
