@@ -60,11 +60,11 @@ NAO has a few touch sensors wich when touched make the robot treact in different
 #### Vision
 There are a vriaty of different ways to make a vision program. The NAO robot will need to recognie faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
 ##### Choregraph
-The robot has its own cameras. The software to program these cameras are also very easy to use. there are already basic functions for face learning and recognicion build into the software. this will thus be very easy to program. Tracking movements with these cameras is a litle harder. There is no build in function for this so this will need to be made from scratch. the cameras also have no 3D vision. making calculations using these cameras will thus be a lot harder.
+The robot has its own cameras. The software to program these cameras are also very easy to use. there are already basic functions for face learning and recognition build into the software. this will thus be very easy to program. Tracking movements with these cameras is a little harder. There is no build in function for this so this will need to be made from scratch. the cameras also have no 3D vision. making calculations using these cameras will thus be a lot harder. 
 ##### Kinect
-The Kinect sensor made by Microsoft for the Xbox console is specialy made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possebility to recognice fases using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
+The Kinect sensor made by Microsoft for the Xbox console is specifically made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faces using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
 ##### Others
-There are some other options as well, such as using an external 3D camera. These however are usualy very expensive and they are usualy not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
+There are some other options as well, such as using an external 3D camera. These however are usually very expensive and they are usually not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
 #### Speech
 ##### Voice recognition
 ###### How it works
@@ -94,9 +94,9 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI5MDUyMDU0LDIwMDk3MjEwMzYsLTc5OT
-U5MjYyNSwzODkyNTIzMSwxODM4ODQ4NjQ3LC00MzM2MjY5Njks
-MTAwMDU2ODQwNSwxMjc4ODA4NTM4LDUyNjc4NDA4NywtMTY4Nj
-M1NTgsLTExNDUyNTE2MzEsMTU1MjQ1NjMzMiwtMTQ3MjI0Njgz
-Niw4MTkxNTg3MCwtOTYyMTMwNTY2LDE4MzM2MzAyNDNdfQ==
+eyJoaXN0b3J5IjpbLTE4NDkxNjU5MTAsMjAwOTcyMTAzNiwtNz
+k5NTkyNjI1LDM4OTI1MjMxLDE4Mzg4NDg2NDcsLTQzMzYyNjk2
+OSwxMDAwNTY4NDA1LDEyNzg4MDg1MzgsNTI2Nzg0MDg3LC0xNj
+g2MzU1OCwtMTE0NTI1MTYzMSwxNTUyNDU2MzMyLC0xNDcyMjQ2
+ODM2LDgxOTE1ODcwLC05NjIxMzA1NjYsMTgzMzYzMDI0M119
 -->
