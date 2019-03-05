@@ -22,7 +22,7 @@ The structure of this report is as follows. In the first chapter all preparation
 ### Function Analysis
 In this chapter the basic and sub functions of the NAO robot will be explained in detail.
 #### Performing the 10-form
-The NAO robot will need to be able to perform 10 different Tai-Chi poses.
+The NAO robot will need to be able to perform 10 different Tai Chi poses.
 #### Tracking movements
 The robot will be able to track the users movements and calculate the angles in which the users limbs are position in.
 #### Comment on poses
@@ -36,7 +36,7 @@ N will always try to look at the users face. This makes the robot seem a bit mor
 #### Hear
 N can recognize certain words and phrases and then respond the them.
 #### Talk
-N can talk with the user about their training,  Chi and have social conversations. 
+N can talk with the user about their training,  Tai Chi and have social conversations. 
 #### Feel
 NAO has a few touch sensors which when touched make the robot react in different ways.
 ### Set of requirements
@@ -94,7 +94,7 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMTkwOTc3OCwtMTg5OTY1ODU5NywtOT
+eyJoaXN0b3J5IjpbMTIyNzc2ODE2OSwtMTg5OTY1ODU5NywtOT
 YyNTI0Mjc5LDE4MDc4Njk4NSwyMDA5NzIxMDM2LC03OTk1OTI2
 MjUsMzg5MjUyMzEsMTgzODg0ODY0NywtNDMzNjI2OTY5LDEwMD
 A1Njg0MDUsMTI3ODgwODUzOCw1MjY3ODQwODcsLTE2ODYzNTU4
