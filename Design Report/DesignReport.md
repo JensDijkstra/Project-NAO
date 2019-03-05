@@ -20,15 +20,15 @@ The structure of this report is as follows. In the first chapter all preparation
 ## Preparation
 
 ### Function Analysis
-In this chapter the basic and subfunctions of the NAO robot will be explained in detail.
+In this chapter the basic and sub functions of the NAO robot will be explained in detail.
 #### Performing the 10-form
 The NAO robot will need to be able to perform 10 different Tai-Chi poses.
 #### Tracking movements
-The robot will be able to track the users movements and calculate the angles in witch the users limbs are positiont in.
+The robot will be able to track the users movements and calculate the angles in witch the users limbs are position in.
 #### Comment on poses
-With the information about the angles NAO will determine if all the limbs are in a certain margin of accuracie. NAO will then determine an appropriate comment on the users movements.
+With the information about the angles NAO determines if all the limbs are in a certain margin of accuracie. NAO will then determine an appropriate comment on the users movements.
 #### Learn faces
-When NAO first meets the user it will ask some personal information about the user and during that time it will try to learn and save the users face so that it can recognice the user later.
+When NAO first meets the user it will ask some personal information about the user and during that time it will try to learn and save the users face so that it can recognie the user later.
 #### Recognice faces
 Once a users face is saved it can recognice the user at any thime and only respond when the correct user is found.
 #### Track faces
@@ -58,7 +58,7 @@ NAO has a few touch sensors wich when touched make the robot treact in different
 ```
 ### Researched topics
 #### Vision
-There are a vriaty of different ways to make a vision program. The NAO robot will need to recognie faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
+There are variant different ways to make a vision program. The NAO robot will need to recognize faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
 ##### Choregraph
 The robot has its own cameras. The software to program these cameras are also very easy to use. there are already basic functions for face learning and recognition build into the software. this will thus be very easy to program. Tracking movements with these cameras is a little harder. There is no build in function for this so this will need to be made from scratch. the cameras also have no 3D vision. making calculations using these cameras will thus be a lot harder. 
 ##### Kinect
@@ -94,10 +94,10 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzg2OTg1LC0xODQ5MTY1OTEwLDIwMD
-k3MjEwMzYsLTc5OTU5MjYyNSwzODkyNTIzMSwxODM4ODQ4NjQ3
-LC00MzM2MjY5NjksMTAwMDU2ODQwNSwxMjc4ODA4NTM4LDUyNj
-c4NDA4NywtMTY4NjM1NTgsLTExNDUyNTE2MzEsMTU1MjQ1NjMz
-MiwtMTQ3MjI0NjgzNiw4MTkxNTg3MCwtOTYyMTMwNTY2LDE4Mz
-M2MzAyNDNdfQ==
+eyJoaXN0b3J5IjpbMTYxNTQ4ODA1LDE4MDc4Njk4NSwyMDA5Nz
+IxMDM2LC03OTk1OTI2MjUsMzg5MjUyMzEsMTgzODg0ODY0Nywt
+NDMzNjI2OTY5LDEwMDA1Njg0MDUsMTI3ODgwODUzOCw1MjY3OD
+QwODcsLTE2ODYzNTU4LC0xMTQ1MjUxNjMxLDE1NTI0NTYzMzIs
+LTE0NzIyNDY4MzYsODE5MTU4NzAsLTk2MjEzMDU2NiwxODMzNj
+MwMjQzXX0=
 -->
