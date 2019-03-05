@@ -6,23 +6,41 @@
 
 ## Introduction
 
-The urban upmarket healthclub **[name]** gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly. 
-A NAO robot by SolidBank is a great solution to this problem. NAO is able to move like a human and has the ability to provide live feedback to the user. 
+The urban upmarket healthclub **[name]** gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly.
+A NAO robot by SolidBank is a great solution to this problem. NAO is able to move like a human and has the ability to provide live feedback to the user.
 
-GeekySolutions has been asked to design and program the NAO so it can act as a real Tai Chi Sifu. Not only will it be able to move like a human, it will also be programmed to have meaningful interactions with the user. These interactions could be grading and correcting the user's pose, give additional information about Tai Chi and interact with the user in a personal way. 
+GeekySolutions has been asked to design and program the NAO so it can act as a real Tai Chi Sifu. Not only will it be able to move like a human, it will also be programmed to have meaningful interactions with the user. These interactions could be grading and correcting the user's pose, give additional information about Tai Chi and interact with the user in a personal way.
 The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.  
 
-  
-The structure of this report is as follows. In the first chapter all preparations are made. Chapter 2 is all the research done to come up with concepts which are elaborated in chapter 3. 
+
+The structure of this report is as follows. In the first chapter all preparations are made. Chapter 2 is all the research done to come up with concepts which are elaborated in chapter 3.
 
 
 
 
 ## Preparation
 
-### Function Analysis 
-
-### Set of requirements (finished)
+### Function Analysis
+In this chapter the basic and subfunctions of the NAO robot will be explained in detail.
+#### Performing the 10-form
+The NAO robot will need to be able to perform 10 different Tai-Chi poses.
+#### Tracking movements
+The robot will be able to track the users movements and calculate the angles in witch the users limbs are positiont in.
+#### Comment on poses
+With the information about the angles NAO will determine if all the limbs are in a certain margin of accuracie. NAO will then determine an appropriate comment on the users movements.
+#### Learn faces
+When NAO first meets the user it will ask some personal information about the user and during that time it will try to learn and save the users face so that it can recognice the user later.
+#### Recognice faces
+Once a users face is saved it can recognice the user at any thime and only respond when the correct user is found.
+#### Track faces
+Nao will always try to look at the users face. This makes the robot seem a bit more friendly and it can keep track of who the user in front of it is.
+#### Hear
+Nao can recognice certain words and frases and then respond the them.
+#### Talk
+Nao can talk with the user about their training but also about some personal stuf and background information.
+#### Feel
+NAO has a few touch sensors wich when touched make the robot treact in different ways.
+### Set of requirements
 ```
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
 |:-------------:|:------------:|-------------------------------------------------------------------------------------|:----------------------------:---:|:-----|
@@ -39,14 +57,14 @@ The structure of this report is as follows. In the first chapter all preparation
 |      x      |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
 |             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
 ```
-### Researched topics 
+### Researched topics
 #### Vision
 ##### Choregraph
 ##### Kinect
 ##### Others
 
 #### Speech
-##### Voice recognition 
+##### Voice recognition
 ###### How it works
 ##### Built in library
 ##### Chat Bots
