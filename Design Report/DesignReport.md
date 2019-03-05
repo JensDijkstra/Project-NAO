@@ -80,11 +80,25 @@ There are some other options as well, such as using an external 3D camera. These
 	 - [ ] Newer NAO version
 	 - [ ] Mimic the user
 
-### Morphological analysis
+### Morphological Analysis
+In the table below are listed all the options for different functions of the NAO robot. all the options will be conciderd while making the final design. at least 3 concepts will be made with different themes. later the concepts will be weight against eachother and the best one will be chosen as the final design.
+| Functions             		| Option 1                        | Option 2                          | Option 2                        | Option 4  |
+|---------------------------|---------------------------------|-----------------------------------|---------------------------------|-----------|
+| **vision hardware**     	| SOC Image Sensor MT9M114        | Kinect                            | PyCAM                           | 3D Camera |
+| **Communication**         | Speech                          | Sign Language                     | screen with subtitles           |           |
+| **User recognition**      | OpenCV                          | Kinect connection via MQTT on Rpi | Build in NAO facial recognition |           |
+| **Movements recognition** | OpenCV                          | Kinect connection via MQTT on Rpi | Build in NAO facial recognition |           |
+| **Hearing**               | External microphone on the user | NAO microphones                   |                                 |           |
+| **Socializing**           | Pre-programmed speech patterns  | Chatbot                           |                                 |           |
+
 #### (at least) 3 Different concepts
 ###### No description yet*
 
 ## Concepts
+Three conceptshave been
+- 1. Cheap and simple
+- 2.
+- 3.
 ### Detailed description of concepts
 ### Considerations
 ### Scores
@@ -92,24 +106,3 @@ There are some other options as well, such as using an external 3D camera. These
 #### System Diagrams
 ## Conclusion
 ## References
-
-<!--stackedit_data:
-<<<<<<< HEAD
-eyJoaXN0b3J5IjpbMzg5MjUyMzEsMTgzODg0ODY0NywtNDMzNj
-I2OTY5LDEwMDA1Njg0MDUsMTI3ODgwODUzOCw1MjY3ODQwODcs
-LTE2ODYzNTU4LC0xMTQ1MjUxNjMxLDE1NTI0NTYzMzIsLTE0Nz
-IyNDY4MzYsODE5MTU4NzAsLTk2MjEzMDU2NiwxODMzNjMwMjQz
-XX0=
--->
-=======
-eyJoaXN0b3J5IjpbMTIyNzc2ODE2OSwtMTg5OTY1ODU5NywtOT
-YyNTI0Mjc5LDE4MDc4Njk4NSwyMDA5NzIxMDM2LC03OTk1OTI2
-MjUsMzg5MjUyMzEsMTgzODg0ODY0NywtNDMzNjI2OTY5LDEwMD
-A1Njg0MDUsMTI3ODgwODUzOCw1MjY3ODQwODcsLTE2ODYzNTU4
-LC0xMTQ1MjUxNjMxLDE1NTI0NTYzMzIsLTE0NzIyNDY4MzYsOD
-E5MTU4NzAsLTk2MjEzMDU2NiwxODMzNjMwMjQzXX0=
--->
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODk4OTI0MTddfQ==
--->
->>>>>>> fd79a573eb1625794c5f6491c7973e2aece9c9e6
