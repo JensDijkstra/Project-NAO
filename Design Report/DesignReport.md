@@ -62,7 +62,7 @@ There are a vriaty of different ways to make a vision program. The NAO robot wil
 ##### Choregraph
 The robot has its own cameras. The software to program these cameras are also very easy to use. there are already basic functions for face learning and recognition build into the software. this will thus be very easy to program. Tracking movements with these cameras is a little harder. There is no build in function for this so this will need to be made from scratch. the cameras also have no 3D vision. making calculations using these cameras will thus be a lot harder. 
 ##### Kinect
-The Kinect sensor made by Microsoft for the Xbox console is specifically made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faces using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
+The Kinect sensor made by Microsoft for the Xbox console is specificlaly made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faes using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
 ##### Others
 There are some other options as well, such as using an external 3D camera. These however are usually very expensive and they are usually not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
 #### Speech
@@ -94,9 +94,10 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDkxNjU5MTAsMjAwOTcyMTAzNiwtNz
-k5NTkyNjI1LDM4OTI1MjMxLDE4Mzg4NDg2NDcsLTQzMzYyNjk2
-OSwxMDAwNTY4NDA1LDEyNzg4MDg1MzgsNTI2Nzg0MDg3LC0xNj
-g2MzU1OCwtMTE0NTI1MTYzMSwxNTUyNDU2MzMyLC0xNDcyMjQ2
-ODM2LDgxOTE1ODcwLC05NjIxMzA1NjYsMTgzMzYzMDI0M119
+eyJoaXN0b3J5IjpbMTgwNzg2OTg1LC0xODQ5MTY1OTEwLDIwMD
+k3MjEwMzYsLTc5OTU5MjYyNSwzODkyNTIzMSwxODM4ODQ4NjQ3
+LC00MzM2MjY5NjksMTAwMDU2ODQwNSwxMjc4ODA4NTM4LDUyNj
+c4NDA4NywtMTY4NjM1NTgsLTExNDUyNTE2MzEsMTU1MjQ1NjMz
+MiwtMTQ3MjI0NjgzNiw4MTkxNTg3MCwtOTYyMTMwNTY2LDE4Mz
+M2MzAyNDNdfQ==
 -->
