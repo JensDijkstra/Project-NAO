@@ -29,14 +29,14 @@ The robot will be able to track the users movements and calculate the angles in 
 With the information about the angles NAO determines if all the limbs are in a certain margin of accuracy. NAO will then determine an appropriate comment on the users movements.
 #### Learn faces
 When NAO first meets the user it will ask some personal information about the user and during that time it will try to learn and save the users face so that it can recognize the user later.
-#### Recognice faces
+#### Recognize faces
 Once a users face is saved it can recognize the user at any time and only respond when the correct user is found.
 #### Track faces
-N will always try to look at the users face. This makes the robot seem a bit more friendly and it can keep track of who the user in front of it is.
+NAO will always try to look at the users face. This makes the robot seem a bit more friendly and it can keep track of who the user in front of it is.
 #### Hear
-N can recognice certain words and phrases and then respond the them.
+NAO can recognize certain words and phrases and then respond the them.
 #### Talk
-N can talk with the user about their training, give 
+NAO can talk with the user about their training, give 
 #### Feel
 NAO has a few touch sensors which when touched make the robot react in different ways.
 ### Set of requirements
@@ -94,10 +94,10 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNjMwMjM0NiwtOTYyNTI0Mjc5LDE4MD
-c4Njk4NSwyMDA5NzIxMDM2LC03OTk1OTI2MjUsMzg5MjUyMzEs
-MTgzODg0ODY0NywtNDMzNjI2OTY5LDEwMDA1Njg0MDUsMTI3OD
-gwODUzOCw1MjY3ODQwODcsLTE2ODYzNTU4LC0xMTQ1MjUxNjMx
-LDE1NTI0NTYzMzIsLTE0NzIyNDY4MzYsODE5MTU4NzAsLTk2Mj
-EzMDU2NiwxODMzNjMwMjQzXX0=
+eyJoaXN0b3J5IjpbMzEzNjA3MzcwLC05NjI1MjQyNzksMTgwNz
+g2OTg1LDIwMDk3MjEwMzYsLTc5OTU5MjYyNSwzODkyNTIzMSwx
+ODM4ODQ4NjQ3LC00MzM2MjY5NjksMTAwMDU2ODQwNSwxMjc4OD
+A4NTM4LDUyNjc4NDA4NywtMTY4NjM1NTgsLTExNDUyNTE2MzEs
+MTU1MjQ1NjMzMiwtMTQ3MjI0NjgzNiw4MTkxNTg3MCwtOTYyMT
+MwNTY2LDE4MzM2MzAyNDNdfQ==
 -->
