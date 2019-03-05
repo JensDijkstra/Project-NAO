@@ -3,11 +3,7 @@
 ## Abstract
 
 ## Index
-<<<<<<< HEAD
-### Vision
-=======
-###Vision
->>>>>>> 9bb485456787318462efc3cae0854bfbda69ee44
+
 
 ## Introduction
 
