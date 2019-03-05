@@ -3,11 +3,7 @@
 ## Abstract
 
 ## Index
-<<<<<<< HEAD
-### Vision
-=======
-###Vision
->>>>>>> 9bb485456787318462efc3cae0854bfbda69ee44
+
 
 ## Introduction
 
@@ -98,7 +94,7 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODUwOTIwMSwtNzk5NTkyNjI1LDM4OT
+eyJoaXN0b3J5IjpbMjAzMzMyMjY4NCwtNzk5NTkyNjI1LDM4OT
 I1MjMxLDE4Mzg4NDg2NDcsLTQzMzYyNjk2OSwxMDAwNTY4NDA1
 LDEyNzg4MDg1MzgsNTI2Nzg0MDg3LC0xNjg2MzU1OCwtMTE0NT
 I1MTYzMSwxNTUyNDU2MzMyLC0xNDcyMjQ2ODM2LDgxOTE1ODcw
