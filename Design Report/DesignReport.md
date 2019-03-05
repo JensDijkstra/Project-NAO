@@ -24,17 +24,17 @@ In this chapter the basic and sub functions of the NAO robot will be explained i
 #### Performing the 10-form
 The NAO robot will need to be able to perform 10 different Tai-Chi poses.
 #### Tracking movements
-The robot will be able to track the users movements and calculate the angles in witch the users limbs are position in.
+The robot will be able to track the users movements and calculate the angles in which the users limbs are position in.
 #### Comment on poses
-With the information about the angles NAO determines if all the limbs are in a certain margin of accuracie. NAO will then determine an appropriate comment on the users movements.
+With the information about the angles NAO determines if all the limbs are in a certain margin of accuracy. NAO will then determine an appropriate comment on the users movements.
 #### Learn faces
-When NAO first meets the user it will ask some personal information about the user and during that time it will try to learn and save the users face so that it can recognie the user later.
+When NAO first meets the user it will ask some personal information about the user and during that time it will try to learn and save the users face so that it can recognize the user later.
 #### Recognice faces
-Once a users face is saved it can recognice the user at any thime and only respond when the correct user is found.
+Once a users face is saved it can recognize the user at any time and only respond when the correct user is found.
 #### Track faces
 Nao will always try to look at the users face. This makes the robot seem a bit more friendly and it can keep track of who the user in front of it is.
 #### Hear
-Nao can recognice certain words and frases and then respond the them.
+Nao can recognice certain words and phrases and then respond the them.
 #### Talk
 Nao can talk with the user about their training but also about some personal stuf and background information.
 #### Feel
@@ -94,7 +94,7 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNTQ4ODA1LDE4MDc4Njk4NSwyMDA5Nz
+eyJoaXN0b3J5IjpbOTgwMDA2OTE1LDE4MDc4Njk4NSwyMDA5Nz
 IxMDM2LC03OTk1OTI2MjUsMzg5MjUyMzEsMTgzODg0ODY0Nywt
 NDMzNjI2OTY5LDEwMDA1Njg0MDUsMTI3ODgwODUzOCw1MjY3OD
 QwODcsLTE2ODYzNTU4LC0xMTQ1MjUxNjMxLDE1NTI0NTYzMzIs
