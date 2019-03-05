@@ -59,10 +59,13 @@ NAO has a few touch sensors wich when touched make the robot treact in different
 ```
 ### Researched topics
 #### Vision
+There are a veriaty of different ways to make a vision program. The NAO robot will need to recognice faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
 ##### Choregraph
+The robot has its own cameras. The software to program these cameras are also very easy to use. there are already basic functions for face learning and recognicion build into the software. this will thus be very easy to program. Tracking movements with these cameras is a litle harder. There is no build in function for this so this will need to be made from scratch. the cameras also have no 3D vision. making calculations using these cameras will thus be a lot harder.
 ##### Kinect
+The Kinect sensor made by Microsoft for the Xbox console is specialy made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possebility to recognice fases using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
 ##### Others
-
+There are some other options as well, such as using an external 3D camera. These however are usualy very expensive and they are usualy not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
 #### Speech
 ##### Voice recognition
 ###### How it works
