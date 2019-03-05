@@ -32,13 +32,13 @@ When NAO first meets the user it will ask some personal information about the us
 #### Recognice faces
 Once a users face is saved it can recognize the user at any time and only respond when the correct user is found.
 #### Track faces
-Nao will always try to look at the users face. This makes the robot seem a bit more friendly and it can keep track of who the user in front of it is.
+N will always try to look at the users face. This makes the robot seem a bit more friendly and it can keep track of who the user in front of it is.
 #### Hear
-Nao can recognice certain words and phrases and then respond the them.
+N can recognice certain words and phrases and then respond the them.
 #### Talk
-Nao can talk with the user about their training but also about some personal stuf and background information.
+N can talk with the user about their training, give extra 
 #### Feel
-NAO has a few touch sensors wich when touched make the robot treact in different ways.
+NAO has a few touch sensors which when touched make the robot react in different ways.
 ### Set of requirements
 ```
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
@@ -94,10 +94,10 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjUyNDI3OSw5ODAwMDY5MTUsMTgwNz
-g2OTg1LDIwMDk3MjEwMzYsLTc5OTU5MjYyNSwzODkyNTIzMSwx
-ODM4ODQ4NjQ3LC00MzM2MjY5NjksMTAwMDU2ODQwNSwxMjc4OD
-A4NTM4LDUyNjc4NDA4NywtMTY4NjM1NTgsLTExNDUyNTE2MzEs
-MTU1MjQ1NjMzMiwtMTQ3MjI0NjgzNiw4MTkxNTg3MCwtOTYyMT
-MwNTY2LDE4MzM2MzAyNDNdfQ==
+eyJoaXN0b3J5IjpbLTE0MTcxNzcyNDQsLTk2MjUyNDI3OSwxOD
+A3ODY5ODUsMjAwOTcyMTAzNiwtNzk5NTkyNjI1LDM4OTI1MjMx
+LDE4Mzg4NDg2NDcsLTQzMzYyNjk2OSwxMDAwNTY4NDA1LDEyNz
+g4MDg1MzgsNTI2Nzg0MDg3LC0xNjg2MzU1OCwtMTE0NTI1MTYz
+MSwxNTUyNDU2MzMyLC0xNDcyMjQ2ODM2LDgxOTE1ODcwLC05Nj
+IxMzA1NjYsMTgzMzYzMDI0M119
 -->
