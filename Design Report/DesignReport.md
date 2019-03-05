@@ -28,7 +28,7 @@ The robot will be able to track the users movements and calculate the angles in 
 #### Comment on poses
 With the information about the angles NAO determines if all the limbs are in a certain margin of accuracy. NAO will then determine an appropriate comment on the users movements.
 #### Learn faces
-When NAO first meets the user it will ask some personal information about the user and during that time it will try to learn and save the users face so that it can recognie the user later.
+When NAO first meets the user it will ask some personal information about the user and during that time it will try to learn and save the users face so that it can recognize the user later.
 #### Recognice faces
 Once a users face is saved it can recognize the user at any time and only respond when the correct user is found.
 #### Track faces
@@ -36,7 +36,7 @@ N will always try to look at the users face. This makes the robot seem a bit mor
 #### Hear
 N can recognice certain words and phrases and then respond the them.
 #### Talk
-N can talk with the user about their training, give extra 
+N can talk with the user about their training, give 
 #### Feel
 NAO has a few touch sensors which when touched make the robot react in different ways.
 ### Set of requirements
@@ -94,10 +94,10 @@ There are some other options as well, such as using an external 3D camera. These
 ## References
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTcxNzcyNDQsLTk2MjUyNDI3OSwxOD
-A3ODY5ODUsMjAwOTcyMTAzNiwtNzk5NTkyNjI1LDM4OTI1MjMx
-LDE4Mzg4NDg2NDcsLTQzMzYyNjk2OSwxMDAwNTY4NDA1LDEyNz
-g4MDg1MzgsNTI2Nzg0MDg3LC0xNjg2MzU1OCwtMTE0NTI1MTYz
-MSwxNTUyNDU2MzMyLC0xNDcyMjQ2ODM2LDgxOTE1ODcwLC05Nj
-IxMzA1NjYsMTgzMzYzMDI0M119
+eyJoaXN0b3J5IjpbMTYxNjMwMjM0NiwtOTYyNTI0Mjc5LDE4MD
+c4Njk4NSwyMDA5NzIxMDM2LC03OTk1OTI2MjUsMzg5MjUyMzEs
+MTgzODg0ODY0NywtNDMzNjI2OTY5LDEwMDA1Njg0MDUsMTI3OD
+gwODUzOCw1MjY3ODQwODcsLTE2ODYzNTU4LC0xMTQ1MjUxNjMx
+LDE1NTI0NTYzMzIsLTE0NzIyNDY4MzYsODE5MTU4NzAsLTk2Mj
+EzMDU2NiwxODMzNjMwMjQzXX0=
 -->
