@@ -2,47 +2,28 @@
 
 ## Abstract
 
-## Table of content
-  * [Introduction](#introduction)
-  * [Preparation](#preparation)
-    + [Function Analysis](#function-analysis)
-      - [Performing the 10-form](#performing-the-10-form)
-      - [Tracking movements](#tracking-movements)
-      - [Comment on poses](#comment-on-poses)
-      - [Learn faces](#learn-faces)
-      - [Recognize faces](#recognize-faces)
-      - [Track faces](#track-faces)
-      - [Hear](#hear)
-      - [Talk](#talk)
-      - [Feel](#feel)
-    + [Set of requirements](#set-of-requirements)
-    + [Researched topics](#researched-topics)
-      - [Vision](#vision)
-        * [Choregraph](#choregraph)
-        * [Kinect](#kinect)
-        * [Others](#others)
-      - [Speech](#speech)
-        * [Speech recognition](#speech-recognition)
-          + [How it works](#how-it-works)
-        * [Built in library](#built-in-library)
-        * [Chat Bots](#chat-bots)
-      - [Movement](#movement)
-    + [Morphological analysis](#morphological-analysis)
-      - [(at least) 3 Different concepts](#-at-least--3-different-concepts)
-          + [No description yet*](#no-description-yet-)
-  * [Concepts](#concepts)
-    + [Detailed description of concepts](#detailed-description-of-concepts)
-    + [Considerations](#considerations)
-    + [Scores](#scores)
-    + [Final concept](#final-concept)
-      - [System Diagrams](#system-diagrams)
-  * [Conclusion](#conclusion)
+## Table of contents
+- [NAO Design report](#nao-design-report)
+  * [Abstract](#abstract)
+  * [Table of contents](#table-of-contents)
+  * [1. Introduction](#1-introduction)
+  * [2. Preparation](#2-preparation)
+    + [2.1 Function Analysis](#21-function-analysis)
+    + [2.2 Set of requirements](#22-set-of-requirements)
+  * [3. Researched topics](#3-researched-topics)
+    + [3.1 Vision](#31-vision)
+    + [3.2 Speech](#32-speech)
+    + [3.3 Movement](#33-movement)
+  * [4. Concepts](#4-concepts)
+    + [4.1 Morphological analysis](#41-morphological-analysis)
+    + [4.2 Detailed description of concepts](#42-detailed-description-of-concepts)
+  * [5. Considerations](#5-considerations)
+    + [5.1 Scores](#51-scores)
+    + [5.2 Final concept](#52-final-concept)
+  * [6. Conclusion](#6-conclusion)
   * [References](#references)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
-## Introduction
+## 1. Introduction
 
 The urban upmarket healthclub **[name]** gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu (master/teacher) can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly.
 A NAO robot by SolidBank is a great solution to this problem. NAO is able to move like a human and has the ability to provide live feedback to the user.
@@ -51,9 +32,9 @@ GeekySolutions has been asked to design and program the NAO so it can act as a r
 The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.  
 The structure of this report is as follows. In the first chapter all preparations are made. Chapter 2 is all the research done to come up with concepts which are elaborated in chapter 3. Then in chapter 4 considerations between all concepts are made. Finally in chapter 5 a definite concept is chosen which suits the best with the clients wishes. This chapter also shows some global system diagrams.
 
-## Preparation
+## 2. Preparation
 
-### Function Analysis
+### 2.1 Function Analysis
 In this chapter the basic and sub functions of the NAO robot will be explained in detail.
 #### Performing the 10-form
 The NAO robot will need to be able to perform 10 different Tai Chi poses.
@@ -73,7 +54,7 @@ NAO can recognize certain words and phrases and then respond the them.
 NAO can talk with the user about their training, Tai Chi and have social conversations.
 #### Feel
 NAO has a few touch sensors which when touched make the robot react in different ways.
-### Set of requirements
+### 2.2 Set of requirements
 ```
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
 |:-------------:|:------------:|-------------------------------------------------------------------------------------|:-------------------------------:|:-----:|
@@ -89,41 +70,52 @@ NAO has a few touch sensors which when touched make the robot react in different
 |      x      |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
 |             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
 ```
-### Researched topics
-#### Vision
+## 3. Researched topics
+### 3.1 Vision
 There are variant ways to make a vision program. The NAO robot will need to recognize faces and movements so the camera and program to make the vision part of the robot will be selected with these things in mind.
-##### Choregraph
+#### Choregraph
 The robot has its own cameras. The software to program these cameras are also very easy to use. there are already basic functions for face learning and recognition build into the software. this will thus be very easy to program. Tracking movements with these cameras is a little harder. There is no build in function for this so this will need to be made from scratch. the cameras also have no 3D vision. making calculations using these cameras will thus be a lot harder.
-##### Kinect
+#### Kinect
 The Kinect sensor made by Microsoft for the Xbox console is specifically made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faces using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
-##### Others
+#### Others
 There are some other options as well, such as using an external 3D camera. These however are usually very expensive and they are usually not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
-#### Speech
-##### Speech recognition
+### 3.2 Speech
+#### Speech recognition
 Having a conversation between the NAO and the user requires the NAO to have speech recognition. For humans this task is simple. Their brains know what words mean and how to react to them. For robots it is not that simple. Every single word is foreign to them. The pronunciation, meaning and the expected response has to be manually programmed, or at least most of it.
-This research covers some ways of speech recognition that could
-###### How it works
-##### Built in library
-##### Chat Bots
+This research covers two ways of speech recognition that the NAO could end up using. These are the built in speech library from Choregraph and chat bots like Google Assistent and Amazon's Alexa.
+#### Built in library
+Choregraph has a built in feature that allows words written in text to be converted to speech within the NAO. The library used for this feature is *ALSpeechRecognition* in Python. This library is easy to understand, but its drawback is that every word had to be hard coded. It is possible to write different conversations and make them seem spontaneous, however after using the NAO several time these 'spontaneous conversations' get repeated. From that point on NAO's speech starts getting repetitive and static. To counter this NAO's library has to be continuously updated. This is not efficient and more important expensive.
+Though these flaws are clearly noticeable, they are not that bad for this particular project. The way these conversations are hard coded is useful when it comes to giving specific feedback, or when teaching something about Tai Chi. Both the input and output have to be programmed in order for this library to function.
+In order to give conversations more meaning this library can be combined with many others from the NAOqi Audio set. The most useful ones are listed below:
+* **ALTextToSpeech**
+		This library is used to let the NAO say words that are written down in the code.
+		The easiest way to program this, is to use the *say* block in Choregraph.
+* **ALSoundLocalization**
+		This identifies the direction of any loud enough sound heard by the robot.
+		Useful to have the NAO look in the direction of the user when he/she speaks.
+* **ALVoiceEmotionAnalysis**
+		This identifies the emotion expressed by the speaker’s voice, independently of what is being said.
+		NAO could be made to respond according to the user's expressed emotion.
+
+#### Chat Bots
 	 - [ ] Google
 	 - [ ] Amazon
 	 - [ ] Sphinx
 	 - [ ] Others
 
-#### Movement
+### 3.3 Movement
 	 - [ ] Regular programming
 	 - [ ] Newer NAO version
 	 - [ ] Mimic the user
 
-### Morphological analysis
+## 4. Concepts
+### 4.1 Morphological analysis
 #### (at least) 3 Different concepts
-###### No description yet*
+### 4.2 Detailed description of concepts
 
-## Concepts
-### Detailed description of concepts
-### Considerations
-### Scores
-### Final concept
+## 5. Considerations
+### 5.1 Scores
+### 5.2 Final concept
 #### System Diagrams
-## Conclusion
+## 6. Conclusion
 ## References
