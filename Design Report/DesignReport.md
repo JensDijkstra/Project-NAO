@@ -90,14 +90,18 @@ In the table below are listed all the options for different functions of the NAO
 | **Hearing**               | External microphone on the user (3)	 | NAO microphones (1,2)                 |                           |           |
 | **Socializing**           | Pre-programmed speech patterns (1,2) | Chatbot (3)                           |                           |           |
 ```
-#### (at least) 3 Different concepts
-###### No description yet*
 
 ## Concepts
-- 1. Cheap
-- 2. Simple
-- 3. Hight Tech
+1. Cheap
+2. Simple
+3. High Tech
 ### Detailed description of concepts
+#### Cheap
+This concept is the cheapest one. This is because it only uses the standard components on the NAO robot itself. The cameras on the head of the robot can be used to recognize faces and track the movements of the user. These cameras aren't the best option fo these functions, but they will get the job done. The standard microphone on the NAO is also relatively good, but you will have to get close enough to the robot so that it can hear you. To have conversations with NAO there will be some pre-progammed speech patterns in the robots code that you will have to follow. Beacause of this you can't have very complicated conversations, but that isn't really necessary.
+#### Simple
+The second concept is very simple based. It is the easiest to program but the price will be a little higher because it requires a Kinect sensor and Raspberry Pi. To recognize the users face there will still be made use of the NAO camera. that is because there is already a build in function in the Choregraphe software for facial recognition. For movements however there will be a Kinect sensor that is specificlaly made for movement tracking. The sensor will have to be connected to the robot via a Raspberry Pi and the code will be written in python. for the hearing and talking functions there will still be made use of the build in harware of the NAO, because this is the most simple way.
+#### High Tech
+The high Tech concept is probably the best option, but it is very hard to produce and also very expensive. This concept does not use the Kinect sensor but a 3D webcam that can be mounted ontop of the NAO robot. The code will be programmed using opencv in python or C++. This is very user friendly because The user doesn't have to set up the kinect on the correct place. This camera will be used for both facial recognition and movement tracking. For the robot to hear there will be a little microphone that the user can clip onto their clothes This microphone will have to be connected to the robot and it is a costs a little more money. Probably the most usefull tool that will be used in this concept is a chatbot such as the Google assistant or Siri.This way NAO is not limmited by the speech patterns inside the program. This will help the robot to be alot more user friendly and more fun to use. It can also be used to search for things on Google so dthat the robot can tell you things you want to know.
 ### Considerations
 ### Scores
 ### Final concept
