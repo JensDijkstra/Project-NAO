@@ -67,9 +67,10 @@ The Kinect sensor made by Microsoft for the Xbox console is specificlaly made to
 There are some other options as well, such as using an external 3D camera. These however are usually very expensive and they are usually not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
 #### Speech
 ##### Voice recognition
-###### How it works
 ##### Built in library
+The NAO robot has a built in speech recognition system that works pretty good. you have to specifi what you want to say and than you need to give an output of the robot. this works fine, but is takes alot of time to program every conversation you can have with the robot.
 ##### Chat Bots
+There also is the option to use a veriaty of chat bots. these sometimes cost money, but you can also get them for free. This enebles the NAO robot to have more complicated conversations and answer any questions that the user might have. This does however come with some privacy problems. These programs are free because the develepors can use your personal information to upgrade their AI. some users might not want to have this so this becomes something to take into considderation when designing the robot.
 	 - [ ] Google
 	 - [ ] Amazon
 	 - [ ] Sphinx
