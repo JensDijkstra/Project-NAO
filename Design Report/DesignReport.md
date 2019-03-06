@@ -82,18 +82,18 @@ There are some other options as well, such as using an external 3D camera. These
 
 ### Morphological Analysis
 In the table below are listed all the options for different functions of the NAO robot. all the options will be conciderd while making the final design. at least 3 concepts will be made with different themes. later the concepts will be weight against eachother and the best one will be chosen as the final design.
+```
 | Functions             		| Option 1                             | Option 2                              | Option 2                  | Option 4  |
 |---------------------------|--------------------------------------|---------------------------------------|---------------------------|-----------|
 | **User recognition**      | OpenCV with 3D webcam (3)            | Kinect connection via MQTT on Rpi     | Build in NAO camera (1,2) |           |
 | **Movements recognition** | OpenCV with 3D webcam (3)            | Kinect connection via MQTT on Rpi (2) | Build in NAO camera (1)   |           |
 | **Hearing**               | External microphone on the user (3)	 | NAO microphones (1,2)                 |                           |           |
 | **Socializing**           | Pre-programmed speech patterns (1,2) | Chatbot (3)                           |                           |           |
-
+```
 #### (at least) 3 Different concepts
 ###### No description yet*
 
 ## Concepts
-Three conceptshave been
 - 1. Cheap
 - 2. Simple
 - 3. Hight Tech
