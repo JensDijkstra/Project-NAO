@@ -165,7 +165,7 @@ If you want the full training you can ask for the tai chi training. NAO will beg
 You can also ask to do a specific pose. NAO will do the same as with the Tai-Chi training but now only with one pose and it will stop if you are done with this pose.
 ![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
 ##### Validication
-If you are done for the day you can say that you want to stop and NAO will go into the validication state. In this state it will give you some tips on how to continuou your training. It also asks if you have any last questions. If you do you can just ask NAO your question and it will give you an answer. NAO will repeat this untill you don't have any questions left. LAstly it will say goodbye and it will shut down.
-![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
+If you are done for the day you can say that you want to stop and NAO will go into the validication state. In this state it will give you some tips on how to continuou your training. It also asks if you have any last questions. If you do you can just ask NAO your question and it will give you an answer. NAO will repeat this untill you don't have any questions left. Lastly it will say goodbye and it will shut down.
+(https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 ## 6. Conclusion
 ## References
