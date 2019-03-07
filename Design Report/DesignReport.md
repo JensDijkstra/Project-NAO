@@ -142,7 +142,30 @@ The high Tech concept is probably the best option, but it is very hard to produc
     -[ ]  Vision
     -[ ]  
 #### System Diagrams
+In this chapter the system diagrams that were made for designing purposeses of the NAO robot will be explained in detail.
+##### STM
+First there is the State Machine Diagram. This is the main diagram of the robot. all the functions in this diagram will be further elaborated in the activity diagrams or other diagrams below. As you can see after the program is uploaded to the robot it will start with a greeting. After that the robot will ask what you want to do and it will listen to your response. if you just want to socialize a bit you can do that. If you want to immidiatly start training you can ask NAO to start the training. If you don't respond for more than 50 seconds the robot will go into an idle state and it will only come out of it if you call it't name. If you still don't respond for more than 50 seconds again NAO will go into the valedication state and it will say it's goodby and finaly shut down. The same will happen if during the listening state you say goodbye.
 ![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
+##### Greeting
+In the greeting state the robot will look at your face to see if it Recognizes you. if it does it greets you. If it doesn't it will try to learn your face. more about that in the face learning diagram.
+![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Greeting%20ACT.png)
+##### Face learning
+When the robot goes into the learn face state it will first ask your name. It does this because a name needs to be linked to your face in the database. After you say your name it will greet you and simultaniasly scan for any face in front of it. If the face scan is succesfull The robot will give a succes messenge and continuou. If it fails the face scan it will give an error and you can try again. If it fails more than ten times the program will shut down.
+![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Learning%20Face%20ACT.png)
+##### Listening
+After the greeting NAO will ask what you want to do. You can respond to this with socializing or teaching. If you say something it does'n understand it will give an error and try again.
+![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Listen%20ACT.png)
+##### Teaching
+If you go for teaching you will get three options: you can ask for some information about Tai-Chi, you can start a full training program or you can do a single pose.
+###### Information
+If you want information you just ask NAO a question and it will answer it. If NAO doesn't understand the question or it doesn't know the answer it will say: "Subject not known. Let's talk about something else", and you can try again.
+###### Tai-Chi
+If you want the full training you can ask for the tai chi training. NAO will begin the lesson by telling you what you will need to do. After that it will do the first pose and asks you to repeat after it. If you do the pose correctly NAO will compliment you and it will continuou. If you do something wrong NAO will say what you do wrong and tell you what you need to do. it will repeat this untill you do the pose correctly. NAO will repeat this for every pose.
+###### Single poses
+You can also ask to do a specific pose. NAO will do the same as with the Tai-Chi training but now only with one pose and it will stop if you are done with this pose.
 ![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
+##### Validication
+If you are done for the day you can say that you want to stop and NAO will go into the validication state. In this state it will give you some tips on how to continuou your training. It also asks if you have any last questions. If you do you can just ask NAO your question and it will give you an answer. NAO will repeat this untill you don't have any questions left. LAstly it will say goodbye and it will shut down.
+![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 ## 6. Conclusion
 ## References
