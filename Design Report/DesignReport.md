@@ -142,6 +142,6 @@ The high Tech concept is probably the best option, but it is very hard to produc
     -[ ]  Vision
     -[ ]  
 #### System Diagrams
-
+![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
 ## 6. Conclusion
 ## References
