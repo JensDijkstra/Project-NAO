@@ -148,6 +148,7 @@ First there is the State Machine Diagram. This is the main diagram of the robot.
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
 ##### Greeting
 In the greeting state the robot will look at your face to see if it Recognizes you. if it does it greets you. If it doesn't it will try to learn your face. more about that in the face learning diagram.
+
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Greeting%20ACT.png)
 ##### Face learning
 When the robot goes into the learn face state it will first ask your name. It does this because a name needs to be linked to your face in the database. After you say your name it will greet you and simultaniasly scan for any face in front of it. If the face scan is succesfull The robot will give a succes messenge and continuou. If it fails the face scan it will give an error and you can try again. If it fails more than ten times the program will shut down.
@@ -166,6 +167,7 @@ You can also ask to do a specific pose. NAO will do the same as with the Tai-Chi
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
 ##### Validication
 If you are done for the day you can say that you want to stop and NAO will go into the validication state. In this state it will give you some tips on how to continuou your training. It also asks if you have any last questions. If you do you can just ask NAO your question and it will give you an answer. NAO will repeat this untill you don't have any questions left. Lastly it will say goodbye and it will shut down.
+
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 ## 6. Conclusion
 ## References
