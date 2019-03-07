@@ -53,7 +53,7 @@ NAO can recognize certain words and phrases and then respond the them.
 #### Talk
 NAO can talk with the user about their training, Tai Chi and have social conversations.
 #### Feel
-NAO has a few touch sensors which when touched make the robot react in different ways.
+NAO has a few touch sensors which when touched make the robot react in different ways. These sensors can be used to detect the user or other objects.
 ### 2.2 Set of requirements
 ```
 | Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
@@ -79,10 +79,11 @@ The robot has its own cameras. The software to program these cameras are also ve
 The Kinect sensor made by Microsoft for the Xbox console is specifically made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faces using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
 #### Others
 There are some other options as well, such as using an external 3D camera. These however are usually very expensive and they are usually not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
+
 ### 3.2 Speech
 #### Speech recognition
 Having a conversation between the NAO and the user requires the NAO to have speech recognition. For humans this task is simple. Their brains know what words mean and how to react to them. For robots it is not that simple. Every single word is foreign to them. The pronunciation, meaning and the expected response has to be manually programmed, or at least most of it.
-This research covers two ways of speech recognition that the NAO could end up using. These are the built in speech library from Choregraph and chat bots like Google Assistent and Amazon's Alexa.
+This research covers two ways of speech recognition that the NAO could end up using. These are the built in speech library from Choregraph and chat bots like Google Assistant and Amazon's Alexa.
 #### Built in library
 Choregraph has a built in feature that allows words written in text to be converted to speech within the NAO. The library used for this feature is *ALSpeechRecognition* in Python. This library is easy to understand, but its drawback is that every word had to be hard coded. It is possible to write different conversations and make them seem spontaneous, however after using the NAO several time these 'spontaneous conversations' get repeated. From that point on NAO's speech starts getting repetitive and static. To counter this NAO's library has to be continuously updated. This is not efficient and more important expensive.
 Though these flaws are clearly noticeable, they are not that bad for this particular project. The way these conversations are hard coded is useful when it comes to giving specific feedback, or when teaching something about Tai Chi. Both the input and output have to be programmed in order for this library to function.
@@ -96,7 +97,6 @@ In order to give conversations more meaning this library can be combined with ma
 * **ALVoiceEmotionAnalysis**
 		This identifies the emotion expressed by the speaker’s voice, independently of what is being said.
 		NAO could be made to respond according to the user's expressed emotion.
-
 #### Chat Bots
 	 - [ ] Google
 	 - [ ] Amazon
@@ -115,7 +115,14 @@ In order to give conversations more meaning this library can be combined with ma
 
 ## 5. Considerations
 ### 5.1 Scores
-### 5.2 Final concept
+### 5.2 Final concept (concept conclusion)
+  - Scores conclusion
+  - What the NAO is like
+    -[ ]  Personality
+    -[ ]  Speech
+    -[ ]  Vision
+    -[ ]  
+
 #### System Diagrams
 ## 6. Conclusion
 ## References
