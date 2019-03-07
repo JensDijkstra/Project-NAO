@@ -143,5 +143,6 @@ The high Tech concept is probably the best option, but it is very hard to produc
     -[ ]  
 #### System Diagrams
 ![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
+![alt text](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
 ## 6. Conclusion
 ## References
