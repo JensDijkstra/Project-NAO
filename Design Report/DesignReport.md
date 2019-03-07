@@ -25,7 +25,7 @@
 
 ## 1. Introduction
 
-The urban upmarket healthclub **[name]** gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu (master/teacher) can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly.
+The urban upmarket healthclub gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu (master/teacher) can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly.
 A NAO robot by SolidBank is a great solution to this problem. NAO is able to move like a human and has the ability to provide live feedback to the user.
 
 GeekySolutions has been asked to design and program the NAO so it can act as a real Tai Chi Sifu. Not only will it be able to move like a human, it will also be programmed to have meaningful interactions with the user. These interactions could be grading and correcting the user's pose, give additional information about Tai Chi and interact with the user in a personal way.
@@ -33,25 +33,24 @@ The idea is that students take a NAO home so after the live classes they can pra
 The structure of this report is as follows. In the first chapter all preparations are made. Chapter 2 is all the research done to come up with concepts which are elaborated in chapter 3. Then in chapter 4 considerations between all concepts are made. Finally in chapter 5 a definite concept is chosen which suits the best with the clients wishes. This chapter also shows some global system diagrams.
 
 ## 2. Preparation
-
 ### 2.1 Function Analysis
-In this chapter the basic and sub functions of the NAO robot will be explained in detail.
+In this chapter the basic and sub functions of the NAO Tai Chi master will be explained in detail.
 #### Performing the 10-form
-The NAO robot will need to be able to perform 10 different Tai Chi poses.
+The NAO robot has to perform the 10-form in a way that the user knows how to transition from form to form.
 #### Tracking movements
-The robot will be able to track the users movements and calculate the angles in which the users limbs are position in.
+The robot is able to track the user's movements and calculate the angles in which the users limbs are positioned in. These angles are compared to his own.
 #### Comment on poses
-With the information about the angles NAO determines if all the limbs are in a certain margin of accuracy. NAO will then determine an appropriate comment on the users movements.
+With the information about the angles NAO determines if all the limbs are positioned correctly.  NAO will then determine an appropriate comment on the users movements. The allowed amount of deviation from NAO's angles has to be specified beforehand.
 #### Learn faces
-When NAO first meets the user it asks personal information about the user. During the 'meeting phase' it will try to learn and save the users face so that it can recognize the user later.
+When NAO first meets the user it asks personal information about the user. During the meeting it tries to learn and save the users face so it can be recognized in the future.
 #### Recognize faces
-Once a users face is saved it can recognize the user at any time and only respond when the correct user is found.
+Once a users face is saved it can recognize the user at any time. A personal greeting will be initiated if NAO knows the user.
 #### Track faces
-NAO will always try to look at the users face. This makes the robot seem a bit more friendly and it can keep track of who the user in front of it is.
+NAO will always try to look at the users face. This makes the robot seem more engaged and it can keep track of who the user in front of it is.
 #### Hear
-NAO can recognize certain words and phrases and then respond the them.
+NAO can recognize certain words and phrases and respond to them in a meaningful way.
 #### Talk
-NAO can talk with the user about their training, Tai Chi and have social conversations.
+NAO can talk with the user about their training, Tai Chi and have social conversations. 
 #### Feel
 NAO has a few touch sensors which when touched make the robot react in different ways. These sensors can be used to detect the user or other objects.
 ### 2.2 Set of requirements
@@ -97,7 +96,7 @@ In order to give conversations more meaning this library can be combined with ma
 		This identifies the emotion expressed by the speaker’s voice, independently of what is being said.
 		NAO could be made to respond according to the user's expressed emotion.
 #### Chat Bots
-There also is the option to use a veriaty of chat bots. these sometimes cost money, but you can also get them for free. This enebles the NAO robot to have more complicated conversations and answer any questions that the user might have. This does however come with some privacy problems. These programs are free because the develepors can use your personal information to upgrade their AI. some users might not want to have this so this becomes something to take into considderation when designing the robot.
+There also is the option to use a variety of chat bots. these sometimes cost money, but you can also get them for free. This enables the NAO robot to have more complicated conversations and answer any questions that the user might have. This does however come with some privacy problems. These programs are free because the developers can use your personal information to upgrade their AI. some users might not want to have this so this becomes something to take into consideration when designing the robot.
 	 - [ ] Google
 	 - [ ] Amazon
 	 - [ ] Sphinx
@@ -110,7 +109,7 @@ There also is the option to use a veriaty of chat bots. these sometimes cost mon
 
 ## 4 Concepts
 ### 4.1 Morphological Analysis
-In the table below are listed all the options for different functions of the NAO robot. all the options will be conciderd while making the final design. at least 3 concepts will be made with different themes. later the concepts will be weight against eachother and the best one will be chosen as the final design.
+In the table below are listed all the options for different functions of the NAO robot. all the options will be considered while making the final design. at least 3 concepts will be made with different themes. later the concepts will be weight against each other and the best one will be chosen as the final design.
 ```
 | Functions             		| Option 1                             | Option 2                              | Option 2                  | Option 4  |
 |---------------------------|--------------------------------------|---------------------------------------|---------------------------|-----------|
@@ -126,15 +125,16 @@ In the table below are listed all the options for different functions of the NAO
 3. High Tech
 ### 4.3 Detailed description of concepts
 #### Cheap
-This concept is the cheapest one. This is because it only uses the standard components on the NAO robot itself. The cameras on the head of the robot can be used to recognize faces and track the movements of the user. These cameras aren't the best option fo these functions, but they will get the job done. The standard microphone on the NAO is also relatively good, but you will have to get close enough to the robot so that it can hear you. To have conversations with NAO there will be some pre-progammed speech patterns in the robots code that you will have to follow. Beacause of this you can't have very complicated conversations, but that isn't really necessary.
+This concept is the cheapest one. This is because it only uses the standard components on the NAO robot itself. The cameras on the head of the robot can be used to recognize faces and track the movements of the user. These cameras aren't the best option for these functions, but they will get the job done. The standard microphone on the NAO is also relatively good, but you will have to get close enough to the robot so that it can hear you. To have conversations with NAO there will be some pre-programmed speech patterns in the robots code that you will have to follow. Because of this you can't have very complicated conversations, but that isn't really necessary.
 #### Simple
-The second concept is very simple based. It is the easiest to program but the price will be a little higher because it requires a Kinect sensor and Raspberry Pi. To recognize the users face there will still be made use of the NAO camera. that is because there is already a build in function in the Choregraphe software for facial recognition. For movements however there will be a Kinect sensor that is specificlaly made for movement tracking. The sensor will have to be connected to the robot via a Raspberry Pi and the code will be written in python. for the hearing and talking functions there will still be made use of the build in harware of the NAO, because this is the most simple way.
+The second concept is very simple based. It is the easiest to program but the price will be a little higher because it requires a Kinect sensor and Raspberry Pi. To recognize the users face there will still be made use of the NAO camera. that is because there is already a build in function in the Choregraphe software for facial recognition. For movements however there will be a Kinect sensor that is specifically made for movement tracking. The sensor will have to be connected to the robot via a Raspberry Pi and the code will be written in python. for the hearing and talking functions there will still be made use of the build in hardware of the NAO, because this is the most simple way.
 #### High Tech
-The high Tech concept is probably the best option, but it is very hard to produce and also very expensive. This concept does not use the Kinect sensor but a 3D webcam that can be mounted ontop of the NAO robot. The code will be programmed using opencv in python or C++. This is very user friendly because The user doesn't have to set up the kinect on the correct place. This camera will be used for both facial recognition and movement tracking. For the robot to hear there will be a little microphone that the user can clip onto their clothes This microphone will have to be connected to the robot and it is a costs a little more money. Probably the most usefull tool that will be used in this concept is a chatbot such as the Google assistant or Siri.This way NAO is not limmited by the speech patterns inside the program. This will help the robot to be alot more user friendly and more fun to use. It can also be used to search for things on Google so dthat the robot can tell you things you want to know.
+The high Tech concept is probably the best option, but it is very hard to produce and also very expensive. This concept does not use the Kinect sensor but a 3D webcam that can be mounted on top of the NAO robot. The code will be programmed using opencv in python or C++. This is very user friendly because The user doesn't have to set up the Kinect on the correct place. This camera will be used for both facial recognition and movement tracking. For the robot to hear there will be a little microphone that the user can clip onto their clothes This microphone will have to be connected to the robot and it is a costs a little more money. Probably the most useful tool that will be used in this concept is a chatbot such as **INSERT CHATBOT NAME**. This way NAO is not limited by the speech patterns inside the program. This will help the robot to be a lot more user friendly and more fun to use. It can also be used to search for things on Google so that the robot can tell you things you want to know.
 
 ### 5 Considerations
 ### 5.1 Scores
-### 5.2 Final concept (concept conclusion)
+### 5.2 Kesselring
+### 5.3 Final concept (concept conclusion)
   - Scores conclusion
   - What the NAO is like
     -[ ]  Personality
