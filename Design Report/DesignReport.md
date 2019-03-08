@@ -135,13 +135,21 @@ The high Tech concept is probably the best option, but it is very hard to produc
 ### 5 Considerations
 ### 5.1 Scores
 ```
-| Variable requirements | 1 | 2 | 3 | 4 | 5 |
-| NAO can have at least three different social conversations with the user.
-| Users movements can be evaluated and then corrected by the NAO.
-|
-|
+| Variable requirements 								   | 1 | 2 | 3 | 4 | Total |
+| 1.	NAO can have at least three different social conversations with the user.	   | 1 | 0 | 1 | 0 |   2   |
+| 2.	Users movements can be evaluated and then corrected by the NAO.			   | 1 | 1 | 1 | 1 |   4   |
+| 3.	Transitions between the postures are fluid  					   | 0 | 0 | 1 | 0 |   1   |
+| 4.	The vision software is able to measure the distance from the camera to the user.   | 1 | 0 | 1 | 1 |   3   |
 ```
 ### 5.2 Kesselring
+```
+| Variable requirements 								   | Scores | Cheap | Simple | High-Tech |  Ideal  |
+| 1.	NAO can have at least three different social conversations with the user.	   |   2    | 3(6)  |  3(6)  |   5(10)   | 5(10) |
+| 2.	Users movements can be evaluated and then corrected by the NAO.			   |   4    | 1(4)  |  3(12) |   4(16)   | 5(20) |
+| 3.	Transitions between the postures are fluid  					   |   1    | 3(3)  |  3(3)  |   3(3)    | 5(5)      |
+| 4.	The vision software is able to measure the distance from the camera to the user.   |   3    | 1(3)  |  4(12) |   4(12)   | 5(15) |
+| Total											   |        | 16    |  32    |   41	 | 50       |
+```
 ### 5.3 Final concept (concept conclusion)
   - Scores conclusion
   - What the NAO is like
