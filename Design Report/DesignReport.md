@@ -129,7 +129,7 @@ This concept is the cheapest. This is because it only uses the standard componen
 #### Simple
 The second concept is very simple based. It is the easiest to program but the price will be a little higher because it requires a Kinect sensor and RaspberryPi. To recognize the user's face NAO's camera is used. This because there is already a built in function in the Choregraphe software for facial recognition. For the detection of movements however a Kinect sensor is used, which is specifically made for movement tracking. The sensor will have to be connected to the robot via a RaspberryPi and the code will be written in Python. For NAO's hearing and talking Choregraph is used, since all the needed functions are already integrated in there. Because of the addition of a RaspberryPi and Kinect the costs for this concept lay a little higher than the 'cheap' concept.
 #### High Tech
-The high Tech concept is probably the best option, but it is very hard to produce and also very expensive. This concept does not use the Kinect sensor but a 3D webcam that can be mounted on top of the NAO robot. The code will be programmed using opencv in python or C++. This is very user friendly because The user doesn't have to set up the Kinect on the correct place. This camera will be used for both facial recognition and movement tracking. For the robot to hear there will be a little microphone that the user can clip onto their clothes This microphone will have to be connected to the robot and it is a costs a little more money. Probably the most useful tool that will be used in this concept is a chatbot such as **INSERT CHATBOT NAME**. This way NAO is not limited by the speech patterns inside the program. This will help the robot to be a lot more user friendly and more fun to use. It can also be used to search for things on Google so that the robot can tell you things you want to know.
+The high Tech concept is probably the best option, but it is very hard to produce and also very expensive. This concept does not use the Kinect sensor but a 3D webcam that can be mounted on top of the NAO robot. The code will be programmed using opencv in python or C++. This is very user friendly because The user doesn't have to set up the Kinect on the correct place. This camera will be used for both facial recognition and movement tracking. For the robot to hear there will be a little microphone that the user can clip onto their clothes This microphone will have to be connected to the robot and it costs a little more money. Probably the most useful tool that will be used in this concept is a chatbot such as **INSERT CHATBOT NAME**. This way NAO is not limited by the speech patterns inside the program. This will help the robot to be a lot more user friendly and more fun to use. It can also be used to search for things on Google so that the robot can tell you things you want to know.
 
 ### 5 Considerations
 ### 5.1 Scores
@@ -138,35 +138,40 @@ The high Tech concept is probably the best option, but it is very hard to produc
   - Scores conclusion
   - What the NAO is like
     -[ ]  Personality
+    Real life Sifu's tend to be strict and serious. This strict way of teaching is not something most people want, when they are in the comfort of their own home. A logical way to make the NAO fit in the relaxed environment at home is to make him happy and even a little funny at times.
+    During the training NAO will watch you closely he gives you feedback in a relaxing manner. Not forcing you to improve or always pointing out the mistakes and leave out the positives. Users will feel that they can practice Tai Chi at their own pace.
+    When not in training, NAO is happy and occasionally tells jokes. If anything triggers the third party speech software, NAO will run the created text through Choregraph to keep the same tone as he did before the trigger.
     -[ ]  Speech
+    *Read above and give more info*
     -[ ]  Vision
     -[ ]  Name
+    Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
 #### System Diagrams
-In this chapter the system diagrams that were made for designing purposeses of the NAO robot will be explained in detail.
+In this chapter the system diagrams that were made for designing purposes of the NAO robot will be explained in detail.
 ##### STM
-First there is the State Machine Diagram. This is the main diagram of the robot. all the functions in this diagram will be further elaborated in the activity diagrams or other diagrams below. As you can see after the program is uploaded to the robot it will start with a greeting. After that the robot will ask what you want to do and it will listen to your response. if you just want to socialize a bit you can do that. If you want to immidiatly start training you can ask NAO to start the training. If you don't respond for more than 50 seconds the robot will go into an idle state and it will only come out of it if you call it't name. If you still don't respond for more than 50 seconds again NAO will go into the valedication state and it will say it's goodby and finaly shut down. The same will happen if during the listening state you say goodbye.
+First there is the State Machine Diagram. This is the main diagram of Blue. All the functions in this diagram will be further elaborated in the activity diagrams or other diagrams below. Right after Blue wakes up he will start with a greeting. After that he will ask what you want to do and listens to your response. If you just want to socialize you can also do that. If you want to immediately start training you can ask Blue to start the training. If you don't respond for more than 50 seconds, Blue will go into an idle state. He will only come out of idle if you call his name. If you still don't respond for another 50 seconds, Blue will go into the valediction state and he will say its goodbyes and shut down. Blue will also shut down if the user says goodbye first.
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
 ##### Greeting
-In the greeting state the robot will look at your face to see if it Recognizes you. if it does it greets you. If it doesn't it will try to learn your face. more about that in the face learning diagram.
+In the greeting state Blue will look at your face to see if he recognizes you. If he does, he greets you. If he doesn't he will try to learn your face. This is explained further in the face learning diagram.
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Greeting%20ACT.png)
 ##### Face learning
-When the robot goes into the learn face state it will first ask your name. It does this because a name needs to be linked to your face in the database. After you say your name it will greet you and simultaniasly scan for any face in front of it. If the face scan is succesfull The robot will give a succes messenge and continuou. If it fails the face scan it will give an error and you can try again. If it fails more than ten times the program will shut down.
+When Blue goes into the learn face state he will first ask your name. He does this because a name needs to be linked to your face in the database. After you say your name, he will greet you and simultaneously scan for any faces in front of him. If the face scan is successful, Blue will give a success massage and continue. If he fails the face scan he will give an error and you can try again. If this process fails more than ten times the program will shut down.
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Learning%20Face%20ACT.png)
 ##### Listening
-After the greeting NAO will ask what you want to do. You can respond to this with socializing or teaching. If you say something it does'n understand it will give an error and try again.
+After the greeting, Blue will ask what you want to do. You can respond to this with socializing or teaching. If you say something he doesn't understand, he will give an error and try again.
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Listen%20ACT.png)
 ##### Teaching
-If you go for teaching you will get three options: you can ask for some information about Tai-Chi, you can start a full training program or you can do a single pose.
+If you choose to go for teaching you will get three options: you can ask for some information about Tai-Chi, you can start a full training program or you can do a single pose.
 ###### Information
-If you want information you just ask NAO a question and it will answer it. If NAO doesn't understand the question or it doesn't know the answer it will say: "Subject not known. Let's talk about something else", and you can try again.
+If you want information you just ask Blue a question and he will answer it. If Blue doesn't understand the question or he doesn't know the answer, he will say: "Subject not known. Let's talk about something else", and you can try again.
 ###### Tai-Chi
-If you want the full training you can ask for the tai chi training. NAO will begin the lesson by telling you what you will need to do. After that it will do the first pose and asks you to repeat after it. If you do the pose correctly NAO will compliment you and it will continuou. If you do something wrong NAO will say what you do wrong and tell you what you need to do. it will repeat this untill you do the pose correctly. NAO will repeat this for every pose.
+If you want the full training you can ask for the tai chi training. Blue will begin the lesson by telling you what you will need to do. After that he will do the first pose and asks you to repeat after him. If you do the pose correctly, Blue will compliment you and then continue. If you do something wrong, Blue will say what you can improve and how to do that. This is repeated until you do the pose correctly. Blue will repeat this for every pose.
 ###### Single poses
-You can also ask to do a specific pose. NAO will do the same as with the Tai-Chi training but now only with one pose and it will stop if you are done with this pose.
+You can also ask to do a specific pose. Blue will do the same as with the Tai-Chi training but now only with one pose and he will stop if you are done with this pose.
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
-##### Validication
-If you are done for the day you can say that you want to stop and NAO will go into the validication state. In this state it will give you some tips on how to continuou your training. It also asks if you have any last questions. If you do you can just ask NAO your question and it will give you an answer. NAO will repeat this untill you don't have any questions left. Lastly it will say goodbye and it will shut down.
+##### Valediction
+If you are done for the day, you can tell Blue you want to stop and he will go into the valediction state. In this state he will give you some tips on how to continue your training. He also asks if you have any questions. If you do, you can just ask Blue your question and he will give you an answer. Blue will repeat this until you don't have any questions left. Lastly he says goodbye and shuts down.
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 ## 6. Conclusion
