@@ -177,3 +177,6 @@ If you are done for the day, you can tell Blue you want to stop and he will go i
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 ## 6. Conclusion
 ## References
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3ODYzMzY4MTldfQ==
+-->
