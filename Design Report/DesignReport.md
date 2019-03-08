@@ -133,7 +133,7 @@ The second concept is very simple based. It is the easiest to program but the pr
 The high Tech concept is probably the best option, but it is very hard to produce and also very expensive. This concept does not use the Kinect sensor but a 3D webcam that can be mounted on top of the NAO robot. The code will be programmed using opencv in python or C++. This is very user friendly because The user doesn't have to set up the Kinect on the correct place. This camera will be used for both facial recognition and movement tracking. For the robot to hear there will be a little microphone that the user can clip onto their clothes This microphone will have to be connected to the robot and it costs a little more money. Probably the most useful tool that will be used in this concept is a chatbot such as **INSERT CHATBOT NAME**. This way NAO is not limited by the speech patterns inside the program. This will help the robot to be a lot more user friendly and more fun to use. It can also be used to search for things on Google so that the robot can tell you things you want to know.
 
 ### 5 Considerations
-### 5.1 Scores
+### 5.1 Weightings
 ```
 | Variable requirements 								   | 1 | 2 | 3 | 4 | Total |
 | 1.	NAO can have at least three different social conversations with the user.	   | 1 | 0 | 1 | 0 |   2   |
@@ -141,14 +141,16 @@ The high Tech concept is probably the best option, but it is very hard to produc
 | 3.	Transitions between the postures are fluid  					   | 0 | 0 | 1 | 0 |   1   |
 | 4.	The vision software is able to measure the distance from the camera to the user.   | 1 | 0 | 1 | 1 |   3   |
 ```
-### 5.2 Kesselring
+### 5.2 Score table
 ```
 | Variable requirements 								   | Scores | Cheap | Simple | High-Tech |  Ideal  |
+|------------------------------------------------------------------------------------------|
 | 1.	NAO can have at least three different social conversations with the user.	   |   2    | 3(6)  |  3(6)  |   5(10)   | 5(10)   |
-| 2.	Users movements can be evaluated and then corrected by the NAO.			   |   4    | 1(4)  |  3(12) |   4(16)   | 5(20)   |
-| 3.	Transitions between the postures are fluid  					   |   1    | 3(3)  |  3(3)  |   3(3)    | 5(5)        |
+| 2.	Users movements can be evaluated and then corrected by the NAO.			   |   4    | 2(8)  |  3(12) |   4(16)   | 5(20)   |
+| 3.	Transitions between the postures are fluid  					   |   1    | 3(3)  |  3(3)  |   3(3)    | 5(5)    |
 | 4.	The vision software is able to measure the distance from the camera to the user.   |   3    | 1(3)  |  4(12) |   4(12)   | 5(15)   |
-| Total											   |        | 16    |  32    |   41	 | 50          |
+| Total											   |        | 20    |  32    |   41	 | 50      |
+|---------------------------------------------------------------------------------------------------| 40%   |  64%   |   82%     | 100%
 ```
 ### 5.3 Final concept (concept conclusion)
   - Scores conclusion
