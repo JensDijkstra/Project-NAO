@@ -144,6 +144,7 @@ The high Tech concept is probably the best option, but it is very hard to produc
     -[ ]  Speech
     *Read above and give more info*
     -[ ]  Vision
+    We choose to use the Kinect sensor as an external camera to detect a movement in a 3D space. The Kinect is connected to a computer running the WPF application. That WPF application sends the data from the Kinect
     -[ ]  Name
     Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
 #### System Diagrams
