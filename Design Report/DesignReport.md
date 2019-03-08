@@ -104,6 +104,7 @@ There also is the option to use a variety of chat bots. these sometimes cost mon
 
 ### 3.3 Movement
 For the vision of the NAO robot we use a Kinect as was mentioned earlier. De feedback from de Kinect shows 14 joints of the detected body. These joints each have a x-,y- and z-coordinate. With these coordinates it is possible to determine in what angle which joint is. This will be done in a python code with functions for each motor of the NAO robot. The functions will exist out of goniometric calculations in three dimensions and transfer the Kinect output into an angle for the motors of the NAO robot. This python code will only mimic the movement of the detected body. 
+
 The assignment was not to mimic the human of interest, but to check if he or she does mimic the pose of the NAO robot. So the angles of the motors inside the NAO robot will be compared to the calculated angles which were explained before. If the human does or does not do the assignment as de NAO shows, then it will give an appropriate feedback to the user. 
 
 
