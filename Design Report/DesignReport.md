@@ -170,7 +170,7 @@ If you are done for the day you can say that you want to stop and NAO will go in
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 ## 6. Conclusion
-In this project the goal was to make a prototype with a NAO robot wich can give personal egaging Tai-Chi lessons to people at home. To achieve this a thorough research was done regarding the functions wich the robot must fulfill.
+In this project the goal was to make a prototype with a NAO robot wich can give personal egaging Tai-Chi lessons to people at home. To achieve this a thorough research was done regarding the functions wich the robot must fulfill. These functions are movement tracking, face recognition, listening to requests and giving explanetions. 
 
 The results led to a robot that is both thechnologicaly advanced and user friendly at the same time. The Kinect sensor enables the robot to calculate the users movements precicely and the camera inside the robot is perfect for scanning faces.
 
