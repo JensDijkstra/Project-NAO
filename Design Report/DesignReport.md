@@ -78,7 +78,7 @@ The robot has its own cameras. The software to program these cameras are also ve
 The Kinect sensor made by Microsoft for the Xbox console is specifically made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faces using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
 #### Others
 There are some other options as well, such as using an external 3D camera. These however are usually very expensive and they are usually not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
-### 3.2 Speech 
+### 3.2 Speech
 #### Speech recognition
 Having a conversation between the NAO and the user requires the NAO to have speech recognition. For humans this task is simple. Their brains know what words mean and how to react to them. For robots it is not that simple. Every single word is foreign to them. The pronunciation, meaning and the expected response has to be manually programmed, or at least most of it.
 This research covers two ways of speech recognition that the NAO could end up using. These are the built in speech library from Choregraph and chat bots like Google Assistant and Amazon's Alexa.
@@ -144,7 +144,7 @@ The high Tech concept is probably the best option, but it is very hard to produc
     -[ ]  Speech
     *Read above and give more info*
     -[ ]  Vision
-    We choose to use the Kinect sensor as an external camera to detect a movement in a 3D space. The Kinect is connected to a computer running the WPF application. That WPF application sends the data from the Kinect
+    We choose to use the Kinect sensor as an external camera to detect a movement in a 3D space. The Kinect is connected to a computer running the WPF application. That WPF application sends the data from the Kinect to the Python script using the MQTT protocol. The MQTT server is running on a Linux computer using a Raspberry Pi.
     -[ ]  Name
     Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
 #### System Diagrams
