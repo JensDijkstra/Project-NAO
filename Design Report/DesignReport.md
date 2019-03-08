@@ -134,6 +134,13 @@ The high Tech concept is probably the best option, but it is very hard to produc
 
 ### 5 Considerations
 ### 5.1 Scores
+```
+| Variable requirements | 1 | 2 | 3 | 4 | 5 |
+| NAO can have at least three different social conversations with the user.
+| Users movements can be evaluated and then corrected by the NAO.
+|
+|
+```
 ### 5.2 Kesselring
 ### 5.3 Final concept (concept conclusion)
   - Scores conclusion
