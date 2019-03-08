@@ -170,4 +170,10 @@ If you are done for the day you can say that you want to stop and NAO will go in
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 ## 6. Conclusion
+In this project the goal was to make a prototype with a NAO robot wich can give personal egaging Tai-Chi lessons to people at home. To achieve this a thorough research was done regarding the functions wich the robot must fulfill.
+
+The results led to a robot that is both thechnologicaly advanced and user friendly at the same time. The Kinect sensor enables the robot to calculate the users movements precicely and the camera inside the robot is perfect for scanning faces.
+
+Because a strict teacher is not what most people want Blue is really friendly and helpfull. A external chatbot also makes the robot more of a litle friend with wich you can talk about certain subjects.
+
 ## References
