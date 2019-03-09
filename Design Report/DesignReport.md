@@ -137,6 +137,8 @@ This last concept is an improved version of the 'simple' concept. Mostly the hea
 
 ### 5 Considerations
 ### 5.1 Weightings
+The four defined concept now must meet the variable requirements that are defined in the Set of Requirements. The fixed requirements will not weight in in this part of choosing a final concept, because every concept must meet those requirements. 
+At first the weighting factors of the variable requirements will be determined in table below. These factors will be used in the score table.
 ```
 | Variable requirements 								   | 1 | 2 | 3 | 4 | Total |
 | 1.	NAO can have at least three different social conversations with the user.	   | 1 | 1 | 1 | 1 |   4   |
@@ -145,6 +147,9 @@ This last concept is an improved version of the 'simple' concept. Mostly the hea
 | 4.	The vision software is able to measure the distance from the camera to the user.   | 0 | 0 | 1 | 1 |   2   |
 ```
 ### 5.2 Score table
+Now the concepts get a rating from one till five for how well a concept meets the requirement. The weighting factor will be multiplied by this rating and result a final score. When one compares these scores to the ideal outcome of this table a choice can be made. 
+
+As shown below the concepts 'High-Tech' and 'Advanced HMI' have a significantly higher score then the other two. They also are very close to the ideal score. In 5.3 a final concept will be concluded out of these results.
 ```
 | Variable requirements 								   | Scores | Cheap | Simple | High-Tech | Advanced HMI |  Ideal  |
 |------------------------------------------------------------------------------------------|
@@ -153,7 +158,7 @@ This last concept is an improved version of the 'simple' concept. Mostly the hea
 | 3.	Transitions between the postures are fluid  					   |   1    | 3(3)  |  3(3)  |   3(3)    |   3(3)       |  5(5)   |
 | 4.	The vision software is able to measure the distance from the camera to the user.   |   2    | 1(2)  |  4(8)  |   4(8)    |   4(8)       |  2(10)  |
 | Total											   |        | 23    |  32    |   43	 |   40         |   50    |
-|---------------------------------------------------------------------------------------------------| 40%   |  64%   |   86%     |   80%         |   100%  |
+|---------------------------------------------------------------------------------------------------| 40%   |  64%   |   86%     |   80%        |   100%  |
 ```
 ### 5.3 Final concept (concept conclusion)
   - Scores conclusion
