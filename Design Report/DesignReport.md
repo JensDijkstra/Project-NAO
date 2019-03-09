@@ -148,12 +148,12 @@ This last concept is an improved version of the 'simple' concept. Mostly the hea
 ```
 | Variable requirements 								   | Scores | Cheap | Simple | High-Tech | Advanced HMI |  Ideal  |
 |------------------------------------------------------------------------------------------|
-| 1.	NAO can have at least three different social conversations with the user.	   |   4    | 3(12) |  3(12) |   5(20)   |   5(20)     |
-| 2.	Users movements can be evaluated and then corrected by the NAO.			   |   3    | 2(6)  |  3(9)  |   4(12)   |   3(9)      |
-| 3.	Transitions between the postures are fluid  					   |   1    | 3(3)  |  3(3)  |   3(3)    |   3(3)      |
-| 4.	The vision software is able to measure the distance from the camera to the user.   |   2    | 1(2)  |  4(8)  |   4(8)    |   4(8)      |
-| Total											   |        | 23    |  32    |   43	 |   40          |
-|---------------------------------------------------------------------------------------------------| 40%   |  64%   |   86%     |   80%
+| 1.	NAO can have at least three different social conversations with the user.	   |   4    | 3(12) |  3(12) |   5(20)   |   5(20)      |  5(20)  |
+| 2.	Users movements can be evaluated and then corrected by the NAO.			   |   3    | 2(6)  |  3(9)  |   4(12)   |   3(9)       |  3(15)  |
+| 3.	Transitions between the postures are fluid  					   |   1    | 3(3)  |  3(3)  |   3(3)    |   3(3)       |  5(5)   |
+| 4.	The vision software is able to measure the distance from the camera to the user.   |   2    | 1(2)  |  4(8)  |   4(8)    |   4(8)       |  2(10)  |
+| Total											   |        | 23    |  32    |   43	 |   40         |   50    |
+|---------------------------------------------------------------------------------------------------| 40%   |  64%   |   86%     |   80%         |   100%  |
 ```
 ### 5.3 Final concept (concept conclusion)
   - Scores conclusion
