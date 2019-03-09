@@ -113,17 +113,18 @@ The assignment was not to mimic the human of interest, but to check if he or she
 In the table below are listed all the options for different functions of the NAO robot. all the options will be considered while making the final design. at least 3 concepts will be made with different themes. later the concepts will be weight against each other and the best one will be chosen as the final design.
 ```
 | Functions             		| Option 1                             | Option 2                              | Option 2                  | Option 4  |
-|---------------------------|--------------------------------------|---------------------------------------|---------------------------|-----------|
-| **User recognition**      | OpenCV with 3D webcam (3)            | Kinect connection via MQTT on Rpi     | Build in NAO camera (1,2) |           |
-| **Movements recognition** | OpenCV with 3D webcam (3)            | Kinect connection via MQTT on Rpi (2) | Build in NAO camera (1)   |           |
-| **Hearing**               | External microphone on the user (3)	 | NAO microphones (1,2)                 |                           |           |
-| **Socializing**           | Pre-programmed speech patterns (1,2) | Chatbot (3)                           |                           |           |
+|---------------------------|--------------------------------------|----------------------------------------|---------------------------|-----------|
+| **User recognition**      | OpenCV with 3D webcam (3)            | Kinect connection via MQTT on Rpi      | Build in NAO camera (1,2,4) |           |
+| **Movements recognition** | OpenCV with 3D webcam (3)            | Kinect connection via MQTT on Rpi (2,4)| Build in NAO camera (1)   |           |
+| **Hearing**               | External microphone on the user (3,4)	 | NAO microphones (1,2)                 |                           |           |
+| **Socializing**           | Pre-programmed speech patterns (1,2) | Chatbot (3,4)                           |                           |           |
 ```
 
 ### 4.2 Concepts
 1. Cheap
 2. Simple
 3. High Tech
+4. Advanced HMI
 ### 4.3 Detailed description of concepts
 #### Cheap
 This concept is the cheapest. This is because it only uses the standard components of the NAO robot itself. The cameras on the head of the robot is used to recognize faces and track the movements of the user. These cameras will not give you the most detailed readings, but they should get the job done. The standard microphone on the NAO works relatively well for the required functions it preforms, but you have to get close enough to the robot so that it can clearly hear and understand you. To have conversations with NAO there will be some pre-programmed speech patterns in the robot's code that the user has to adhere to. Because of this you can't have very complicated conversations, but it takes less work to finish the NAO which lessens the final costs.
@@ -131,26 +132,28 @@ This concept is the cheapest. This is because it only uses the standard componen
 The second concept is very simple based. It is the easiest to program but the price will be a little higher because it requires a Kinect sensor and RaspberryPi. To recognize the user's face NAO's camera is used. This because there is already a built in function in the Choregraphe software for facial recognition. For the detection of movements however a Kinect sensor is used, which is specifically made for movement tracking. The sensor will have to be connected to the robot via a RaspberryPi and the code will be written in Python. For NAO's hearing and talking Choregraph is used, since all the needed functions are already integrated in there. Because of the addition of a RaspberryPi and Kinect the costs for this concept lay a little higher than the 'cheap' concept.
 #### High Tech
 The high Tech concept is probably the best option, but it is very hard to produce and also very expensive. This concept does not use the Kinect sensor but a 3D webcam that can be mounted on top of the NAO robot. The code will be programmed using opencv in python or C++. This is very user friendly because The user doesn't have to set up the Kinect on the correct place. This camera will be used for both facial recognition and movement tracking. For the robot to hear there will be a little microphone that the user can clip onto their clothes This microphone will have to be connected to the robot and it costs a little more money. Probably the most useful tool that will be used in this concept is a chatbot such as **INSERT CHATBOT NAME**. This way NAO is not limited by the speech patterns inside the program. This will help the robot to be a lot more user friendly and more fun to use. It can also be used to search for things on Google so that the robot can tell you things you want to know.
+#### Advanced HMI
+This last concept is an improved version of the 'simple' concept. Mostly the hearing and socializing skills have an option which will result in a better HMI. For Vision it is not necessary to choose the difficult options like a 3D-camera and OpenCV, because this concept is all about the correct and polite interaction between the NAO robot and the human. Though we have chosen not to use the NAO microphone there is a not that much of a difference, depending on which external microphone one would choose. In this particular concept a small Voice Detection sensor will do it, but one can also consider a studio microphone with white noise filters et cetera.
 
 ### 5 Considerations
 ### 5.1 Weightings
 ```
 | Variable requirements 								   | 1 | 2 | 3 | 4 | Total |
-| 1.	NAO can have at least three different social conversations with the user.	   | 1 | 0 | 1 | 0 |   2   |
-| 2.	Users movements can be evaluated and then corrected by the NAO.			   | 1 | 1 | 1 | 1 |   4   |
+| 1.	NAO can have at least three different social conversations with the user.	   | 1 | 1 | 1 | 1 |   4   |
+| 2.	Users movements can be evaluated and then corrected by the NAO.			   | 0 | 1 | 1 | 1 |   3   |
 | 3.	Transitions between the postures are fluid  					   | 0 | 0 | 1 | 0 |   1   |
-| 4.	The vision software is able to measure the distance from the camera to the user.   | 1 | 0 | 1 | 1 |   3   |
+| 4.	The vision software is able to measure the distance from the camera to the user.   | 0 | 0 | 1 | 1 |   2   |
 ```
 ### 5.2 Score table
 ```
-| Variable requirements 								   | Scores | Cheap | Simple | High-Tech |  Ideal  |
+| Variable requirements 								   | Scores | Cheap | Simple | High-Tech | Advanced HMI |  Ideal  |
 |------------------------------------------------------------------------------------------|
-| 1.	NAO can have at least three different social conversations with the user.	   |   2    | 3(6)  |  3(6)  |   5(10)   | 5(10)   |
-| 2.	Users movements can be evaluated and then corrected by the NAO.			   |   4    | 2(8)  |  3(12) |   4(16)   | 5(20)   |
-| 3.	Transitions between the postures are fluid  					   |   1    | 3(3)  |  3(3)  |   3(3)    | 5(5)    |
-| 4.	The vision software is able to measure the distance from the camera to the user.   |   3    | 1(3)  |  4(12) |   4(12)   | 5(15)   |
-| Total											   |        | 20    |  32    |   41	 | 50      |
-|---------------------------------------------------------------------------------------------------| 40%   |  64%   |   82%     | 100%
+| 1.	NAO can have at least three different social conversations with the user.	   |   4    | 3(12) |  3(12) |   5(20)   | 5(20)   |
+| 2.	Users movements can be evaluated and then corrected by the NAO.			   |   3    | 2(6)  |  3(9)  |   4(12)   | 3(9)   |
+| 3.	Transitions between the postures are fluid  					   |   1    | 3(3)  |  3(3)  |   3(3)    | 3(3)    |
+| 4.	The vision software is able to measure the distance from the camera to the user.   |   2    | 1(2)  |  4(8)  |   4(8)    | 4(8)   |
+| Total											   |        | 23    |  32    |   43	 | 40      |
+|---------------------------------------------------------------------------------------------------| 40%   |  64%   |   86%     | 80%
 ```
 ### 5.3 Final concept (concept conclusion)
   - Scores conclusion
