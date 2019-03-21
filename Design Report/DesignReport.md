@@ -144,6 +144,7 @@ The high Tech concept is probably the best option, but it is very hard to produc
     -[ ]  Speech
     *Read above and give more info*
     -[ ]  Vision
+    Checking for the movements will be done by the Kinect camera from Microsoft. The cameras of the NAO robot are 1280x960 resolution at 30 frames per second wich would not be enough to make a good measurement. The points of the motion capture were to inconsistent to check if a person is making the right moves. The other options for motion capture are 3D cameras as a separate device for the first concept. Most other 3D cameras are expensive and come with their own software. The xbox Kinect camera is less expensive because it has been more mass produced and come with the software Visual Basic. In Visual Basic the motion capture is ready out of the box and it can give data of the points to other software. This is not the case with all 3D camera software. The data send out by the 3D camera ore the software behind it needed to be open source because there is a separate Python code running to check for the angles between the points. For a more userfriendly experience the next concept of the NAO there is the option to build the Kinect camera in the robot.
     -[ ]  Name
     Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
 #### System Diagrams
