@@ -1,6 +1,18 @@
 # NAO Design report
+*The personal home trainer for Tai Chi*
 
 ## Abstract
+An urban upmarket health club needs a personal robot that its clients can take home to practice the Tai Chi 10-form. The robot that the prototype uses is a NAO from SolidBank. Research has been done on how to implement a vision system for the NAO and communication. After carefully considering what aspects are most important for a Tai Chi teacher a final concept has been worked out.
+
+This concept has the following features:
+  - The NAO tries to mimic human behaviour
+  - NAO responds to its given name: Blue
+  - Blue is a happy young robot
+  - Both the 10-form and extra information about Tai Chi can be taught
+  - Blue uses a Kinect to give feedback on your position
+  - Chatbot Snips and Choregraph are used for conversations
+
+State machine and activity diagrams have been made to show the functions the robot possesses. These can be found in the final concept.
 
 ## Table of contents
 - [NAO Design report](#nao-design-report)
@@ -25,7 +37,7 @@
 
 ## 1. Introduction
 
-The urban upmarket healthclub gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu (master/teacher) can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly.
+An urban upmarket health club gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu (master/teacher) can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly.
 A NAO robot by SolidBank is a great solution to this problem. NAO is able to move like a human and has the ability to provide live feedback to the user.
 
 GeekySolutions has been asked to design and program the NAO so it can act as a real Tai Chi Sifu. Not only will it be able to move like a human, it will also be programmed to have meaningful interactions with the user. These interactions could be grading and correcting the user's pose, give additional information about Tai Chi and interact with the user in a personal way.
@@ -77,7 +89,9 @@ The robot has its own cameras. The software to program these cameras are also ve
 #### Kinect
 The Kinect sensor made by Microsoft for the Xbox console is specifically made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faces using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot. The software of the Kinect will probably be unable to look into. If the information of the Kinect is to hard to work with or even understand we will have to look for others ways to check movements.
 #### Others
-There are some other options as well, such as using an other external 3D camera. These however are very expensive most of the time. The reason why the Kinect is cheaper is because of the face that it was mass produced. The kinect looks like a good solution for most of our problems regarding the Vision aspect of the project. Another one of the reasons is that the software generates point (x,y,z) from each bodypart of the seen human by the camera.
+
+There are some other options as well, such as using another external 3D camera. These however are very expensive most of the time. The reason why the Kinect is cheaper is because of the face that it was mass produced. The kinect looks like a good solution for most of our problems regarding the Vision aspect of the project. Another one of the reasons is that the software generates point (x,y,z) from each bodypart of the seen human by the camera.
+
 ### 3.2 Speech
 #### Speech recognition
 Having a conversation between the NAO and the user requires the NAO to have speech recognition. For humans this task is simple. Their brains know what words mean and how to react to them. For robots it is not that simple. Every single word is foreign to them. The pronunciation, meaning and the expected response has to be manually programmed, or at least most of it.
@@ -96,7 +110,7 @@ In order to give conversations more meaning this library can be combined with ma
 		This identifies the emotion expressed by the speaker’s voice, independently of what is being said.
 		NAO could be made to respond according to the user's expressed emotion.
 #### Chat Bots
-There also is the option to use a variety of chat bots. these sometimes cost money, but you can also get them for free. This enables the NAO robot to have more complicated conversations and answer any questions that the user might have. This does however come with some privacy problems. These programs are free because the developers can use your personal information to upgrade their AI. some users might not want to have this so this becomes something to take into consideration when designing the robot.
+There also is the option to use a variety of chat bots. these sometimes cost money, but you can also get them for free. This enables the NAO robot to have more complicated conversations and answer any questions that the user might have. This does however come with some privacy problems. Google Cloud is a way to get an easy chatbot going, but everything the user says is stored in Google's database. Some users might not want to have this so this becomes something to take into consideration when designing the robot.
 	 - [ ] Google
 	 - [ ] Amazon
 	 - [ ] Sphinx
@@ -144,13 +158,16 @@ The high Tech concept is probably the best option, but it is very hard to produc
     -[ ]  Speech
     *Read above and give more info*
     -[ ]  Vision
+
     Checking for the movements will be done by the Kinect camera from Microsoft. The cameras of the NAO robot are 1280x960 resolution at 30 frames per second wich would not be enough to make a good measurement. The points of the motion capture were to inconsistent to check if a person is making the right moves. The other options for motion capture are 3D cameras as a separate device for the first concept. Most other 3D cameras are expensive and come with their own software. The xbox Kinect camera is less expensive because it has been more mass produced and come with the software Visual Basic. In Visual Basic the motion capture is ready out of the box and it can give data of the points to other software. This is not the case with all 3D camera software. The data send out by the 3D camera ore the software behind it needed to be open source because there is a separate Python code running to check for the angles between the points. For a more userfriendly experience the next concept of the NAO there is the option to build the Kinect camera in the robot.
+
     -[ ]  Name
     Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
 #### System Diagrams
 In this chapter the system diagrams that were made for designing purposes of the NAO robot will be explained in detail.
 ##### STM
 First there is the State Machine Diagram. This is the main diagram of Blue. All the functions in this diagram will be further elaborated in the activity diagrams or other diagrams below. Right after Blue wakes up he will start with a greeting. After that he will ask what you want to do and listens to your response. If you just want to socialize you can also do that. If you want to immediately start training you can ask Blue to start the training. If you don't respond for more than 50 seconds, Blue will go into an idle state. He will only come out of idle if you call his name. If you still don't respond for another 50 seconds, Blue will go into the valediction state and he will say its goodbyes and shut down. Blue will also shut down if the user says goodbye first.
+
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
 ##### Greeting
 In the greeting state Blue will look at your face to see if he recognizes you. If he does, he greets you. If he doesn't he will try to learn your face. This is explained further in the face learning diagram.
@@ -176,4 +193,10 @@ If you are done for the day, you can tell Blue you want to stop and he will go i
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 ## 6. Conclusion
+In this project the goal was to make a prototype with a NAO robot wich can give personal egaging Tai-Chi lessons to people at home. To achieve this a thorough research was done regarding the functions wich the robot must fulfill. These functions are movement tracking, face recognition, listening to requests and giving explanetions. 
+
+The results led to a robot that is both thechnologicaly advanced and user friendly at the same time. The Kinect sensor enables the robot to calculate the users movements precicely and the camera inside the robot is perfect for scanning faces.
+
+Because a strict teacher is not what most people want Blue is really friendly and helpfull. A external chatbot also makes the robot more of a litle friend with wich you can talk about certain subjects.
+
 ## References
