@@ -219,8 +219,10 @@ In order to accuratly Judge the users movements, Blue needs to make some calcula
 - yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
 
 On the website of Aldebaran you can find all the joints of the NAO robot and how far they can bend.
+adjustments had to be made to ensure that the angles could not be higher than the angles of the robot. The angles were also shifted 90 degrees.
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
+Using a python script the robots and the users joint angles can be compared. The program will give a score depending on how close the user is to the actual pose and if this score is over a certain threshhold you get a pass. If the score is lower, Blue will say what needs to be improved on your pose.
 ### 6.3 System hierarchy (Toni/Tristan)
 ### 6.4 Vision (Toni/Tristan)
 ### 6.5 Poses (Just/Jens)
