@@ -217,6 +217,7 @@ In order to accuratly Judge the users movements, Blue needs to make some calcula
 - roll:   Φ<sub>r</sub> = atan(|Y1-Y2| / |X1-X2|)
 - pitch:  Φ<sub>p</sub> = atan(|Y1-Y2| / |Z1-Z2|)  
 - yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
+
 On the website of Aldebaran you can find all the joints of the NAO robot and how far they can bend.
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
