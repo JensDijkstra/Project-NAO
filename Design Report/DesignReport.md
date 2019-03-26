@@ -214,9 +214,11 @@ If you are done for the day, you can tell Blue you want to stop and he will go i
 
 ### 6.2 Angle Calculations (Jens)
 In order to accuratly Judge the users movements, Blue needs to make some calculations. Every joint can move in one or more directions. These directions are called the jaw, roll and pitch axes. The angles can be calculated with a fairly simple formula.
-- roll:   Φ<sub>r</sub> = atan(|Y1-Y2|/|X1-X2|)
-- pitch:  Φ = atan(|Y1-Y2|/|Z1-Z2|)  
-- yaw:    Φ = atan(|Z1-Z2|/|X1-X2|)
+- roll:   Φ<sub>r</sub> = atan(|Y1-Y2| / |X1-X2|)
+- pitch:  Φ<sub>p</sub> = atan(|Y1-Y2| / |Z1-Z2|)  
+- yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
+On the website of Aldebaran you can find all the joints of the NAO robot and how far they can bend.
+![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
 ### 6.3 System hierarchy (Toni/Tristan)
 ### 6.4 Vision (Toni/Tristan)
 ### 6.5 Poses (Just/Jens)
