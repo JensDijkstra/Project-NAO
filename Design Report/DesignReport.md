@@ -213,6 +213,10 @@ If you are done for the day, you can tell Blue you want to stop and he will go i
 -[ ]  Valediction
 
 ### 6.2 Angle Calculations (Jens)
+In order to accuratly Judge the users movements, Blue needs to make some calculations. Every joint can move in one or more directions. These directions are called the jaw, roll and pitch axes. The angles can be calculated with a fairly simple formula.
+- roll:   Φ<sub>r</sub> = atan(|Y1-Y2|/|X1-X2|)
+- pitch:  Φ = atan(|Y1-Y2|/|Z1-Z2|)  
+- yaw:    Φ = atan(|Z1-Z2|/|X1-X2|)
 ### 6.3 System hierarchy (Toni/Tristan)
 ### 6.4 Vision (Toni/Tristan)
 ### 6.5 Poses (Just/Jens)
