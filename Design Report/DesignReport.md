@@ -123,15 +123,6 @@ In order to give conversations more meaning this library can be combined with ma
 		NAO could be made to respond according to the user's expressed emotion.
 #### Chat Bots
 There also is the option to use a variety of chat bots. these sometimes cost money, but you can also get them for free. This enables the NAO robot to have more complicated conversations and answer any questions that the user might have. This does however come with some privacy problems. Google Cloud is a way to get an easy chatbot going, but everything the user says is stored in Google's database. Some users might not want to have this so this becomes something to take into consideration when designing the robot.
-	 - [ ] Google
-	 - [ ] Amazon
-	 - [ ] Sphinx
-	 - [ ] Others
-
-### 3.3 Movement
-	 - [ ] Regular programming
-	 - [ ] Newer NAO version
-	 - [ ] Mimic the user
 
 ## 4 Concepts
 ### 4.1 Morphological Analysis
@@ -170,13 +161,6 @@ The high Tech concept is probably the best option, but it is very hard to produc
     -[ ]  Speech
     *Read above and give more info*
     -[ ]  Vision
-    We choose to use the Kinect sensor as an external camera to detect a person and get the coordinates of specific points on the human body. The Kinect is connected to a Windows computer running the WPF application. That WPF application sends the data from the Kinect to the Python script using the MQTT protocol. The MQTT server is running on a Linux computer using a Raspberry Pi. The python script receives 3D-coordinates from the virtual server and calculates the angle between each joint using the 3D coordinates of each point. After finding the angels, the angles will be converted to radians so it's readable for the NAO robot. With that information we are able to compare it with the current position of the NAO robot. By comparing those positions we are able to confirm if the movement is right.
-
-    The WPF application is running on a Windows OS and build with #C and is using the Kinect framework and MQTT library. The WPF application give us a few options. We are able to change the MQTT broker Ip-Address and the topic. The application has also a start and stop button. With those buttons we are able the record the movements of the person in front of the Kinect sensor. The movements will be saved in JSON data locally on the Windows machine. If the buttons in the application are not used the application will send all the data directly to the virtual MQTT server. The data will be lost on the WPF application side because the JSON data is not saved locally.
-
-    In the Python script we will ask information from the user. We will ask the Ip-Address of the NAO robot, the port of the NAO robot, the IP-Address of MQTT broker and the topic. After the correct information is entered by the user the Python script is connect with the MQTT server. After connected there will be a result code printed in the console of Python. After a successful connection the Python script is receiving JSON data from the MQTT server. In the on_connect function that is part of the MQTT python library the list of degree angels is created. To get the angels we have to calculate the angels based on the JSON data which contains the 3D coordinates of each joint. By appending the angels to the list we wrote a function which will calculate the angels. The input of that function are all the necessary X,Y and Z coordinates.
-
-    After the list of angels is created we use the function sendrobot to send the list and make a connection with the NAO robot. As an input of the sendrobot function we need the list of angels, IP-Address and the port. With this information we can establish a connection with the NAO robot. If there is a connection with de NAO robot we will convert all the angels inside the list to radians because the output of the NAO robot is also in radians. With the input and output both in radians we are able to compare them with each other.
 
     -[ ]  Name
     Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
@@ -208,12 +192,16 @@ You can also ask to do a specific pose. Blue will do the same as with the Tai-Ch
 If you are done for the day, you can tell Blue you want to stop and he will go into the valediction state. In this state he will give you some tips on how to continue your training. He also asks if the user has any questions about the practice. The user is free to ask questions about the practice and about social topics. When asking about the training, Blue will repeat this until you don't have any questions left. After which he will say goodbye and shutdown. When asking about social related topics, NAO leaves his valediction state and goes back into the teaching/socializing state.
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 
-## 6. (Uitwerking/Resultaat)
-### 6.1 Dialogue (Just)
+## 6. Elaboration
+### 6.1 Social interaction (Just)
+Not all the ideas from the initial design involving the social interaction made it into the final product. The reason for this and what happened to replace the scrapped parts is found in this chapter along with all different social interactions.
 #### Chatbot
--[ ]  Why we choose not to use it
+The initial design had a chatbot incorporated in it. This way the social interactions of Blue would be endless which would add to the overall experience. Including the chatbot in the final design proved to take more time than expected. Therefor it has been taken out of the final design and replaced with programming all social interactions in Choregraph.
+Reason why it took more time than expected is privacy concerns. When having a speech API connected to the internet all information is stored somewhere. Searching for a speech recognition software that is compatible with Python, self learning and protective of the user's information took a lot of time. Snips.AI seemed to be the only chatbot that meets all these requirements. It can be trained to understand lots of words sentences online. It even has built in functions for a calculator and a weather forecast (only for online use). After training, an offline version can be downloaded and installed on a RaspberryPi, which is already being used for the connection to the Kinect.
+For further expansion of the NAO Tai Chi robot, using Snips.AI would be recommended.
 #### Choregraph
 -[ ]  Script
+All of Blue's dialogues are programmed with Choregraph.
 #### Different dialogues
 -[ ]  Introduction
 -[ ]  Teaching & socializing
