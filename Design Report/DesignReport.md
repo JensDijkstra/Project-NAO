@@ -147,13 +147,13 @@ This concept is the cheapest. This is because it only uses the standard componen
 #### Simple
 The second concept is very simple based. It is the easiest to program but the price will be a little higher because it requires a Kinect sensor and RaspberryPi. To recognize the user's face NAO's camera is used. This because there is already a built in function in the Choregraphe software for facial recognition. For the detection of movements however a Kinect sensor is used, which is specifically made for movement tracking. The sensor will have to be connected to the robot via a RaspberryPi and the code will be written in Python. For NAO's hearing and talking Choregraph is used, since all the needed functions are already integrated in there. Because of the addition of a RaspberryPi and Kinect the costs for this concept lay a little higher than the 'cheap' concept.
 #### High Tech
-The high Tech concept is probably the best option, but it is very hard to produce and also very expensive. This concept does not use the Kinect sensor but a 3D webcam that can be mounted on top of the NAO robot. The code will be programmed using opencv in python or C++. This is very user friendly because The user doesn't have to set up the Kinect on the correct place. This camera will be used for both facial recognition and movement tracking. For the robot to hear there will be a little microphone that the user can clip onto their clothes This microphone will have to be connected to the robot and it costs a little more money. Probably the most useful tool that will be used in this concept is a chatbot such as **INSERT CHATBOT NAME**. This way NAO is not limited by the speech patterns inside the program. This will help the robot to be a lot more user friendly and more fun to use. It can also be used to search for things on Google so that the robot can tell you things you want to know.
+The high Tech concept is probably the best option, but it is very hard to produce and also very expensive. This concept does not use the Kinect sensor but a 3D webcam that can be mounted on top of the NAO robot. The code will be programmed using opencv in python or C++. This is very user friendly because The user doesn't have to set up the Kinect on the correct place. This camera will be used for both facial recognition and movement tracking. For the robot to hear there will be a little microphone that the user can clip onto their clothes This microphone will have to be connected to the robot and it costs a little more money. Probably the most useful tool that will be used in this concept is a chatbot such as Google Assistant or Sphinx. This way NAO is not limited by the speech patterns inside the program. This will help the robot to be a lot more user friendly and more fun to use. It can also be used to search for things on Google so that the robot can tell you things you want to know.
 #### Advanced HMI
 This last concept is an improved version of the 'simple' concept. Mostly the hearing and socializing skills have an option which will result in a better HMI. For Vision it is not necessary to choose the difficult options like a 3D-camera and OpenCV, because this concept is all about the correct and polite interaction between the NAO robot and the human. Though we have chosen not to use the NAO microphone there is a not that much of a difference, depending on which external microphone one would choose. In this particular concept a small Voice Detection sensor will do it, but one can also consider a studio microphone with white noise filters et cetera.
 
 ### 5 Considerations
 ### 5.1 Weightings
-The four defined concept now must meet the variable requirements that are defined in the Set of Requirements. The fixed requirements will not weight in in this part of choosing a final concept, because every concept must meet those requirements. 
+The four defined concept now must meet the variable requirements that are defined in the Set of Requirements. The fixed requirements will not weight in in this part of choosing a final concept, because every concept must meet those requirements.
 At first the weighting factors of the variable requirements will be determined in table below. These factors will be used in the score table.
 ```
 | Variable requirements 								   | 1 | 2 | 3 | 4 | Total |
@@ -163,7 +163,7 @@ At first the weighting factors of the variable requirements will be determined i
 | 4.	The vision software is able to measure the distance from the camera to the user.   | 0 | 0 | 1 | 1 |   2   |
 ```
 ### 5.2 Score table
-Now the concepts get a rating from one till five for how well a concept meets the requirement. The weighting factor will be multiplied by this rating and result a final score. When one compares these scores to the ideal outcome of this table a choice can be made. 
+Now the concepts get a rating from one till five for how well a concept meets the requirement. The weighting factor will be multiplied by this rating and result a final score. When one compares these scores to the ideal outcome of this table a choice can be made.
 
 As shown below the concepts 'High-Tech' and 'Advanced HMI' have a significantly higher score then the other two. They also are very close to the ideal score. In 5.3 a final concept will be concluded out of these results.
 ```
@@ -226,21 +226,57 @@ The initial design had a chatbot incorporated in it. This way the social interac
 Reason why it took more time than expected is privacy concerns. When having a speech API connected to the internet all information is stored somewhere. Searching for a speech recognition software that is compatible with Python, self learning and protective of the user's information took a lot of time. Snips.AI seemed to be the only chatbot that meets all these requirements. It can be trained to understand lots of words sentences online. It even has built in functions for a calculator and a weather forecast (only for online use). After training, an offline version can be downloaded and installed on a RaspberryPi, which is already being used for the connection to the Kinect.
 For further expansion of the NAO Tai Chi robot, using Snips.AI would be recommended.
 
-For the NAO robot to perform according to our requirements it is necessary to use or build a speech recognition library or a chatbot from a external source. Online a load of option are available for usage, but one have to consider that this NAO robot will be used in a private area and it has to make a conversation with the user. Web browsers like Mozilla and search engines like Google have speech API’s one can use for multiple languages. These libraries are big and thereby reliable for usage, but considering the fact that a the NAO is used in a homely environment it is not responsible to integrate these kind of libraries. The biggest argument for this decision is the privacy of the user. If the Google API would be chosen it can be that Google abstracts information from the conversation between the user and the NAO. 
+For the NAO robot to perform according to our requirements it is necessary to use or build a speech recognition library or a chatbot from a external source. Online a load of option are available for usage, but one have to consider that this NAO robot will be used in a private area and it has to make a conversation with the user. Web browsers like Mozilla and search engines like Google have speech API’s one can use for multiple languages. These libraries are big and thereby reliable for usage, but considering the fact that a the NAO is used in a homely environment it is not responsible to integrate these kind of libraries. The biggest argument for this decision is the privacy of the user. If the Google API would be chosen it can be that Google abstracts information from the conversation between the user and the NAO.
 
-To anticipate to this problem there are also chatbots which can be connected to the NAO via a Raspberry Pi. The one which was the most easiest to modify to your own preferences was Snips. This application enables one to design one’s own ‘assistant’. In the assistant different applications can be installed for different situations of speech. To let the assistant operate reliable it is possible to “train” the application with practise examples. The more examples are in this application the better it is working. 
+To anticipate to this problem there are also chatbots which can be connected to the NAO via a Raspberry Pi. The one which was the most easiest to modify to your own preferences was Snips. This application enables one to design one’s own ‘assistant’. In the assistant different applications can be installed for different situations of speech. To let the assistant operate reliable it is possible to “train” the application with practise examples. The more examples are in this application the better it is working.
 
 The downside of Snips in this project is that Snips has to be extensive to operate properly. Besides that, for the output of the Raspberry Pi a completely different code has to be written to use those words to program a reaction or an action. In the time period of this particular project it is unrealistic to build such an extensive code.
 
-Eventually a choice has been made to use the in-build NAO speech recognition. For this project had more focus for movement correction of the user. The NAO speech recognition software is not as good as one of the options shown above, but it will be sufficient for our requirements. 
+Eventually a choice has been made to use the in-build NAO speech recognition. For this project had more focus for movement correction of the user. The NAO speech recognition software is not as good as one of the options shown above, but it will be sufficient for our requirements.
 
 #### Choregraph
--[ ]  Script
-All of Blue's dialogues are programmed with Choregraph.
+##### Dialog boxes
+All of Blue's dialogues are programmed with Choregraph. This is done by creating a dialog box in Choregraph. **Picture**
+This gives the possibility to write lots of interactions quickly in one box. Writing and altering the interactions happens in a .top file which contains all possible user inputs and NAO outputs. These files are sorted by topic. For this project topics are divided into greeting, teaching/socializing and valediction. The topics 'teaching' and 'socializing' are combined, because these do not need a separate box and separating them would only clutter the screen.
+Through these .top files, which are essentially scripts, outputs of the box can be triggered. If a dialog box needs an output, for instance when a certain action by the NAO is required, this can simply be added by editing the box. **Picture**
+##### Syntax
+- [ ] Check appendix references
+
+The full script of all dialog boxes can be found in appendix **A**. To read the script, an explanation of the syntax is useful.
+- *u:*                                  (User input)
+- *u1:*                                 (A continuation of the previous 'u:')
+- *u2:*                                 (A continuation of the previous 'u1:')
+                                        *This can be further expanded upon.*
+- *[word1 word2 word3]*                 (Any of the words mentioned is valid)
+- *["Phrase 1" "Phrase 2" "Phrase 3"]*  (Any of the phrases is valid)
+- *{}*                                  (Optional word/phrase/choice)
+- *                                     (Any received input is valid)
+- *u:(My name is _Rob)* Hello $1 !      (This gives the output "Hello Rob!")
+- *^rand[word1 word2 word3]*            (Randomly return chose a word as an output)
+
 #### Different dialogues
--[ ]  Introduction
--[ ]  Teaching & socializing
--[ ]  Valediction
+Blue has three main dialog boxes he uses to communicate with the user. These are the introduction, teaching & socializing and valediction box. Each with it's own set of interactions. Every time Blue speaks, he moves around a little bit and uses body language to further express himself. This makes the NAO feel even more human-like.
+##### Introduction
+The introduction dialog box is the first thing users will hear when they start up the NAO. This introduction is mostly a monologue, but some questions are asked in order to make the user more interested in what Blue says.
+First Blue introduces himself and asks the user to do the same by shaking hands. During this, Blue will learn to recognize the user's face and name. After this process, Blue is able to make interactions more personal by calling out the user's name. The next time a user starts up the NAO, this process does not have to be repeated, since it will automatically recognize the user.
+After this, Blue starts explaining how he works. This part has a pop quiz to test if the user was paying attention. If the user answers correctly, Blue will respond very excited. Otherwise, Blue will make a joke and rephrase it's original explanation.
+Finally Blue jokes about having to tell the user all kinds of legal things.
+
+##### Teaching & Socializing
+After the introduction, Blue automatically goes into the teaching & socializing box. This box contains all Tai Chi and social related interactions.
+Blue asks the user if he or she wants to practice Tai Chi. If the user answers **yes**, Blue will go into a teaching only dialog box, in which all Tai Chi related dialogues are scripted. This is the 'active box' If the user answers **no**, Blue will stay in the same box, but wait for the user to ask him about something. This is the 'passive box'. Note that the active box has the same Tai Chi options as the passive box, but let's Blue ask the questions. It is basically a sub-box of the passive box.
+Blue has the following abilities in the teaching & socializing box:
+  - Show the user a specific form from the 10-form.
+  - Show the user all programmed forms with fluent transition.
+  - Tell facts about Tai Chi (Chuan).
+  - Basic interactions like greeting and different responses to "How are you?".
+  - The user can ask Blue if he likes X, with X being any word or phrase.
+  - Tell jokes.
+  - Easter eggs.
+
+##### Valediction
+In the valediction state, Blue asks the user if all exercises were clear and gives the user compliments on their work today. Motivating them to come back at any time for more lessons and to also keep practicing themselves.
+The user may ask questions about their training and say their goodbyes to Blue The NAO robot then shuts down by itself in a safe position, so it will not fall over once the motors are off.
 
 ### 6.2 Angle Calculations (Jens)
 ### 6.3 System hierarchy (Toni/Tristan)
@@ -254,3 +290,9 @@ All of Blue's dialogues are programmed with Choregraph.
 
 ## References
 
+## Appendix
+### A
+### B
+### C
+### D
+### ![](Design Report\pictures\Dialog box.png)
