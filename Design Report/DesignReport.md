@@ -278,6 +278,8 @@ Blue has the following abilities in the teaching & socializing box:
 In the valediction state, Blue asks the user if all exercises were clear and gives the user compliments on their work today. Motivating them to come back at any time for more lessons and to also keep practicing themselves.
 The user may ask questions about their training and say their goodbyes to Blue The NAO robot then shuts down by itself in a safe position, so it will not fall over once the motors are off.
 
+#### Motivating
+
 ### 6.2 Angle Calculations (Jens)
 ### 6.3 System hierarchy (Toni/Tristan)
 ### 6.4 Vision (Toni/Tristan)
