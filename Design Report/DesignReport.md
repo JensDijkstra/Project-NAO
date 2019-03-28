@@ -234,6 +234,14 @@ The downside of Snips in this project is that Snips has to be extensive to opera
 
 Eventually a choice has been made to use the in-build NAO speech recognition. For this project had more focus for movement correction of the user. The NAO speech recognition software is not as good as one of the options shown above, but it will be sufficient for our requirements.
 
+#### Social behaviour
+Learning new skills requires spare time and motivation. For individuals attending upmarket health clubs time may be scarce. In order to make people motivated enough to use Blue during the little spare time they may have, requires engaging and encouraging dialogues. Since Blue is a teacher, he has to provide the users with feedback on their efforts as well. This cannot be too direct and has to be carefully brought to the user. Using Blue should be a fun experience.
+##### Motivating students
+Blue has to motivate his students to keep practicing. Since the users pay to rent/buy Blue, there already is an incentive to practice Tai Chi. Users need to get their moneys worth. But how should the users be persuaded to turn the NAO back on after the first time?  
+The article *Motivating Students* (Vanderbilt University, 2019) shows different ways to motivate students and keep them interested. This article was used as reference during the writing of the teaching and valediction dialogues.
+##### Providing feedback to the user
+
+
 #### Choregraph
 ##### Dialog boxes
 All of Blue's dialogues are programmed with Choregraph. This is done by creating a dialog box in Choregraph. **Picture**
@@ -263,8 +271,10 @@ After this, Blue starts explaining how he works. This part has a pop quiz to tes
 Finally Blue jokes about having to tell the user all kinds of legal things.
 
 ##### Teaching & Socializing
+- [ ] Check appendix references
+
 After the introduction, Blue automatically goes into the teaching & socializing box. This box contains all Tai Chi and social related interactions.
-Blue asks the user if he or she wants to practice Tai Chi. If the user answers **yes**, Blue will go into a teaching only dialog box, in which all Tai Chi related dialogues are scripted. This is the 'active box' If the user answers **no**, Blue will stay in the same box, but wait for the user to ask him about something. This is the 'passive box'. Note that the active box has the same Tai Chi options as the passive box, but let's Blue ask the questions. It is basically a sub-box of the passive box.
+Blue asks the user if he or she wants to practice Tai Chi. If the user answers **yes**, Blue will go into a teaching only dialog box, in which all Tai Chi related dialogues are scripted. This is the 'active box' If the user answers **no**, Blue will stay in the same box, but wait for the user to ask him about something. This is the 'passive box'. Note that the active box has the same Tai Chi options as the passive box, but let's Blue ask the questions. It is basically a sub-box of the passive box. These dialog boxes also define the state that the NAO is in. **Appendix B** shows the corresponding STM.
 Blue has the following abilities in the teaching & socializing box:
   - Show the user a specific form from the 10-form.
   - Show the user all programmed forms with fluent transition.
@@ -278,8 +288,6 @@ Blue has the following abilities in the teaching & socializing box:
 In the valediction state, Blue asks the user if all exercises were clear and gives the user compliments on their work today. Motivating them to come back at any time for more lessons and to also keep practicing themselves.
 The user may ask questions about their training and say their goodbyes to Blue The NAO robot then shuts down by itself in a safe position, so it will not fall over once the motors are off.
 
-#### Motivating
-
 ### 6.2 Angle Calculations (Jens)
 ### 6.3 System hierarchy (Toni/Tristan)
 ### 6.4 Vision (Toni/Tristan)
@@ -291,6 +299,8 @@ The user may ask questions about their training and say their goodbyes to Blue T
 ### 7.3 Final Conclusion
 
 ## References
+**Social behaviour**
+  Vanderbilt University. (2019). Motivating Students. [online] Available at: https://wp0.vanderbilt.edu/cft/guides-sub-pages/motivating-students/ [Accessed 28 Mar. 2019].
 
 ## Appendix
 ### A
