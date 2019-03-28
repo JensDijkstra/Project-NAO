@@ -232,7 +232,7 @@ To anticipate to this problem there are also chatbots which can be connected to 
 
 The downside of Snips in this project is that Snips has to be extensive to operate properly. Besides that, for the output of the Raspberry Pi a completely different code has to be written to use those words to program a reaction or an action. In the time period of this particular project it is unrealistic to build such an extensive code.
 
-Eventually a choice has been made to use the in-build NAO speech recognition. For we have had more focus for movement correction of the user. The NAO speech recognition software is not as good as one of the options shown above, but it will be sufficient for our requirements. 
+This projects time limits were short so all options were considered, but not for too long. Snips is, as explained, a bot which can be trained and linked through a Raspberry Pi to the NAO robot. This link between Snips and the NAO was not to be sufficient enough considering the time limits of this project. Therefore the choice was made to use the build-in NAO speech abilities. In the start there was an opportunity to use one of the webbrowsers API's, but privacy matters were more important than a sofisticated API.
 
 #### Choregraph
 -[ ]  Script
