@@ -340,6 +340,7 @@ For deaf people it would be very helpful if Blue included a touchscreen on which
 ## References
 **Social behaviour**
   Vanderbilt University. (2019). Motivating Students. [online] Available at: https://wp0.vanderbilt.edu/cft/guides-sub-pages/motivating-students/ [Accessed 28 Mar. 2019].
+  
 **Angle calculations**
   Doc.aldebaran.com. (2019). Joints — Aldebaran 2.1.4.13 documentation. [online] Available at: http://doc.aldebaran.com/2-1/family/robots/joints_robot.html [Accessed 28 Mar. 2019].
 
