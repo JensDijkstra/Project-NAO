@@ -223,7 +223,7 @@ In order to accuratly Judge the users movements, Blue needs to make some calcula
 - pitch:  Φ<sub>p</sub> = atan(|Y1-Y2| / |Z1-Z2|)  
 - yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
 
-On the website of Aldebaran you can find all the joints of the NAO robot and how far they can bend.
+On the website of Aldebaran, the makers of NAO, you can find all the joints of the NAO robot and how far they can bend.
 Some adjustments had to be made in the program to ensure that the angles could not be higher than the angles of the robot. The angles were also shifted 90 degrees.
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
@@ -232,7 +232,9 @@ Using a python script the robots and the users joint angles can be compared. The
 ### 6.3 System hierarchy (Toni/Tristan)
 ### 6.4 Vision (Toni/Tristan)
 ### 6.5 Poses (Just/Jens)
+Blue can simulate the poses of the 10-form of Tai-Chi. In order to do this the poses were manually programmed into the robot. This was done by putting Blue in a certain position, locking it's motors and saving the position into a timeline keyframe. The 10-forms aren't realy stationairy poses but actually a set of movement so for every form a bunch of positions had to be saved and played after one another to make smooth motions. every form begins in the position where the last form ended. This makes for very smooth transitions between the forms.
 
+Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough. 
 ## 7. Conclusion
 ### 7.1 Results (Just)
 ### 7.2 Recommendations
