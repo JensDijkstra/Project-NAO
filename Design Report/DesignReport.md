@@ -193,6 +193,7 @@ As shown below the concepts 'High-Tech' and 'Advanced HMI' have a significantly 
 In this chapter the system diagrams that were made for designing purposes of the NAO robot will be explained in detail.
 ##### STM
 First there is the State Machine Diagram. This is the main diagram of Blue. All the functions in this diagram will be further elaborated in the activity diagrams or other diagrams below. Right after Blue wakes up he will start with a greeting. After that he will ask what you want to do and listens to your response. If you just want to socialize you can also do that. If you want to immediately start training you can ask Blue to start the training. If you don't respond for more than 50 seconds, Blue will go into an idle state. He will only come out of idle if you call his name. If you still don't respond for another 50 seconds, Blue will go into the valediction state and he will say its goodbyes and shut down. Blue will also shut down if the user says goodbye first.
+
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
 ##### Greeting
 In the greeting state Blue will look at your face to see if he recognizes you. If he does, he greets you. If he doesn't he will try to learn your face. This is explained further in the face learning diagram.
@@ -200,9 +201,11 @@ In the greeting state Blue will look at your face to see if he recognizes you. I
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Greeting%20ACT.png)
 ##### Face learning
 When Blue goes into the learn face state he will first ask your name. He does this because a name needs to be linked to your face in the database. After you say your name, he will greet you and simultaneously scan for any faces in front of him. If the face scan is successful, Blue will give a success massage and continue. If he fails the face scan he will give an error and you can try again. If this process fails more than ten times the program will shut down.
+
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Learning%20Face%20ACT.png)
 ##### Listening
 After the greeting, Blue will ask what you want to do. You can respond to this with socializing or teaching. If you say something he doesn't understand, he will give an error and try again.
+
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Listen%20ACT.png)
 ##### Teaching
 If you choose to go for teaching you will get three options: you can ask for some information about Tai-Chi, you can start a full training program or you can do a single pose.
@@ -212,9 +215,11 @@ If you want information you just ask Blue a question and he will answer it. If B
 If you want the full training you can ask for the tai chi training. Blue will begin the lesson by telling you what you will need to do. After that he will do the first pose and asks you to repeat after him. If you do the pose correctly, Blue will compliment you and then continue. If you do something wrong, Blue will say what you can improve and how to do that. This is repeated until you do the pose correctly. Blue will repeat this for every pose.
 ###### Single poses
 You can also ask to do a specific pose. Blue will do the same as with the Tai-Chi training but now only with one pose and he will stop if you are done with this pose.
+
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
 ##### Valediction
 If you are done for the day, you can tell Blue you want to stop and he will go into the valediction state. In this state he will give you some tips on how to continue your training. He also asks if the user has any questions about the practice. The user is free to ask questions about the practice and about social topics. When asking about the training, Blue will repeat this until you don't have any questions left. After which he will say goodbye and shutdown. When asking about social related topics, NAO leaves his valediction state and goes back into the teaching/socializing state.
+
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 
 
@@ -289,13 +294,48 @@ In the valediction state, Blue asks the user if all exercises were clear and giv
 The user may ask questions about their training and say their goodbyes to Blue The NAO robot then shuts down by itself in a safe position, so it will not fall over once the motors are off.
 
 ### 6.2 Angle Calculations (Jens)
+In order to accuratly Judge the users movements, Blue needs to make some calculations. Every joint can move in one or more directions. These directions are called the jaw, roll and pitch axes. The angles can be calculated with a fairly simple formula.
+- roll:   Φ<sub>r</sub> = atan(|Y1-Y2| / |X1-X2|)
+- pitch:  Φ<sub>p</sub> = atan(|Y1-Y2| / |Z1-Z2|)  
+- yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
+
+On the website of Aldebaran, the makers of NAO, you can find all the joints of the NAO robot and how far they can bend.
+Some adjustments had to be made in the program to ensure that the angles could not be higher than the angles of the robot. The angles were also shifted 90 degrees.
+
+![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
+
+Using a python script the robots and the users joint angles can be compared. The program will give a score depending on how close the user is to the actual pose and if this score is over a certain threshhold you get a pass. If the score is lower, Blue will say what needs to be improved on your pose.
 ### 6.3 System hierarchy (Toni/Tristan)
 ### 6.4 Vision (Toni/Tristan)
 ### 6.5 Poses (Just/Jens)
+Blue can simulate the poses of the 10-form of Tai-Chi. In order to do this the poses were manually programmed into the robot. This was done by putting Blue in a certain position, locking it's motors and saving the position into a timeline keyframe.
 
+To do this first you make a timeline box. in this box a timeline is created where you can store all the positions the robot needs to make.
+
+![](Design Report\pictures\timeline box.png)
+
+Then you put the robot in the right position. you can do this in the robot view by clicking on a limb and edit the angles of the motor. Another option is to move the robot by hand by loosen its joints. If the robot is in the right position you lock the joints and save the keyframe.
+
+![](Design Report\pictures\keyframe.png)
+
+The 10-forms aren't realy stationairy poses but actually a set of movement so for every form a bunch of positions had to be saved and played after one another to make smooth motions. every form begins in the position where the last form ended. This makes for very smooth transitions between the forms. Eventualy you get a timeline with all the positions. the further away the positions are from each other the longer the robot takes to get to the next position. You can use this to make the robot move faster or slower.
+
+![](Design Report\pictures\timeline.png)
+
+Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough.
 ## 7. Conclusion
 ### 7.1 Results (Just)
 ### 7.2 Recommendations
+#### Different robots
+The NAO robot is an easy robot to work with. it has an easy to understand programming language and it is very compatible with external hardware. But the NAO robot also comes with a lot of limmitations. For instance the motors are not very precise and get hot realy fast. The time you can work with it can be extended by cooling the robot with a fan, but at most this only ads ten minutes of work time. Using another robot wich has more optimized Motors will increase the time wich it can be used and will thus increase the user friendltness.
+#### Compact hardware
+Right now the python rogram is run on a laptop and the kinect camera needs to be placed on the ground near the robot. This is not very user friendly and can be improved on. A good way of doing this is to include all the hardware outside the robot in a single box. This box will include a Raspberry Pi wich runs the program instead of a laptop and the camera, wich will be a different camera than the kinect. This box can be plugged in the wall with a single cable and it should work fine.
+#### Snips AI
+A chatbot like Snips can also be added. This will highly improve interactions the robot can have with the user. Because the chatbot is an AI it can also learn the users usual behaviour and improve its own systems accordingly. This way Blue will feel a lot more personal and it will increase the users experience.
+#### Robot checks for space
+Blue can't see arround himself right now. This is however something important the robot should be able to do. if Blue doens't have enough space to move it should tell the user to move it to another place. this will ensure that the robot doesn't damage itself in the process.
+#### GUI (optional)
+For deaf people it would be very helpful if Blue included a touchscreen on wich the user can see wht Blue is saying. It should also have inputs with answers the user can give to the robot. This way the robot can be usefull for people with disabillities like deaf people.
 ### 7.3 Final Conclusion
 
 ## References
