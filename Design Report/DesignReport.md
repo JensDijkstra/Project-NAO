@@ -177,6 +177,7 @@ As shown below the concepts 'High-Tech' and 'Advanced HMI' have a significantly 
 |---------------------------------------------------------------------------------------------------| 40%   |  64%   |   86%     |   80%        |   100%  |
 ```
 ### 5.3 Final concept (concept conclusion)
+<<<<<<< HEAD
   - Scores conclusion
   - What the NAO is like
     -[ ]  Personality
@@ -192,6 +193,15 @@ As shown below the concepts 'High-Tech' and 'Advanced HMI' have a significantly 
 
     -[ ]  Name
     Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
+=======
+#### Personality
+Real life Sifu's tend to be strict and serious. This strict way of teaching is not something most people want, when they are in the comfort of their own home. A logical way to make the NAO fit in the relaxed environment at home is to make him happy and even a little funny at times.
+During the training NAO will watch you closely he gives you feedback in a relaxing manner. Not forcing you to improve or always pointing out the mistakes and leave out the positives. Users will feel that they can practice Tai Chi at their own pace.
+When not in training, NAO is happy and occasionally tells jokes. If anything triggers the third party speech software, NAO will run the created text through Choregraph to keep the same tone as he did before the trigger.
+
+#### Name
+Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
+>>>>>>> 12a515e0547b112867baadcdbaa94d8a9f93f94d
 #### System Diagrams
 In this chapter the system diagrams that were made for designing purposes of the NAO robot will be explained in detail.
 ##### STM
@@ -245,7 +255,14 @@ Eventually a choice has been made to use the in-build NAO speech recognition. Fo
 Learning new skills requires spare time and motivation. For individuals attending upmarket health clubs time may be scarce. In order to make people motivated enough to use Blue during the little spare time they may have, requires engaging and encouraging dialogues. Since Blue is a teacher, he has to provide the users with feedback on their efforts as well. This cannot be too direct and has to be carefully brought to the user. Using Blue should be a fun experience.
 ##### Motivating students
 Blue has to motivate his students to keep practicing. Since the users pay to rent/buy Blue, there already is an incentive to practice Tai Chi. Users need to get their moneys worth. But how should the users be persuaded to turn the NAO back on after the first time?  
-The article *Motivating Students* (Vanderbilt University, 2019) shows different ways to motivate students and keep them interested. This article was used as reference during the writing of the teaching and valediction dialogues.
+The article *Motivating Students* (Vanderbilt University, 2019) shows different ways to motivate students and keep them interested. This article was used as reference during the writing of the teaching and valediction dialogues. In it eight different motivational strategies are discussed. Not all of these made it into Blue.
+Within the design team all colleagues voted on what strategies would work best for them, if they were the ones being Blue's student. The following cited strategies have been chosen:
+  + **Place appropriate emphasis on testing and grading.** Tests should be a means of showing what students have mastered, not what they have not. Avoid grading on the curve and give everyone the opportunity to achieve the highest standard and grades.
+  + **Be free with praise and constructive in criticism.** Negative comments should pertain to particular performances, not the performer. Offer non-judgmental feedback on students’ work, stress opportunities to improve, look for ways to stimulate advancement, and avoid dividing students into sheep and goats.
+  + **Give students as much control over their own education as possible.** Let students choose paper and project topics that interest them. Assess them in a variety of ways (tests, papers, projects, presentations, etc.) to give students more control over how they show their understanding to you. Give students options for how these assignments are weighted.
+
+These strategies seemed most fitting to the free and relaxed learning environment at home. Adding the other strategies is possible, but that would take up more time, since there are a lot more phrases that have to be coded into the NAO. It is also unsure if it will add additional value to the experience.
+
 ##### Providing feedback to the user
 
 
@@ -296,7 +313,7 @@ In the valediction state, Blue asks the user if all exercises were clear and giv
 The user may ask questions about their training and say their goodbyes to Blue The NAO robot then shuts down by itself in a safe position, so it will not fall over once the motors are off.
 
 ### 6.2 Angle Calculations (Jens)
-In order to accurately Judge the users movements, Blue needs to make some calculations. Every joint can move in one or more directions. These directions are called the jaw, roll and pitch axes. The angles can be calculated with a fairly simple formula.
+In order to accurately judge the users movements, Blue needs to make some calculations. Every joint can move in one or more directions. These directions are called the jaw, roll and pitch axes. The angles can be calculated with a fairly simple formula.
 - roll:   Φ<sub>r</sub> = atan(|Y1-Y2| / |X1-X2|)
 - pitch:  Φ<sub>p</sub> = atan(|Y1-Y2| / |Z1-Z2|)  
 - yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
@@ -347,6 +364,7 @@ The 10-forms aren't really stationary poses but actually a set of movement so fo
 Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough.
 ## 7. Conclusion
 ### 7.1 Results (Just)
+
 ### 7.2 Recommendations
 #### Different robots
 The NAO robot is an easy robot to work with. it has an easy to understand programming language and it is very compatible with external hardware. But the NAO robot also comes with a lot of limitations. For instance the motors are not very precise and get hot really fast. The time you can work with it can be extended by cooling the robot with a fan, but at most this only ads ten minutes of work time. Using another robot which has more optimized Motors will increase the time which it can be used and will thus increase the user friendliness.
@@ -358,18 +376,22 @@ A chatbot like Snips can also be added. This will highly improve interactions th
 Blue can't see around himself right now. This is however something important the robot should be able to do. if Blue does not have enough space to move it should tell the user to move it to another place. this will ensure that the robot doesn't damage itself in the process.
 #### GUI (optional)
 For deaf people it would be very helpful if Blue included a touchscreen on which the user can see what Blue is saying. It should also have inputs with answers the user can give to the robot. This way the robot can be useful for people with disabilities like deaf people.
+
 ### 7.3 Final Conclusion
 
 ## References
 **Social behaviour**
   Vanderbilt University. (2019). Motivating Students. [online] Available at: https://wp0.vanderbilt.edu/cft/guides-sub-pages/motivating-students/ [Accessed 28 Mar. 2019].
-  
+
 **Angle calculations**
   Doc.aldebaran.com. (2019). Joints — Aldebaran 2.1.4.13 documentation. [online] Available at: http://doc.aldebaran.com/2-1/family/robots/joints_robot.html [Accessed 28 Mar. 2019].
+
+**Snips AI**
+  Snips. (2019). Snips — Using Voice to Make Technology Disappear. [online] Available at: https://snips.ai [Accessed 28 Mar. 2019].
 
 ## Appendix
 ### A
 ### B
 ### C
 ### D
-### ![](Design Report\pictures\Dialog box.png)
+### E
