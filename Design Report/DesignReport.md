@@ -177,18 +177,13 @@ As shown below the concepts 'High-Tech' and 'Advanced HMI' have a significantly 
 |---------------------------------------------------------------------------------------------------| 40%   |  64%   |   86%     |   80%        |   100%  |
 ```
 ### 5.3 Final concept (concept conclusion)
-  - Scores conclusion
-  - What the NAO is like
-    -[ ]  Personality
-    Real life Sifu's tend to be strict and serious. This strict way of teaching is not something most people want, when they are in the comfort of their own home. A logical way to make the NAO fit in the relaxed environment at home is to make him happy and even a little funny at times.
-    During the training NAO will watch you closely he gives you feedback in a relaxing manner. Not forcing you to improve or always pointing out the mistakes and leave out the positives. Users will feel that they can practice Tai Chi at their own pace.
-    When not in training, NAO is happy and occasionally tells jokes. If anything triggers the third party speech software, NAO will run the created text through Choregraph to keep the same tone as he did before the trigger.
-    -[ ]  Speech
-    *Read above and give more info*
-    -[ ]  Vision
+#### Personality
+Real life Sifu's tend to be strict and serious. This strict way of teaching is not something most people want, when they are in the comfort of their own home. A logical way to make the NAO fit in the relaxed environment at home is to make him happy and even a little funny at times.
+During the training NAO will watch you closely he gives you feedback in a relaxing manner. Not forcing you to improve or always pointing out the mistakes and leave out the positives. Users will feel that they can practice Tai Chi at their own pace.
+When not in training, NAO is happy and occasionally tells jokes. If anything triggers the third party speech software, NAO will run the created text through Choregraph to keep the same tone as he did before the trigger.
 
-    -[ ]  Name
-    Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
+#### Name
+Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
 #### System Diagrams
 In this chapter the system diagrams that were made for designing purposes of the NAO robot will be explained in detail.
 ##### STM
@@ -305,11 +300,7 @@ In order to accurately judge the users movements, Blue needs to make some calcul
 - pitch:  Φ<sub>p</sub> = atan(|Y1-Y2| / |Z1-Z2|)  
 - yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
 
-<<<<<<< HEAD
-On the website of Aldebaran, the makers of NAO, all the joint of the NAO are can be found and how far they can bend.
-=======
 On the website of Aldebaran (Doc.aldebaran.com, 2019), the makers of NAO, you can find all the joints of the NAO robot and how far they can bend.
->>>>>>> 28e64471e089914c18ea4400ae95492c9788eb29
 Some adjustments had to be made in the program to ensure that the angles could not be higher than the angles of the robot. The angles were also shifted 90 degrees.
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
