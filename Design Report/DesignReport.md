@@ -234,7 +234,7 @@ Using a python script the robots and the users joint angles can be compared. The
 ### 6.5 Poses (Just/Jens)
 Blue can simulate the poses of the 10-form of Tai-Chi. In order to do this the poses were manually programmed into the robot. This was done by putting Blue in a certain position, locking it's motors and saving the position into a timeline keyframe. The 10-forms aren't realy stationairy poses but actually a set of movement so for every form a bunch of positions had to be saved and played after one another to make smooth motions. every form begins in the position where the last form ended. This makes for very smooth transitions between the forms.
 
-Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough. 
+Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough.
 ## 7. Conclusion
 ### 7.1 Results (Just)
 ### 7.2 Recommendations
