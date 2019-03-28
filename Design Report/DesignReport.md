@@ -311,15 +311,15 @@ Blue can simulate the poses of the 10-form of Tai-Chi. In order to do this the p
 
 To do this first you make a timeline box. in this box a timeline is created where you can store all the positions the robot needs to make.
 
-![](Design Report\pictures\timeline box.png)
+![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/timeline%20box.png)
 
 Then you put the robot in the right position. you can do this in the robot view by clicking on a limb and edit the angles of the motor. Another option is to move the robot by hand by loosen its joints. If the robot is in the right position you lock the joints and save the keyframe.
 
-![](Design Report\pictures\keyframe.png)
+![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/keyframe.png)
 
 The 10-forms aren't really stationary poses but actually a set of movement so for every form a bunch of positions had to be saved and played after one another to make smooth motions. every form begins in the position where the last form ended. This makes for very smooth transitions between the forms. Eventually you get a timeline with all the positions. the further away the positions are from each other the longer the robot takes to get to the next position. You can use this to make the robot move faster or slower.
 
-![](Design Report\pictures\timeline.png)
+![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/timeline.png)
 
 Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough.
 ## 7. Conclusion
