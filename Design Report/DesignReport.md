@@ -222,7 +222,6 @@ If you are done for the day, you can tell Blue you want to stop and he will go i
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
 
-
 ## 6. Elaboration
 ### 6.1 Social interaction (Just)
 Not all the ideas from the initial design involving the social interaction made it into the final product. The reason for this and what happened to replace the scrapped parts is found in this chapter along with all different social interactions.
@@ -294,7 +293,7 @@ In the valediction state, Blue asks the user if all exercises were clear and giv
 The user may ask questions about their training and say their goodbyes to Blue The NAO robot then shuts down by itself in a safe position, so it will not fall over once the motors are off.
 
 ### 6.2 Angle Calculations (Jens)
-In order to accuratly Judge the users movements, Blue needs to make some calculations. Every joint can move in one or more directions. These directions are called the jaw, roll and pitch axes. The angles can be calculated with a fairly simple formula.
+In order to accurately Judge the users movements, Blue needs to make some calculations. Every joint can move in one or more directions. These directions are called the jaw, roll and pitch axes. The angles can be calculated with a fairly simple formula.
 - roll:   Φ<sub>r</sub> = atan(|Y1-Y2| / |X1-X2|)
 - pitch:  Φ<sub>p</sub> = atan(|Y1-Y2| / |Z1-Z2|)  
 - yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
@@ -304,7 +303,7 @@ Some adjustments had to be made in the program to ensure that the angles could n
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
 
-Using a python script the robots and the users joint angles can be compared. The program will give a score depending on how close the user is to the actual pose and if this score is over a certain threshhold you get a pass. If the score is lower, Blue will say what needs to be improved on your pose.
+Using a python script the robots and the users joint angles can be compared. The program will give a score depending on how close the user is to the actual pose and if this score is over a certain threshold you get a pass. If the score is lower, Blue will say what needs to be improved on your pose.
 ### 6.3 System hierarchy (Toni/Tristan)
 ### 6.4 Vision (Toni/Tristan)
 ### 6.5 Poses (Just/Jens)
@@ -318,7 +317,7 @@ Then you put the robot in the right position. you can do this in the robot view 
 
 ![](Design Report\pictures\keyframe.png)
 
-The 10-forms aren't realy stationairy poses but actually a set of movement so for every form a bunch of positions had to be saved and played after one another to make smooth motions. every form begins in the position where the last form ended. This makes for very smooth transitions between the forms. Eventualy you get a timeline with all the positions. the further away the positions are from each other the longer the robot takes to get to the next position. You can use this to make the robot move faster or slower.
+The 10-forms aren't really stationary poses but actually a set of movement so for every form a bunch of positions had to be saved and played after one another to make smooth motions. every form begins in the position where the last form ended. This makes for very smooth transitions between the forms. Eventually you get a timeline with all the positions. the further away the positions are from each other the longer the robot takes to get to the next position. You can use this to make the robot move faster or slower.
 
 ![](Design Report\pictures\timeline.png)
 
@@ -327,15 +326,15 @@ Because programming the forms takes a lot of time and the focus of the project w
 ### 7.1 Results (Just)
 ### 7.2 Recommendations
 #### Different robots
-The NAO robot is an easy robot to work with. it has an easy to understand programming language and it is very compatible with external hardware. But the NAO robot also comes with a lot of limmitations. For instance the motors are not very precise and get hot realy fast. The time you can work with it can be extended by cooling the robot with a fan, but at most this only ads ten minutes of work time. Using another robot wich has more optimized Motors will increase the time wich it can be used and will thus increase the user friendltness.
+The NAO robot is an easy robot to work with. it has an easy to understand programming language and it is very compatible with external hardware. But the NAO robot also comes with a lot of limitations. For instance the motors are not very precise and get hot really fast. The time you can work with it can be extended by cooling the robot with a fan, but at most this only ads ten minutes of work time. Using another robot which has more optimized Motors will increase the time which it can be used and will thus increase the user friendliness.
 #### Compact hardware
-Right now the python rogram is run on a laptop and the kinect camera needs to be placed on the ground near the robot. This is not very user friendly and can be improved on. A good way of doing this is to include all the hardware outside the robot in a single box. This box will include a Raspberry Pi wich runs the program instead of a laptop and the camera, wich will be a different camera than the kinect. This box can be plugged in the wall with a single cable and it should work fine.
+Right now the python program is run on a laptop and the Kinect camera needs to be placed on the ground near the robot. This is not very user friendly and can be improved on. A good way of doing this is to include all the hardware outside the robot in a single box. This box will include a Raspberry Pi which runs the program instead of a laptop and the camera, which will be a different camera than the Kinect. This box can be plugged in the wall with a single cable and it should work fine.
 #### Snips AI
 A chatbot like Snips can also be added. This will highly improve interactions the robot can have with the user. Because the chatbot is an AI it can also learn the users usual behaviour and improve its own systems accordingly. This way Blue will feel a lot more personal and it will increase the users experience.
 #### Robot checks for space
-Blue can't see arround himself right now. This is however something important the robot should be able to do. if Blue doens't have enough space to move it should tell the user to move it to another place. this will ensure that the robot doesn't damage itself in the process.
+Blue can't see around himself right now. This is however something important the robot should be able to do. if Blue does not have enough space to move it should tell the user to move it to another place. this will ensure that the robot doesn't damage itself in the process.
 #### GUI (optional)
-For deaf people it would be very helpful if Blue included a touchscreen on wich the user can see wht Blue is saying. It should also have inputs with answers the user can give to the robot. This way the robot can be usefull for people with disabillities like deaf people.
+For deaf people it would be very helpful if Blue included a touchscreen on which the user can see what Blue is saying. It should also have inputs with answers the user can give to the robot. This way the robot can be useful for people with disabilities like deaf people.
 ### 7.3 Final Conclusion
 
 ## References
