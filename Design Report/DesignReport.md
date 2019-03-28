@@ -325,6 +325,7 @@ Because programming the forms takes a lot of time and the focus of the project w
 ## 7. Conclusion
 ### 7.1 Results (Just)
 ### 7.2 Recommendations
+The NAO robot described in this report is merely a prototype and does not posses all the features the final product will have. In this chapter a few reccomendations, that could be added to the final product, will be discussed.
 #### Different robots
 The NAO robot is an easy robot to work with. it has an easy to understand programming language and it is very compatible with external hardware. But the NAO robot also comes with a lot of limitations. For instance the motors are not very precise and get hot really fast. The time you can work with it can be extended by cooling the robot with a fan, but at most this only ads ten minutes of work time. Using another robot which has more optimized Motors will increase the time which it can be used and will thus increase the user friendliness.
 #### Compact hardware
@@ -340,7 +341,7 @@ For deaf people it would be very helpful if Blue included a touchscreen on which
 ## References
 **Social behaviour**
   Vanderbilt University. (2019). Motivating Students. [online] Available at: https://wp0.vanderbilt.edu/cft/guides-sub-pages/motivating-students/ [Accessed 28 Mar. 2019].
-  
+
 **Angle calculations**
   Doc.aldebaran.com. (2019). Joints — Aldebaran 2.1.4.13 documentation. [online] Available at: http://doc.aldebaran.com/2-1/family/robots/joints_robot.html [Accessed 28 Mar. 2019].
 
