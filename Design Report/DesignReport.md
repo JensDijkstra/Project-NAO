@@ -298,7 +298,7 @@ In order to accurately Judge the users movements, Blue needs to make some calcul
 - pitch:  Φ<sub>p</sub> = atan(|Y1-Y2| / |Z1-Z2|)  
 - yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
 
-On the website of Aldebaran, the makers of NAO, you can find all the joints of the NAO robot and how far they can bend.
+On the website of Aldebaran (Doc.aldebaran.com, 2019), the makers of NAO, you can find all the joints of the NAO robot and how far they can bend.
 Some adjustments had to be made in the program to ensure that the angles could not be higher than the angles of the robot. The angles were also shifted 90 degrees.
 
 ![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
@@ -340,6 +340,8 @@ For deaf people it would be very helpful if Blue included a touchscreen on which
 ## References
 **Social behaviour**
   Vanderbilt University. (2019). Motivating Students. [online] Available at: https://wp0.vanderbilt.edu/cft/guides-sub-pages/motivating-students/ [Accessed 28 Mar. 2019].
+**Angle calculations**
+  Doc.aldebaran.com. (2019). Joints — Aldebaran 2.1.4.13 documentation. [online] Available at: http://doc.aldebaran.com/2-1/family/robots/joints_robot.html [Accessed 28 Mar. 2019].
 
 ## Appendix
 ### A
