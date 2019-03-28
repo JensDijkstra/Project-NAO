@@ -348,6 +348,9 @@ For deaf people it would be very helpful if Blue included a touchscreen on which
 **Angle calculations**
   Doc.aldebaran.com. (2019). Joints — Aldebaran 2.1.4.13 documentation. [online] Available at: http://doc.aldebaran.com/2-1/family/robots/joints_robot.html [Accessed 28 Mar. 2019].
 
+**Snips AI**
+  Snips. (2019). Snips — Using Voice to Make Technology Disappear. [online] Available at: https://snips.ai [Accessed 28 Mar. 2019].
+
 ## Appendix
 ### A
 ### B
