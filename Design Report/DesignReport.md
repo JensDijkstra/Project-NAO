@@ -1,7 +1,7 @@
 # NAO Tai-Chi master report
 *The personal home trainer for Tai Chi*
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/frontpage%20picture.png)
+![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/frontpage%20picture.png)
 
 By:
 Just Weijers,
