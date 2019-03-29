@@ -364,7 +364,7 @@ Some adjustments had to be made in the program to ensure that the angles could n
 Using a python script the robots and the users joint angles can be compared. The program will give a score depending on how close the user is to the actual pose and if this score is over a certain threshold you get a pass. If the score is lower, Blue will say what needs to be improved on your pose.
 
 ### 6.3 System hierarchy
-The Kinect sensor is chosen as an external camera to detect a person and get the coordinates of specific points on the human body. The Kinect is connected using USB to a Windows computer running the WPF application. That WPF application sends the data from the Kinect to the Python script using the MQTT protocol. The MQTT server is running on a Linux computer using a Raspberry Pi. The python script receives 3D-coordinates (XYZ) from the MQTT server and calculates the angle between each joint using the 3D coordinates of each point. After finding the angels, the angles will be converted to radians so it is the same as the NAO robot's output.
+The Kinect sensor is chosen as an external camera to detect a person and get the coordinates of specific points on the human body. The Kinect is connected using USB to a Windows computer running the WPF application. That WPF application sends the data from the Kinect to the Python script using the MQTT protocol. The MQTT server is running on a Linux computer using a Raspberry Pi. The python script receives 3D-coordinates (XYZ) from the MQTT server and calculates the angle between each joint using the 3D coordinates of each point. After finding the angels, the angles will be converted to radians so it is the same as the NAO robot's output. The corresponding sequence diagram can be found in appendix A.5.
 
 The WPF application is running on a Windows OS and build with #C and is using the Kinect framework and MQTT library. The WPF application will show a few options. The user is able to change the MQTT broker Ip-Address and the topic. The application has also a start and stop button. With those buttons we are able the record the movements of the person in front of the Kinect sensor. The movements will be saved in JSON data locally on the Windows machine. If the buttons in the application are not used the application will send all the data directly to the MQTT server. The data will be lost on the WPF application side because the JSON data is not saved locally. For this project it is not necessary to use the start and stop button. It's only necessary to click start to establish a connection with the MQTT broker. After connection the WPF application will send a payload to the MQTT broker every 1000ms.
 
@@ -456,6 +456,20 @@ For deaf people it would be very helpful if Blue included a touchscreen on which
 #### 3 STM
 #### 4 ACT
 #### 5 SEQ
+```mermaid
+sequenceDiagram
+Title: seq Complete data system
+Kinect->>WPF APP: Continuous Joint Data
+Note over WPF APP: WPF APP filtering <br/> useable data
+Note over WPF APP: Send every 1000ms
+WPF APP->>MQTT: XYZ coordinates in JSON
+MQTT->>Python: XYZ coordinates in JSON
+Note over Python: Calculates coordinates <br/> to radians
+Python->>Robot: Get sensor data joints
+Robot-->>Python: Radians of joints
+Note over Python: Python compares user <br/> input with robot output
+Python->>Robot: Feedback user TTS
+```
 #### 6 USE
 No use case diagram has been made, since the only users are the student and the NAO. These are the only two entities who actively interact with each other.
 ### B Intorduction Dialog
