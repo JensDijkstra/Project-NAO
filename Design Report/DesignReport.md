@@ -443,10 +443,12 @@ Here, all the system diagrams that were made for designing purposes of the NAO r
 
 #### BDD
 This small block definition diagram shows all the parts used in the NAO Tai Chi master system.
+
 ![BDD of NAO Tai Chi master system](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/BDD.png)
 
 #### IBD
 The NAO itself is made out of smaller parts. Most of which have a function of their own. These parts are all shown in the internal block diagram below.
+
 ![IBD of the NAO robot](ROBIN PLAK HIER JE LINK)
 
 #### STM
