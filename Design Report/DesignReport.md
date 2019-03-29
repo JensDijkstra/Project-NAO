@@ -8,7 +8,7 @@ Just Weijers,
 Jens Dijkstra,
 Toni Kuijpers,
 Tristan Nijveld,
-Robin Lotgering,
+Robin Lotgering
 
 ## Abstract
 An urban upmarket health club needs a personal robot that its clients can take home to practice the Tai Chi 10-form. The robot that the prototype uses is a NAO from SolidBank Robotics. Research has been done on how to implement a vision system for the NAO and communication. After carefully considering what aspects are most important for a Tai Chi teacher a final concept has been worked out. This is not a finished product, but a prove of concept.
@@ -418,15 +418,15 @@ Blue can't see around himself right now. This is however something important the
 For deaf people it would be very helpful if Blue included a touchscreen on which the user can see what Blue is saying. It should also have inputs with answers the user can give to the robot. This way the robot can be useful for people with disabilities like deaf people.
 
 ## References
-**Social behaviour**
+### Social behaviour
   Vanderbilt University. (2019). Motivating Students. [online] Available at: https://wp0.vanderbilt.edu/cft/guides-sub-pages/motivating-students/ [Accessed 28 Mar. 2019].
 
   Giving constructive feedback. (n.d.). [ebook] Aptos, California: Cabrillo. Available at: https://www.cabrillo.edu/services/jobs/pdfs/giving-feedback.pdf [Accessed 28 Mar. 2019].
 
-**Angle calculations**
+### Angle calculations
   Doc.aldebaran.com. (2019). Joints — Aldebaran 2.1.4.13 documentation. [online] Available at: http://doc.aldebaran.com/2-1/family/robots/joints_robot.html [Accessed 4 Mar. 2019].
 
-**Snips AI**
+### Snips AI
   Snips. (2019). Snips — Using Voice to Make Technology Disappear. [online] Available at: https://snips.ai [Accessed 12 Mar. 2019].
 
 
@@ -487,6 +487,7 @@ If you are done for the day, you can tell Blue you want to stop and he will go i
 
 #### SEQ
 This sequence diagram shows the data transition within the Tai Chi master system. Most of the data being sent is joint coordinate data.
+
 ![Sequence diagram of NAO's data](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Sequence.jpg)
 
 #### UC
