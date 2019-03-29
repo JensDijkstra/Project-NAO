@@ -2,7 +2,7 @@
 *The personal home trainer for Tai Chi*
 
 ## Abstract
-An urban upmarket health club needs a personal robot that its clients can take home to practice the Tai Chi 10-form. The robot that the prototype uses is a NAO from SolidBank. Research has been done on how to implement a vision system for the NAO and communication. After carefully considering what aspects are most important for a Tai Chi teacher a final concept has been worked out. This is not a finished product, but a prove of concept.
+An urban upmarket health club needs a personal robot that its clients can take home to practice the Tai Chi 10-form. The robot that the prototype uses is a NAO from SolidBank Robotics. Research has been done on how to implement a vision system for the NAO and communication. After carefully considering what aspects are most important for a Tai Chi teacher a final concept has been worked out. This is not a finished product, but a prove of concept.
 
 This concept has the following features:
   - The NAO mimics human behaviour
@@ -21,11 +21,9 @@ Results of all the requirements are as follows:
   * Fail:                 1 (*Wish*)
   * Untested:             2 (*Expected to pass for the demonstration*)
 
-The two most important recommendations for a finished user friendly product are:
-**Different robots**
-The NAO robot overheats too fast. When used for training, without any ways of cooling it, the NAO can be used for about ten minutes before it's joints get too lose to have it to perform the 10-form.
-**Compact hardware**
-Right now a program is run on a laptop and RaspberryPi and the Kinect camera needs to be placed on the ground near the robot. For every user this is a pain to setup correctly. Therefor it is recommended to combine all these components into a small box with every program running on the RaspberryPi. This way the user only has to plug the box into a power outlet and optionally into an internet router and the setup is done.
+  The two most important recommendations for a finished user friendly product are:
+&nbsp;&nbsp;&nbsp;&nbsp;**Different robots**<br/>The NAO robot overheats too fast. When used for training, without any ways of cooling it, the NAO can be used for about ten minutes before it's joints get too lose to have it to perform the 10-form.
+&nbsp;&nbsp;&nbsp;&nbsp;**Compact hardware**<br/>Right now a program is run on a laptop and RaspberryPi and the Kinect camera needs to be placed on the ground near the robot. For every user this is a pain to setup correctly. Therefor it is recommended to combine all these components into a small box with every program running on the RaspberryPi. This way the user only has to plug the box into a power outlet and optionally into an internet router and the setup is done.
 
 ## Table of contents
 - [NAO Design report](#nao-design-report)
@@ -60,11 +58,6 @@ Right now a program is run on a laptop and RaspberryPi and the Kinect camera nee
     + [7.3 Final Conclusion](#73-final-conclusion)
   * [References](#references)
   * [Appendix](#appendix)
-    + [A](#a)
-    + [B](#b)
-    + [C](#c)
-    + [D](#d)
-    + [E](#e)
 
 ## 1. Introduction
 An urban upmarket health club gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu (master/teacher) can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly.
@@ -97,6 +90,7 @@ NAO can talk with the user about their training, Tai Chi and have social convers
 #### Feel
 NAO has a few touch sensors which when touched make the robot react in different ways. These sensors can be used to detect the user or other objects.
 ### 2.2 Set of requirements
+<<<<<<< HEAD
 |Manufacture|Functional|Requirements|Fixed|Variable|Extra|
 |:--:|:--:|--|:--:|:--:|:--:|
 |    | x | NAO is able to recognize pre-defined sentences. | x |   |   |
@@ -110,19 +104,37 @@ NAO has a few touch sensors which when touched make the robot react in different
 |    |      x     | NAO can demonstrate the postures of the Tai Chi Chuan 10-form.                                                   |   x   |          |       |
 | x |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
 |    |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
+=======
+
+| Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
+|:-------------:|:------------:|-------------------------------------------------------------------------------------|:-------------------------------:|:-----:|
+|             |      x     | NAO is able to recognize pre-defined sentences.                                                   |   x   |          |       |
+|             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
+|             |      x     | NAO confirms with the user if the exercise is clear.                                                       |   x   |          |       |
+|      x      |            | Certain functions and conversations can be performed through a privacy focussed 3rd party speech recognition API.           |       |          |   x   |
+|             |      x     | If the user does not interact with NAO for 30-60 seconds, it will ask if the user still needs its service. |   x   |          |       |
+|             |      x     | Users movements can be evaluated and then corrected by the NAO.                                            |       |     x    |       |
+|             |      x     | NAO can remember and recognize the users face.                                                             |   x   |          |       |
+|             |      x     | The vision software is able to measure the distance from the camera to the user. (+/- 100mm)                |       |     x    |       |
+|             |      x     | NAO can demonstrate the postures of the Tai Chi Chuan 10-form.                                                   |   x   |          |       |
+|      x      |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
+|             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
+
+>>>>>>> 733bac0cb6ce15fb3b9c82f940019a4096c8a77e
 ### 2.3 Validating requirements (Just)
 All requirements have to be met at the end of the design. To test each requirement the following steps are taken:
-**1**   All possible inputs are clearly pronounced to the NAO. If it understands 3 different people clearly, this requirement is validated. To check if NAO understands everything clearly the dialog box, containing the received input, is read.
-**2**   Any kind of social interaction will suffice. For instance the user may say: "Greetings" "How are you doing?" "Do you know any jokes?". The idea is to make the NAO feel more engaging besides the training program.
-**3**   The exercise will be explained before it starts. NAO asks the user beforehand if the goal of the exercise is clear and acts accordingly.
-**4**   Most 3rd party speech recognition API's responds to a 'wake word', giving the user access to it's functions. A human-like API, that keeps the user's input private, is needed to validate this requirement.
-**5**   This is validated by waiting for the given amount of time and watching how the NAO responds.
-**6**   During training, the NAO gives feedback to the user on their posture. It tells them what parts of their body is correctly placed and what part needs adjusting.
-**7**   During start-up, the NAO greets the user. This will be a personalized greeting based on if the NAO has recognized their face. If the user's face is not recognized, the NAO will ask questions to the user so it will recognize him or her next time.
-**8**   Measuring the distance to the user is validated by manually measuring the distance and comparing it to the distance given by the camera. The requirement is met when the difference between the two distances is consistently less than 100mm.
-**9**   Demonstrating the postures of the Tai Chi Chuan 10-form requires the NAO not to fall over during the performance. If all 10 poses are performed without the NAO falling (Does not have to be one after the other), this requirement is met.
-**10**  The NAO does not have to return to a fixed position to transition from one form to the next. This transition only has to be fluid for the next form in the 10-form. This means form 1 to form 2, form 4 to form 5 and so on.
-**11**  To make the NAO feel more human-like, it looks at the user when not performing the 10-form. This is tested by walking around and following the NAO's head movements.
+**1.** All possible inputs are clearly pronounced to the NAO. If it understands 3 different people clearly, this requirement is validated. To check if NAO understands everything clearly the dialog box, containing the received input, is read.
+**2.** Any kind of social interaction will suffice. For instance the user may say: "Greetings" "How are you doing?" "Do you know any jokes?". The idea is to make the NAO feel more engaging besides the training program.
+**3.** The exercise will be explained before it starts. NAO asks the user beforehand if the goal of the exercise is clear and acts accordingly.
+**4.** Most 3rd party speech recognition API's responds to a 'wake word', giving the user access to it's functions. A human-like API, that keeps the user's input private, is needed to validate this requirement.
+**5.** This is validated by waiting for the given amount of time and watching how the NAO responds.
+**6.** During training, the NAO gives feedback to the user on their posture. It tells them what parts of their body is correctly placed and what part needs adjusting.
+**7.** During start-up, the NAO greets the user. This will be a personalized greeting based on if the NAO has recognized their face. If the user's face is not recognized, the NAO will ask questions to the user so it will recognize him or her next time.
+**8.** Measuring the distance to the user is validated by manually measuring the distance and comparing it to the distance given by the camera. The requirement is met when the difference between the two distances is consistently less than 100mm.
+**9.** Demonstrating the postures of the Tai Chi Chuan 10-form requires the NAO not to fall over during the performance. If all 10 poses are performed without the NAO falling (Does not have to be one after the other), this requirement is met.
+**10.** The NAO does not have to return to a fixed position to transition from one form to the next. This transition only has to be fluid for the next form in the 10-form. This means form 1 to form 2, form 4 to form 5 and so on.
+**11.** To make the NAO feel more human-like, it looks at the user when not performing the 10-form. This is tested by walking around and following the NAO's head movements.
+
 
 ## 3. Researched topics
 ### 3.1 Vision
@@ -133,6 +145,7 @@ The robot has its own cameras. The software to program these cameras are also ve
 The Kinect sensor made by Microsoft for the Xbox console is specifically made to track the movements of people. This could be a very good way to track and calculate the movements of the users. There is also the possibility to recognize faces using a Kinect sensor. The hard part is that the program will need to be made from scratch using python but there are a lot of test programs online for you to use. Also the camera isn't directly connected to the NAO. You will need the use a Raspberry Pi in order to connect the sensor to the robot.
 #### Others
 There are some other options as well, such as using an external 3D camera. These however are usually very expensive and they are usually not made to track movements so there will not be a lot of programs you can find online. The upside is that they come in any size and shape you want and you could even buy one that you can mount onto the NAO. This is a lot more user friendly.
+
 ### 3.2 Speech
 #### Speech recognition
 Having a conversation between the NAO and the user requires the NAO to have speech recognition. For humans this task is simple. Their brains know what words mean and how to react to them. For robots it is not that simple. Every single word is foreign to them. The pronunciation, meaning and the expected response has to be manually programmed, or at least most of it.
@@ -150,27 +163,22 @@ In order to give conversations more meaning this library can be combined with ma
 * **ALVoiceEmotionAnalysis**
 		This identifies the emotion expressed by the speaker’s voice, independently of what is being said.
 		NAO could be made to respond according to the user's expressed emotion.
+
 #### Chat Bots
 There also is the option to use a variety of chat bots. these sometimes cost money, but you can also get them for free. This enables the NAO robot to have more complicated conversations and answer any questions that the user might have. This does however come with some privacy problems. Google Cloud is a way to get an easy chatbot going, but everything the user says is stored in Google's database. Some users might not want to have this so this becomes something to take into consideration when designing the robot.
 
 ## 4 Concepts
 ### 4.1 Morphological Analysis
 In the table below are listed all the options for different functions of the NAO robot. all the options will be considered while making the final design. at least 3 concepts will be made with different themes. later the concepts will be weight against each other and the best one will be chosen as the final design.
-```
-| Functions             		| Option 1                             | Option 2                              | Option 2                  | Option 4  |
+
+| Functions             		| Option 1                             | Option 2                              | Option 3                  |
 |---------------------------|--------------------------------------|----------------------------------------|---------------------------|-----------|
 | **User recognition**      | OpenCV with 3D webcam (3)            | Kinect connection via MQTT on Rpi      | Build in NAO camera (1,2,4) |           |
 | **Movements recognition** | OpenCV with 3D webcam (3)            | Kinect connection via MQTT on Rpi (2,4)| Build in NAO camera (1)   |           |
 | **Hearing**               | External microphone on the user (3,4)	 | NAO microphones (1,2)                 |                           |           |
-| **Socializing**           | Pre-programmed speech patterns (1,2) | Chatbot (3,4)                           |                           |           |
-```
+| **Socializing**           | Pre-programmed speech patterns (1,2) | Chatbot (3,4)      
 
-### 4.2 Concepts
-1. Cheap
-2. Simple
-3. High Tech
-4. Advanced HMI
-### 4.3 Detailed description of concepts
+### 4.2 Detailed description of concepts
 #### Cheap
 This concept is the cheapest. This is because it only uses the standard components of the NAO robot itself. The cameras on the head of the robot is used to recognize faces and track the movements of the user. These cameras will not give you the most detailed readings, but they should get the job done. The standard microphone on the NAO works relatively well for the required functions it preforms, but you have to get close enough to the robot so that it can clearly hear and understand you. To have conversations with NAO there will be some pre-programmed speech patterns in the robot's code that the user has to adhere to. Because of this you can't have very complicated conversations, but it takes less work to finish the NAO which lessens the final costs.
 #### Simple
@@ -184,18 +192,18 @@ This last concept is an improved version of the 'simple' concept. Mostly the hea
 ### 5.1 Weightings
 The four defined concept now must meet the variable requirements that are defined in the Set of Requirements. The fixed requirements will not weight in in this part of choosing a final concept, because every concept must meet those requirements.
 At first the weighting factors of the variable requirements will be determined in table below. These factors will be used in the score table.
-```
+
 | Variable requirements 								   | 1 | 2 | 3 | 4 | Total |
 | 1.	NAO can have at least three different social conversations with the user.	   | 1 | 1 | 1 | 1 |   4   |
 | 2.	Users movements can be evaluated and then corrected by the NAO.			   | 0 | 1 | 1 | 1 |   3   |
 | 3.	Transitions between the postures are fluid  					   | 0 | 0 | 1 | 0 |   1   |
 | 4.	The vision software is able to measure the distance from the camera to the user.   | 0 | 0 | 1 | 1 |   2   |
-```
+
 ### 5.2 Score table
 Now the concepts get a rating from one till five for how well a concept meets the requirement. The weighting factor will be multiplied by this rating and result a final score. When one compares these scores to the ideal outcome of this table a choice can be made.
 
 As shown below the concepts 'High-Tech' and 'Advanced HMI' have a significantly higher score then the other two. They also are very close to the ideal score. In 5.3 a final concept will be concluded out of these results.
-```
+
 | Variable requirements 								   | Scores | Cheap | Simple | High-Tech | Advanced HMI |  Ideal  |
 |------------------------------------------------------------------------------------------|
 | 1.	NAO can have at least three different social conversations with the user.	   |   4    | 3(12) |  3(12) |   5(20)   |   5(20)      |  5(20)  |
@@ -204,12 +212,12 @@ As shown below the concepts 'High-Tech' and 'Advanced HMI' have a significantly 
 | 4.	The vision software is able to measure the distance from the camera to the user.   |   2    | 1(2)  |  4(8)  |   4(8)    |   4(8)       |  2(10)  |
 | Total											   |        | 23    |  32    |   43	 |   40         |   50    |
 |---------------------------------------------------------------------------------------------------| 40%   |  64%   |   86%     |   80%        |   100%  |
-```
+
 ### 5.3 Final concept (concept conclusion)
 #### Personality
-  Real life Sifu's tend to be strict and serious. This strict way of teaching is not something most people want, when they are in the comfort of their own home. A logical way to make the NAO fit in the relaxed environment at home is to make him happy and even a little funny at times.
-  During the training NAO will watch you closely he gives you feedback in a relaxing manner. Not forcing you to improve or always pointing out the mistakes and leave out the positives. Users will feel that they can practice Tai Chi at their own pace.
-  When not in training, NAO is happy and occasionally tells jokes. If anything triggers the third party speech software, NAO will run the created text through Choregraph to keep the same tone as he did before the trigger.
+Real life Sifu's tend to be strict and serious. This strict way of teaching is not something most people want, when they are in the comfort of their own home. A logical way to make the NAO fit in the relaxed environment at home is to make him happy and even a little funny at times.
+During the training NAO will watch you closely he gives you feedback in a relaxing manner. Not forcing you to improve or always pointing out the mistakes and leave out the positives. Users will feel that they can practice Tai Chi at their own pace.
+When not in training, NAO is happy and occasionally tells jokes. If anything triggers the third party speech software, NAO will run the created text through Choregraph to keep the same tone as he did before the trigger.
 
 #### Vision
 After researching the Kinect it is chosen for this project. The Kinect is a 3D camera from which various libraries are available. The investigation revealed that the Kinect provided the perfect starting point for continuing. The Kinect namely provides 3D coordinates of each joint on the body of the user. With the 3D coordinates it is possible to calculate the angels of each joint.
@@ -232,19 +240,23 @@ In this chapter the system diagrams that were made for designing purposes of the
 #### STM
 First there is the State Machine Diagram. This is the main diagram of Blue. All the functions in this diagram will be further elaborated in the activity diagrams or other diagrams below. Right after Blue wakes up he will start with a greeting. After that he will ask what you want to do and listens to your response. If you just want to socialize you can also do that. If you want to immediately start training you can ask Blue to start the training. If you don't respond for more than 50 seconds, Blue will go into an idle state. He will only come out of idle if you call his name. If you still don't respond for another 50 seconds, Blue will go into the valediction state and he will say its goodbyes and shut down. Blue will also shut down if the user says goodbye first.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
+![State machine diagram of the NAO](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
+
 #### Greeting
 In the greeting state Blue will look at your face to see if he recognizes you. If he does, he greets you. If he doesn't he will try to learn your face. This is explained further in the face learning diagram.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Greeting%20ACT.png)
+![Activity diagram of greeting](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Greeting%20ACT.png)
+
 #### Face learning
 When Blue goes into the learn face state he will first ask your name. He does this because a name needs to be linked to your face in the database. After you say your name, he will greet you and simultaneously scan for any faces in front of him. If the face scan is successful, Blue will give a success massage and continue. If he fails the face scan he will give an error and you can try again. If this process fails more than ten times the program will shut down.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Learning%20Face%20ACT.png)
-#### Listening
+![Activity diagram of face learning](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Learning%20Face%20ACT.png)
+
+#### Teaching & socializing
 After the greeting, Blue will ask what you want to do. You can respond to this with socializing or teaching. If you say something he doesn't understand, he will give an error and try again.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Listen%20ACT.png)
+![Activity diagram of teaching & socializing](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Listen%20ACT.png)
+
 #### Teaching
 If you choose to go for teaching you will get three options: you can ask for some information about Tai-Chi, you can start a full training program or you can do a single pose.
 ##### Information
@@ -254,11 +266,15 @@ If you want the full training you can ask for the tai chi training. Blue will be
 ##### Single poses
 You can also ask to do a specific pose. Blue will do the same as with the Tai-Chi training but now only with one pose and he will stop if you are done with this pose.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
+![Activity diagram of teaching a single pose](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
+
 #### Valediction
 If you are done for the day, you can tell Blue you want to stop and he will go into the valediction state. In this state he will give you some tips on how to continue your training. He also asks if the user has any questions about the practice. The user is free to ask questions about the practice and about social topics. When asking about the training, Blue will repeat this until you don't have any questions left. After which he will say goodbye and shutdown. When asking about social related topics, NAO leaves his valediction state and goes back into the teaching/socializing state.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
+![Activity diagram of valediction](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
+
+####Use case diagram
+No use case diagram has been made, since the only users are the student and the NAO. These are the only two entities who actively interact with each other.
 
 ## 6. Elaboration
 ### 6.1 Social interaction (Just)
@@ -282,21 +298,21 @@ Learning new skills requires spare time and motivation. For individuals attendin
 Blue has to motivate his students to keep practicing. Since the users pay to rent/buy Blue, there already is an incentive to practice Tai Chi. Users need to get their moneys worth. But how should the users be persuaded to turn the NAO back on after the first time?  
 The article *Motivating Students* (Vanderbilt University, 2019) shows different ways to motivate students and keep them interested. This article was used as reference during the writing of the teaching and valediction dialogues. In it eight different motivational strategies are discussed. Not all of these made it into Blue.
 Within the design team all colleagues voted on what strategies would work best for them, if they were the ones being Blue's student. The following cited strategies have been chosen:
-  + **Place appropriate emphasis on testing and grading.** Tests should be a means of showing what students have mastered, not what they have not. Avoid grading on the curve and give everyone the opportunity to achieve the highest standard and grades.
-  + **Be free with praise and constructive in criticism.** Negative comments should pertain to particular performances, not the performer. Offer non-judgmental feedback on students’ work, stress opportunities to improve, look for ways to stimulate advancement, and avoid dividing students into sheep and goats.
-  + **Give students as much control over their own education as possible.** Let students choose paper and project topics that interest them. Assess them in a variety of ways (tests, papers, projects, presentations, etc.) to give students more control over how they show their understanding to you. Give students options for how these assignments are weighted.
+>  + **Place appropriate emphasis on testing and grading.** Tests should be a means of showing what >students have mastered, not what they have not. Avoid grading on the curve and give everyone the >opportunity to achieve the highest standard and grades.
+>  + **Be free with praise and constructive in criticism.** Negative comments should pertain to particular performances, not the performer. Offer non-judgmental feedback on students’ work, stress opportunities to improve, look for ways to stimulate advancement, and avoid dividing students into sheep and goats.
+>  + **Give students as much control over their own education as possible.** Let students choose paper and project topics that interest them. Assess them in a variety of ways (tests, papers, projects, presentations, etc.) to give students more control over how they show their understanding to you. Give students options for how these assignments are weighted.
 
 These strategies seemed most fitting to the free and relaxed learning environment at home. Adding the other strategies is possible, but that would take up more time, since there are a lot more phrases that have to be coded into the NAO. It is also unsure if it will add additional value to the experience.
 
 ##### Providing feedback to the user
 The feedback Blue gives the user during their training should be constructive, but not in a way the user will feel uncomfortable. Providing feedback ties in with motivating the user, as they are both important to make the user want to practise again.
 An article from Cabrillo (Giving constructive feedback, 2015) shows six steps to give constructive criticism. After reading other articles about giving constructive feedback, it seems that all sources give about the same steps. This way of giving feedback is only applicable for the valediction state, which will summarize what the user did right and what he or she can improve. This follows step 6 from Cabrillo's article, which states the following:
-  **Step 6: Summarize and express your support**
-  *Review the major points you discussed. Summarize the Action items, not the negative points of
+>  **Step 6: Summarize and express your support**
+  Review the major points you discussed. Summarize the Action items, not the negative points of
   the other person's behaviour. If you have given neutral feedback, emphasize the main points you
   have wanted to convey. For corrective feedback, stress the main things you've discussed that the
   person could do differently. End on a positive note by communicating confidence in the person's
-  ability to improve the situation*.
+  ability to improve the situation.
 
 During training, it seems these steps will not work as well. When performing the forms and grading the student, Blue only has to tell what parts of the user's body are off and how they need to be corrected. This can be done by saying phrases like:
   * "*Try raising your left elbow some more.*"
@@ -306,23 +322,23 @@ This way of giving feedback does not come off as demanding and gets straight to 
 
 #### Choregraph
 ##### Dialog boxes
-All of Blue's dialogues are programmed with Choregraph. This is done by creating a dialog box in Choregraph. **Picture**
+All of Blue's dialogues are programmed with Choregraph. This is done by creating a dialog box in Choregraph.
+![Creating a dialog box](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/create%20dialog.png)
 This gives the possibility to write lots of interactions quickly in one box. Writing and altering the interactions happens in a .top file which contains all possible user inputs and NAO outputs. These files are sorted by topic. For this project topics are divided into greeting, teaching/socializing and valediction. The topics 'teaching' and 'socializing' are combined, because these do not need a separate box and separating them would only clutter the screen.
-Through these .top files, which are essentially scripts, outputs of the box can be triggered. If a dialog box needs an output, for instance when a certain action by the NAO is required, this can simply be added by editing the box. **Picture**
+Through these .top files, which are essentially scripts, outputs of the box can be triggered. If a dialog box needs an output, for instance when a certain action by the NAO is required, this can simply be added by editing the box.
+![Editing the dialog box](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/edit%20dialog.png)
 ##### Syntax
-- [ ] Check appendix references
-
-The full script of all dialog boxes can be found in appendix **A**. To read the script, an explanation of the syntax is useful.
-- *u:*                                  (User input)
-- *u1:*                                 (A continuation of the previous 'u:')
-- *u2:*                                 (A continuation of the previous 'u1:')
-                                        *This can be further expanded upon.*
-- *[word1 word2 word3]*                 (Any of the words mentioned is valid)
-- *["Phrase 1" "Phrase 2" "Phrase 3"]*  (Any of the phrases is valid)
-- *{}*                                  (Optional word/phrase/choice)
-- *                                     (Any received input is valid)
-- *u:(My name is _Rob)* Hello $1 !      (This gives the output "Hello Rob!")
-- *^rand[word1 word2 word3]*            (Randomly return chose a word as an output)
+The full script of all dialog boxes can be found in *appendix B*. To read the script, an explanation of the syntax is useful.
+- *u:* &nbsp;&nbsp;&nbsp;&nbsp;(User input)
+- *u1:*&nbsp;&nbsp;&nbsp;&nbsp;(A continuation of the previous 'u:')
+- *u2:*&nbsp;&nbsp;&nbsp;&nbsp;(A continuation of the previous 'u1:')
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*This can be further expanded upon.*
+- *[word1 word2 word3]* &nbsp;&nbsp;&nbsp;&nbsp;(Any of the words mentioned is valid)
+- *["Phrase 1" "Phrase 2" "Phrase 3"]* &nbsp;&nbsp;&nbsp;&nbsp;(Any of the phrases is valid)
+- *{}* &nbsp;&nbsp;&nbsp;&nbsp;(Optional word/phrase/choice)
+- \* &nbsp;&nbsp;&nbsp;&nbsp; (Any received input is valid)
+- *u:(My name is _Rob)* Hello $1 !&nbsp;&nbsp;&nbsp;&nbsp;(This gives the output "Hello Rob!")
+- *^rand[word1 word2 word3]*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Randomly return chose a word as an output)
 
 #### Different dialogues
 Blue has three main dialog boxes he uses to communicate with the user. These are the introduction, teaching & socializing and valediction box. Each with it's own set of interactions. Every time Blue speaks, he moves around a little bit and uses body language to further express himself. This makes the NAO feel even more human-like.
@@ -354,19 +370,19 @@ In order to accurately judge the users movements, Blue needs to make some calcul
 - pitch:  Φ<sub>p</sub> = atan(|Y1-Y2| / |Z1-Z2|)  
 - yaw:    Φ<sub>y</sub> = atan(|Z1-Z2| / |X1-X2|)
 
-On the website of Aldebaran (Doc.aldebaran.com, 2019), the makers of NAO, you can find all the joints of the NAO robot and how far they can bend.
+On the website of Aldebaran (Doc.aldebaran.com, 2019), the makers of NAO, you can find all the joints of the NAO robot and how far they can bend. An example of this is noted below.
 Some adjustments had to be made in the program to ensure that the angles could not be higher than the angles of the robot. The angles were also shifted 90 degrees.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
+![Example joint documentation NAO](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/leg%20joints.png)
 
 Using a python script the robots and the users joint angles can be compared. The program will give a score depending on how close the user is to the actual pose and if this score is over a certain threshold you get a pass. If the score is lower, Blue will say what needs to be improved on your pose.
 
 ### 6.3 System hierarchy
-The Kinect sensor is chosen as an external camera to detect a person and get the coordinates of specific points on the human body. The Kinect is connected using USB to a Windows computer running the WPF application. That WPF application sends the data from the Kinect to the Python script using the MQTT protocol. The MQTT server is running on a Linux computer using a Raspberry Pi. The python script receives 3D-coordinates (XYZ) from the MQTT server and calculates the angle between each joint using the 3D coordinates of each point. After finding the angels, the angles will be converted to radians so it is the same as the NAO robot's output. The corresponding sequence diagram can be found in appendix A.5.
+The Kinect sensor is chosen as an external camera to detect a person and get the coordinates of specific points on the human body. The Kinect is connected using USB to a Windows computer running the WPF application. That WPF application sends the data from the Kinect to the Python script using the MQTT protocol. The MQTT server is running on a Linux computer using a Raspberry Pi. The python script receives 3D-coordinates (XYZ) from the MQTT server and calculates the angle between each joint using the 3D coordinates of each point. After finding the angels, the angles will be converted to radians so it is the same as the NAO robot's output.
 
-The WPF application is running on a Windows OS and build with #C and is using the Kinect framework and MQTT library. The WPF application will show a few options. The user is able to change the MQTT broker Ip-Address and the topic. The application has also a start and stop button. With those buttons we are able the record the movements of the person in front of the Kinect sensor. The movements will be saved in JSON data locally on the Windows machine. If the buttons in the application are not used the application will send all the data directly to the MQTT server. The data will be lost on the WPF application side because the JSON data is not saved locally. For this project it is not necessary to use the start and stop button. It's only necessary to click start to establish a connection with the MQTT broker. After connection the WPF application will send a payload to the MQTT broker every 1000ms.
+The WPF application is running on a Windows OS and build with #C and is using the Kinect framework and MQTT library. The WPF application will show a few options. The user is able to change the MQTT broker IP-Address and the topic. The application has also a start and stop button. With those buttons we are able the record the movements of the person in front of the Kinect sensor. The movements will be saved in JSON data locally on the Windows machine. If the buttons in the application are not used the application will send all the data directly to the MQTT server. The data will be lost on the WPF application side because the JSON data is not saved locally. For this project it is not necessary to use the start and stop button. It's only necessary to click start to establish a connection with the MQTT broker. After connection the WPF application will send a payload to the MQTT broker every 1000ms.
 
-The Python script needs input from the user. It will ask the Ip-Address of the NAO robot, the port of the NAO robot, the IP-Address of MQTT broker and the topic. After the correct information is entered by the user the Python script is connect with the MQTT server. After connected there will be a result code printed in the console of Python. After a successful connection the Python script is receiving JSON data from the MQTT server. In the on_connect function that is part of the MQTT python library the list of degree angels is created.
+The Python script needs input from the user. It will ask the IP-Address of the NAO robot, the port of the NAO robot, the IP-Address of MQTT broker and the topic. After the correct information is entered by the user the Python script is connect with the MQTT server. After connected there will be a result code printed in the console of Python. After a successful connection the Python script is receiving JSON data from the MQTT server. In the on_connect function that is part of the MQTT python library the list of degree angels is created.
 
 The only part missing of this system is the robot it self. The robot will provide the Python script with the current positions of each joints. It's necessary to make a request from the python script to the robot. The information that is needed is in de memory of the robot. To read that information there has to be a connection with the *ALMemory* module. This information is used to compare the user input data with the robot output data. More details about the vision part and feedback with be in the next paragraph.
 
@@ -388,22 +404,22 @@ Blue can simulate the poses of the 10-form of Tai-Chi. In order to do this the p
 
 To do this first you make a timeline box. in this box a timeline is created where you can store all the positions the robot needs to make.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/timeline%20box.png)
+![Timeline box](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/timeline%20box.png)
 
 Then you put the robot in the right position. you can do this in the robot view by clicking on a limb and edit the angles of the motor. Another option is to move the robot by hand by loosen its joints. If the robot is in the right position you lock the joints and save the keyframe.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/keyframe.png)
+![Storing joints in a keyframe](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/keyframe.png)
 
 The 10-forms aren't really stationary poses but actually a set of movement so for every form a bunch of positions had to be saved and played after one another to make smooth motions. every form begins in the position where the last form ended. This makes for very smooth transitions between the forms. Eventually you get a timeline with all the positions. the further away the positions are from each other the longer the robot takes to get to the next position. You can use this to make the robot move faster or slower.
 
-![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/timeline.png)
+![Timeline](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/timeline.png)
 
 Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough.
 
 ## 7. Conclusion
 ### 7.1 Results (Just)
 These are all the tests performed to check if the requirements are met and the final outcome. These are the results as of writing the report and not for the finished product. Some results may change.
-```|    | Requirement                                                                                                      | Test                                                                                                                                                                                                                                                  | Results                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Pass/Fail |
+|    | Requirement                                                                                                      | Test                                                                                                                                                                                                                                                  | Results                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Pass/Fail |
 |:--:|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 |  1 | NAO is able to recognize pre-defined sentences                                                                   | All possible inputs are clearly pronounced to the NAO. If it understands 3 different people clearly, this requirement is validated. To check if NAO understands everything clearly the dialog box, containing the received input, is read.            | Blue had some trouble understanding people when they talk fast. When pronouncing clearly and taking the time, Blue understood most sentences perfectly. The NAO has to reach a certainty of 50% before he sees the input as a valid one. This happened without a problem, also when talking at normal speed.                                                                                                                                                                                                    |    PASS   |
 |  2 | NAO can have at least three different social conversations with the user                                         | Any kind of social interaction will suffice. For instance the user may say: "Greetings" "How are you doing?" "Do you know any jokes?".                                                                                                                | All social interactions to date (*X*) work without any problems. Blue has different answers to all questions, making him feel alive.                                                                                                                                                                                                                                                                                                                                                                            |    PASS   |
@@ -417,7 +433,7 @@ These are all the tests performed to check if the requirements are met and the f
 | 10 | Transitions between the postures are fluid                                                                       | The NAO does not have to return to a fixed position to transition from one form to the next. This transition only has to be fluid for the next form in the 10-form. This means form 1 to form 2, form 4 to form 5 and so on.                          | Every programmed posture/form can fluidly transition into the next one. As of writing this report form 1-2 and 8-9-10 can be performed without returning to a fixed position. Read the results from requirement 9 for further details as to why not all poses are possible.                                                                                                                                                                                                                                     |    PASS   |
 | 11 | When not performing the 10-form, the NAO looks at the user                                                       | To make the NAO feel more human-like, it looks at the user when not performing the 10-form. This is tested by walking around and following the NAO's head movements.                                                                                  | This could be done with both sound and visuals. The NAO can look at the direction it hears a voice or detect faces and look at them. While these functions work separately, they have not been tested together. Work is still being done on combining these functions for an even more immersive experience. Since the NAO is able to follow user's faces and sounds, this requirement is met.                                                                                                                  |    PASS   |
 
-```
+
 In total eight out of the eleven requirements have been met. One of the requirements has been graded with a fail. The other two requirements involve parts that are not finished yet, but are expected to get a pass when the demonstration is due.
 
 ### 7.2 Recommendations
@@ -448,30 +464,4 @@ For deaf people it would be very helpful if Blue included a touchscreen on which
 
 
 ## Appendix
-### A System Diagrams
-#### 1 BDD
-#### 2 IBD
-#### 3 STM
-#### 4 ACT
-#### 5 SEQ
-```mermaid
-sequenceDiagram
-Title: seq Complete data system
-Kinect->>WPF APP: Continuous Joint Data
-Note over WPF APP: WPF APP filtering <br/> useable data
-Note over WPF APP: Send every 1000ms
-WPF APP->>MQTT: XYZ coordinates in JSON
-MQTT->>Python: XYZ coordinates in JSON
-Note over Python: Calculates coordinates <br/> to radians
-Python->>Robot: Get sensor data joints
-Robot-->>Python: Radians of joints
-Note over Python: Python compares user <br/> input with robot output
-Python->>Robot: Feedback user TTS
-```
-#### 6 USE
-No use case diagram has been made, since the only users are the student and the NAO. These are the only two entities who actively interact with each other.
-### B Intorduction Dialog
-
-### C
-### D
-### E
+### A Introduction Dialog
