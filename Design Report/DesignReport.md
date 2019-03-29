@@ -13,7 +13,7 @@ This concept has the following features:
   - Blue is able to recognize and remember the faces of it's users
   - The NAO understands Tai Chi related sentences in multiple ways. This way foreign users who's first language is not English can use the NAO without problems.
 
-State machine and activity diagrams have been made to show the functions the robot possesses. These can be found in appendix A.
+State machine and activity diagrams have been made to show the functions the robot possesses. These can be found in chapter 5.4.
 
 Results of all the requirements are as follows:
   * Total requirements:   11
@@ -103,7 +103,7 @@ NAO has a few touch sensors which when touched make the robot react in different
 |    |      x     | NAO can demonstrate the postures of the Tai Chi Chuan 10-form.                                                   |   x   |          |       |
 | x |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
 |    |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
-### 2.3 Validating requirements
+### 2.3 Validating requirements (Just)
 All requirements have to be met at the end of the design. To test each requirement the following steps are taken:
 **1.** All possible inputs are clearly pronounced to the NAO. If it understands 3 different people clearly, this requirement is validated. To check if NAO understands everything clearly the dialog box, containing the received input, is read.
 **2.** Any kind of social interaction will suffice. For instance the user may say: "Greetings" "How are you doing?" "Do you know any jokes?". The idea is to make the NAO feel more engaging besides the training program.
@@ -260,7 +260,7 @@ If you are done for the day, you can tell Blue you want to stop and he will go i
 No use case diagram has been made, since the only users are the student and the NAO. These are the only two entities who actively interact with each other.
 
 ## 6. Elaboration
-### 6.1 Social interaction
+### 6.1 Social interaction (Just)
 Not all the ideas from the initial design involving the social interaction made it into the final product. The reason for this and what happened to replace the scrapped parts is found in this chapter along with all different social interactions.
 #### Chatbot
 The initial design had a chatbot incorporated in it. This way the social interactions of Blue would be endless which would add to the overall experience. Including the chatbot in the final design proved to take more time than expected. Therefor it has been taken out of the final design and replaced with programming all social interactions in Choregraph.
@@ -326,14 +326,14 @@ The full script of all dialog boxes can be found in *appendix B*. To read the sc
 #### Different dialogues
 Blue has three main dialog boxes he uses to communicate with the user. These are the introduction, teaching & socializing and valediction box. Each with it's own set of interactions. Every time Blue speaks, he moves around a little bit and uses body language to further express himself. This makes the NAO feel even more human-like.
 ##### Introduction
-The introduction dialog box is the first thing users will hear when they start up the NAO. This introduction is mostly a monologue, but some questions are asked in order to make the user more interested in what Blue says. The concept for this dialog can be read in appendix B.
+The introduction dialog box is the first thing users will hear when they start up the NAO. This introduction is mostly a monologue, but some questions are asked in order to make the user more interested in what Blue says. The concept for this dialog can be read in *appendix A*.
 First Blue introduces himself and asks the user to do the same by shaking hands. During this, Blue will learn to recognize the user's face and name. After this process, Blue is able to make interactions more personal by calling out the user's name. The next time a user starts up the NAO, this process does not have to be repeated, since it will automatically recognize the user.
 After this, Blue starts explaining how he works. This part has a pop quiz to test if the user was paying attention. If the user answers correctly, Blue will respond very excited. Otherwise, Blue will make a joke and rephrase it's original explanation.
 Finally Blue jokes about having to tell the user all kinds of legal things.
 
 ##### Teaching & Socializing
 After the introduction, Blue automatically goes into the teaching & socializing box. This box contains all Tai Chi and social related interactions.
-Blue asks the user if he or she wants to practice Tai Chi. If the user answers "yes", Blue will go into a teaching only dialog box, in which all Tai Chi related dialogues are scripted. This is the 'active box' If the user answers "no", Blue will stay in the same box, but wait for the user to ask him about something. This is the 'passive box'. Note that the active box has the same Tai Chi options as the passive box, but let's Blue ask the questions. It is basically a sub-box of the passive box. These dialog boxes also define the state that the NAO is in. Appendix A.3 shows the corresponding STM.
+Blue asks the user if he or she wants to practice Tai Chi. If the user answers "yes", Blue will go into a teaching only dialog box, in which all Tai Chi related dialogues are scripted. This is the 'active box' If the user answers "no", Blue will stay in the same box, but wait for the user to ask him about something. This is the 'passive box'. Note that the active box has the same Tai Chi options as the passive box, but let's Blue ask the questions. It is basically a sub-box of the passive box. These dialog boxes also define the state that the NAO is in. Chapter 5.4 covers all system diagrams including this one.
 Blue has the following abilities in the teaching & socializing box:
   - Show the user a specific form from the 10-form.
   - Show the user all programmed forms with fluent transition.
@@ -400,7 +400,7 @@ The 10-forms aren't really stationary poses but actually a set of movement so fo
 Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough.
 
 ## 7. Conclusion
-### 7.1 Results
+### 7.1 Results (Just)
 These are all the tests performed to check if the requirements are met and the final outcome. These are the results as of writing the report and not for the finished product. Some results may change.
 
 || Requirements | Test | Results | Pass/Fail |
@@ -448,3 +448,8 @@ For deaf people it would be very helpful if Blue included a touchscreen on which
 
 ## Appendix
 ### A Introduction Dialog
+![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/Introduction1.png)
+![](https://github.com/JensDijkstra/Project-NAO/blob/master/Design%20Report/pictures/Introduction2.png)
+
+### B Full dialogues
+![](https://github.com/JensDijkstra/Project-NAO/tree/master/Script%20program/Speech)
