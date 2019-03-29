@@ -1,5 +1,14 @@
-# NAO Design report
+# NAO Tai-Chi master report
 *The personal home trainer for Tai Chi*
+
+![](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/frontpage%picture.png)
+
+By:
+Just Weijers,
+Jens Dijkstra,
+Toni Kuijpers,
+Tristan Nijveld,
+Robin Lotgering,
 
 ## Abstract
 An urban upmarket health club needs a personal robot that its clients can take home to practice the Tai Chi 10-form. The robot that the prototype uses is a NAO from SolidBank Robotics. Research has been done on how to implement a vision system for the NAO and communication. After carefully considering what aspects are most important for a Tai Chi teacher a final concept has been worked out. This is not a finished product, but a prove of concept.
