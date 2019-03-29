@@ -58,8 +58,9 @@ An urban upmarket health club gives Tai Chi lessons. When performing Tai Chi it 
 A NAO robot by SolidBank is a great solution to this problem. NAO is able to move like a human and has the ability to provide live feedback to the user.
 
 GeekySolutions has been asked to design and program the NAO so it can act as a real Tai Chi Sifu. Not only will it be able to move like a human, it will also be programmed to have meaningful interactions with the user. These interactions could be grading and correcting the user's pose, give additional information about Tai Chi and interact with the user in a personal way.
-The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.  
-The structure of this report is as follows. In the first chapter all preparations are made. Chapter 2 is all the research done to come up with concepts which are elaborated in chapter 3. Then in chapter 4 considerations between all concepts are made. Finally in chapter 5 a definite concept is chosen which suits the best with the clients wishes. This chapter also shows some global system diagrams.
+The idea is that students take a NAO home so after the live classes they can practice their pose correctly. This makes them progress much faster and more efficiently since the students still receive live feedback at home.
+
+The structure of this report is as follows. In the second chapter all preparations are made. Chapter 3 is all the research done to come up with concepts which are elaborated in chapter 4. Then in chapter 5 considerations between all concepts are made and a final concept is chosen. This chapter also shows some global system diagrams. Chapter 6 gives all the details about the NAO, what has changed from the initial concept and all the choices made during the realization of the final product. Finally in chapter 7 all requirements are tested and results are noted, recommendations are given and a conclusion is made.  
 
 ## 2. Preparation
 ### 2.1 Function Analysis
@@ -278,7 +279,7 @@ These strategies seemed most fitting to the free and relaxed learning environmen
 
 ##### Providing feedback to the user
 The feedback Blue gives the user during their training should be constructive, but not in a way the user will feel uncomfortable. Providing feedback ties in with motivating the user, as they are both important to make the user want to practise again.
-An article from Cabrillo (Giving constructive feedback, Cabrillo) shows six steps to give constructive criticism. After reading other articles about giving constructive feedback, it seems that all sources give about the same steps. This way of giving feedback is only applicable for the valediction state, which will summarize what the user did right and what he or she can improve. This follows step 6 from Cabrillo's article, which states the following:
+An article from Cabrillo (Giving constructive feedback, 2015) shows six steps to give constructive criticism. After reading other articles about giving constructive feedback, it seems that all sources give about the same steps. This way of giving feedback is only applicable for the valediction state, which will summarize what the user did right and what he or she can improve. This follows step 6 from Cabrillo's article, which states the following:
   **Step 6: Summarize and express your support**
   *Review the major points you discussed. Summarize the Action items, not the negative points of
   the other person's behaviour. If you have given neutral feedback, emphasize the main points you
