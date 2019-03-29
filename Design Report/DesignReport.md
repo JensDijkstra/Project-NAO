@@ -97,21 +97,19 @@ NAO can talk with the user about their training, Tai Chi and have social convers
 #### Feel
 NAO has a few touch sensors which when touched make the robot react in different ways. These sensors can be used to detect the user or other objects.
 ### 2.2 Set of requirements
-```
-| Manufacture | Functional | Requirements                                                                                               | Fixed | Variable | Extra |
-|:-------------:|:------------:|-------------------------------------------------------------------------------------|:-------------------------------:|:-----:|
-|             |      x     | NAO is able to recognize pre-defined sentences.                                                   |   x   |          |       |
-|             |      x     | NAO can have at least three different social conversations with the user.                                  |       |     x    |       |
-|             |      x     | NAO confirms with the user if the exercise is clear.                                                       |   x   |          |       |
-|      x      |            | Certain functions and conversations can be performed through a privacy focussed 3rd party speech recognition API.           |       |          |   x   |
-|             |      x     | If the user does not interact with NAO for 30-60 seconds, it will ask if the user still needs its service. |   x   |          |       |
-|             |      x     | Users movements can be evaluated and then corrected by the NAO.                                            |       |     x    |       |
-|             |      x     | NAO can remember and recognize the users face.                                                             |   x   |          |       |
-|             |      x     | The vision software is able to measure the distance from the camera to the user. (+/- 100mm)                |       |     x    |       |
-|             |      x     | NAO can demonstrate the postures of the Tai Chi Chuan 10-form.                                                   |   x   |          |       |
-|      x      |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
-|             |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
-```
+|Manufacture|Functional|Requirements|Fixed|Variable|Extra|
+|:--:|:--:|--|:--:|:--:|:--:|
+|    | x | NAO is able to recognize pre-defined sentences. | x |   |   |
+|    | x | NAO can have at least three different social conversations with the user. |   | x |   |
+|    |x  | NAO confirms with the user if the exercise is clear. |   x   |          |       |
+| x |    | Certain functions and conversations can be performed through a privacy focussed 3rd party speech recognition API. | |    | x |
+|    | x | If the user does not interact with NAO for 30-60 seconds, it will ask if the user still needs its service. |   x   |          |   |
+|    |      x     | Users movements can be evaluated and then corrected by the NAO.                                            |       |     x    |       |
+|    |      x     | NAO can remember and recognize the users face.                                                             |   x   |          |       |
+|    |      x     | The vision software is able to measure the distance from the camera to the user. (+/- 100mm)                |       |     x    |    |
+|    |      x     | NAO can demonstrate the postures of the Tai Chi Chuan 10-form.                                                   |   x   |          |       |
+| x |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
+|    |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
 ### 2.3 Validating requirements (Just)
 All requirements have to be met at the end of the design. To test each requirement the following steps are taken:
 **1**   All possible inputs are clearly pronounced to the NAO. If it understands 3 different people clearly, this requirement is validated. To check if NAO understands everything clearly the dialog box, containing the received input, is read.
