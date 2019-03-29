@@ -33,7 +33,7 @@ Results of all the requirements are as follows:
   * [2. Preparation](#2-preparation)
     + [2.1 Function Analysis](#21-function-analysis)
     + [2.2 Set of requirements](#22-set-of-requirements)
-    + [2.3 Validating requirements (Just)](#23-validating-requirements--just-)
+    + [2.3 Validating requirements](#23-validating-requirements)
   * [3. Researched topics](#3-researched-topics)
     + [3.1 Vision](#31-vision)
     + [3.2 Speech](#32-speech)
@@ -45,13 +45,13 @@ Results of all the requirements are as follows:
     + [5.2 Score table](#52-score-table)
     + [5.3 Final concept (concept conclusion)](#53-final-concept--concept-conclusion-)
   * [6. Elaboration](#6-elaboration)
-    + [6.1 Social interaction (Just)](#61-social-interaction--just-)
+    + [6.1 Social interaction](#61-social-interaction)
     + [6.2 Angle Calculations](#62-angle-calculations)
     + [6.3 System hierarchy](#63-system-hierarchy)
     + [6.4 Vision](#64-vision)
     + [6.5 Poses](#65-poses)
   * [7. Conclusion](#7-conclusion)
-    + [7.1 Results (Just)](#71-results--just-)
+    + [7.1 Results](#71-results)
     + [7.2 Final Conclusion](#72-final-conclusion)
     + [7.3 Recommendations](#73-recommendations)
   * [References](#references)
@@ -104,7 +104,7 @@ NAO has a few touch sensors which when touched make the robot react in different
 |    |      x     | NAO can demonstrate the postures of the Tai Chi Chuan 10-form.                                                   |   x   |          |       |
 | x |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
 |    |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
-### 2.3 Validating requirements (Just)
+### 2.3 Validating requirements
 All requirements have to be met at the end of the design. To test each requirement the following steps are taken:
 **1.** All possible inputs are clearly pronounced to the NAO. If it understands 3 different people clearly, this requirement is validated. To check if NAO understands everything clearly the dialog box, containing the received input, is read.
 **2.** Any kind of social interaction will suffice. For instance the user may say: "Greetings" "How are you doing?" "Do you know any jokes?". The idea is to make the NAO feel more engaging besides the training program.
@@ -221,7 +221,7 @@ Now that NAO is designed like a human, it's time to give NAO a human name. The n
 All system diagrams can be found in *appendix C*
 
 ## 6. Elaboration
-### 6.1 Social interaction (Just)
+### 6.1 Social interaction
 Not all the ideas from the initial design involving the social interaction made it into the final product. The reason for this and what happened to replace the scrapped parts is found in this chapter along with all different social interactions.
 #### Chatbot
 The initial design had a chatbot incorporated in it. This way the social interactions of Blue would be endless which would add to the overall experience. Including the chatbot in the final design proved to take more time than expected. Therefor it has been taken out of the final design and replaced with programming all social interactions in Choregraph.
@@ -361,7 +361,7 @@ The 10-forms aren't really stationary poses but actually a set of movement so fo
 Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough.
 
 ## 7. Conclusion
-### 7.1 Results (Just)
+### 7.1 Results
 These are all the tests performed to check if the requirements are met and the final outcome. These are the results as of writing the report and not for the finished product. Some results may change.
 
 || Requirements | Test | Results | Pass/Fail |
