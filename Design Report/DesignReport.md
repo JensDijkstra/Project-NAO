@@ -13,7 +13,7 @@ This concept has the following features:
   - Blue is able to recognize and remember the faces of it's users
   - The NAO understands Tai Chi related sentences in multiple ways. This way foreign users who's first language is not English can use the NAO without problems.
 
-State machine and activity diagrams have been made to show the functions the robot possesses. These can be found in chapter 5.4.
+State machine and activity diagrams have been made to show the functions the robot possesses. These can be found in *appendix C*.
 
 Results of all the requirements are as follows:
   * Total requirements:   11
@@ -39,25 +39,26 @@ Results of all the requirements are as follows:
     + [3.2 Speech](#32-speech)
   * [4 Concepts](#4-concepts)
     + [4.1 Morphological Analysis](#41-morphological-analysis)
-    + [4.2 Concepts](#42-concepts)
-    + [4.3 Detailed description of concepts](#43-detailed-description-of-concepts)
+    + [4.2 Detailed description of concepts](#42-detailed-description-of-concepts)
   * [5 Considerations](#5-considerations)
     + [5.1 Weightings](#51-weightings)
     + [5.2 Score table](#52-score-table)
     + [5.3 Final concept (concept conclusion)](#53-final-concept--concept-conclusion-)
-    + [5.4 System Diagrams](#54-system-diagrams)
   * [6. Elaboration](#6-elaboration)
     + [6.1 Social interaction (Just)](#61-social-interaction--just-)
-    + [6.2 Angle Calculations (Jens)](#62-angle-calculations--jens-)
-    + [6.3 System hierarchy (Toni/Tristan)](#63-system-hierarchy--toni-tristan-)
-    + [6.4 Vision (Toni/Tristan)](#64-vision--toni-tristan-)
-    + [6.5 Poses (Just/Jens)](#65-poses--just-jens-)
+    + [6.2 Angle Calculations](#62-angle-calculations)
+    + [6.3 System hierarchy](#63-system-hierarchy)
+    + [6.4 Vision](#64-vision)
+    + [6.5 Poses](#65-poses)
   * [7. Conclusion](#7-conclusion)
     + [7.1 Results (Just)](#71-results--just-)
-    + [7.2 Recommendations](#72-recommendations)
-    + [7.3 Final Conclusion](#73-final-conclusion)
+    + [7.2 Final Conclusion](#72-final-conclusion)
+    + [7.3 Recommendations](#73-recommendations)
   * [References](#references)
   * [Appendix](#appendix)
+    + [A Introduction Dialog](#a-introduction-dialog)
+    + [B Full dialogues](#b-full-dialogues)
+    + [C System Diagrams](#c-system-diagrams)
 
 ## 1. Introduction
 An urban upmarket health club gives Tai Chi lessons. When performing Tai Chi it is important to be aware of your posture. During live classes a Sifu (master/teacher) can correct individuals on their poses. At home however, there is nobody to check if you're doing everything correctly.
@@ -217,47 +218,7 @@ When not in training, NAO is happy and occasionally tells jokes. If anything tri
 #### Name
 Now that NAO is designed like a human, it's time to give NAO a human name. The name we settled on is Blue, since he (yes, Blue is a he) is coloured blue and blue stands for a healthy and long life in Chinese. This is also a reason people practice Tai Chi. A small detail that adds more meaning to the NAO robot.
 
-### 5.4 System Diagrams
-In this chapter the system diagrams that were made for designing purposes of the NAO robot will be explained in detail.
-
-#### STM
-First there is the State Machine Diagram. This is the main diagram of Blue. All the functions in this diagram will be further elaborated in the activity diagrams or other diagrams below. Right after Blue wakes up he will start with a greeting. After that he will ask what you want to do and listens to your response. If you just want to socialize you can also do that. If you want to immediately start training you can ask Blue to start the training. If you don't respond for more than 50 seconds, Blue will go into an idle state. He will only come out of idle if you call his name. If you still don't respond for another 50 seconds, Blue will go into the valediction state and he will say its goodbyes and shut down. Blue will also shut down if the user says goodbye first.
-
-![State machine diagram of the NAO](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
-
-#### Greeting
-In the greeting state Blue will look at your face to see if he recognizes you. If he does, he greets you. If he doesn't he will try to learn your face. This is explained further in the face learning diagram.
-
-![Activity diagram of greeting](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Greeting%20ACT.png)
-
-#### Face learning
-When Blue goes into the learn face state he will first ask your name. He does this because a name needs to be linked to your face in the database. After you say your name, he will greet you and simultaneously scan for any faces in front of him. If the face scan is successful, Blue will give a success massage and continue. If he fails the face scan he will give an error and you can try again. If this process fails more than ten times the program will shut down.
-
-![Activity diagram of face learning](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Learning%20Face%20ACT.png)
-
-#### Teaching & socializing
-After the greeting, Blue will ask what you want to do. You can respond to this with socializing or teaching. If you say something he doesn't understand, he will give an error and try again.
-
-![Activity diagram of teaching & socializing](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Listen%20ACT.png)
-
-#### Teaching
-If you choose to go for teaching you will get three options: you can ask for some information about Tai-Chi, you can start a full training program or you can do a single pose.
-##### Information
-If you want information you just ask Blue a question and he will answer it. If Blue doesn't understand the question or he doesn't know the answer, he will say: "Subject not known. Let's talk about something else", and you can try again.
-##### Tai-Chi
-If you want the full training you can ask for the tai chi training. Blue will begin the lesson by telling you what you will need to do. After that he will do the first pose and asks you to repeat after him. If you do the pose correctly, Blue will compliment you and then continue. If you do something wrong, Blue will say what you can improve and how to do that. This is repeated until you do the pose correctly. Blue will repeat this for every pose.
-##### Single poses
-You can also ask to do a specific pose. Blue will do the same as with the Tai-Chi training but now only with one pose and he will stop if you are done with this pose.
-
-![Activity diagram of teaching a single pose](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
-
-#### Valediction
-If you are done for the day, you can tell Blue you want to stop and he will go into the valediction state. In this state he will give you some tips on how to continue your training. He also asks if the user has any questions about the practice. The user is free to ask questions about the practice and about social topics. When asking about the training, Blue will repeat this until you don't have any questions left. After which he will say goodbye and shutdown. When asking about social related topics, NAO leaves his valediction state and goes back into the teaching/socializing state.
-
-![Activity diagram of valediction](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
-
-####Use case diagram
-No use case diagram has been made, since the only users are the student and the NAO. These are the only two entities who actively interact with each other.
+All system diagrams can be found in *appendix C*
 
 ## 6. Elaboration
 ### 6.1 Social interaction (Just)
@@ -333,7 +294,7 @@ Finally Blue jokes about having to tell the user all kinds of legal things.
 
 ##### Teaching & Socializing
 After the introduction, Blue automatically goes into the teaching & socializing box. This box contains all Tai Chi and social related interactions.
-Blue asks the user if he or she wants to practice Tai Chi. If the user answers "yes", Blue will go into a teaching only dialog box, in which all Tai Chi related dialogues are scripted. This is the 'active box' If the user answers "no", Blue will stay in the same box, but wait for the user to ask him about something. This is the 'passive box'. Note that the active box has the same Tai Chi options as the passive box, but let's Blue ask the questions. It is basically a sub-box of the passive box. These dialog boxes also define the state that the NAO is in. Chapter 5.4 covers all system diagrams including this one.
+Blue asks the user if he or she wants to practice Tai Chi. If the user answers "yes", Blue will go into a teaching only dialog box, in which all Tai Chi related dialogues are scripted. This is the 'active box' If the user answers "no", Blue will stay in the same box, but wait for the user to ask him about something. This is the 'passive box'. Note that the active box has the same Tai Chi options as the passive box, but let's Blue ask the questions. It is basically a sub-box of the passive box. These dialog boxes also define the state that the NAO is in. *appendix C* covers all system diagrams including this one.
 Blue has the following abilities in the teaching & socializing box:
   - Show the user a specific form from the 10-form.
   - Show the user all programmed forms with fluent transition.
@@ -419,7 +380,22 @@ These are all the tests performed to check if the requirements are met and the f
 
 In total eight out of the eleven requirements have been met. One of the requirements has been graded with a fail. The other two requirements involve parts that are not finished yet, but are expected to get a pass when the demonstration is due.
 
-### 7.2 Recommendations
+### 7.2 Final Conclusion
+The goal of this project was to design a NAO robot to become a Tai Chi master for an upmarket health club, that teaches it's users Tai Chi Chuan from the comfort of their home. This NAO listens to the name 'Blue' and has a young and bright personality.
+
+These are his functions:
+* The NAO mimics human behaviour
+* The NAO responds to its given name: Blue
+* Five forms of the 10-form can be taught and forms have fluent transitions
+* Blue uses a Kinect to give feedback on your position and summarizes it's evaluation at the and of the training
+* Blue is able to recognize and remember the faces of it's users
+* The NAO understands Tai Chi related sentences in multiple ways. This way foreign users who's first language is not English can use the NAO without problems.
+Details on how the NAO works are best described by the system diagrams in appendix C.
+
+The designed product is a prove of concept and not a final product. The Tai Chi master needs several point of improvement in order to become a consumer ready product. These point are discussed in the next chapter 'recommendations'.
+
+
+### 7.3 Recommendations
 #### Different robots
 The NAO robot is an easy robot to work with. it has an easy to understand programming language and it is very compatible with external hardware. But the NAO robot also comes with a lot of limitations. For instance the motors are not very precise and get hot really fast. The time you can work with it can be extended by cooling the robot with a fan, but at most this only ads ten minutes of work time. Using another robot which has more optimized Motors will increase the time which it can be used and will thus increase the user friendliness.
 #### Compact hardware
@@ -430,8 +406,6 @@ A chatbot like Snips can also be added. This will highly improve interactions th
 Blue can't see around himself right now. This is however something important the robot should be able to do. if Blue does not have enough space to move it should tell the user to move it to another place. this will ensure that the robot doesn't damage itself in the process.
 #### GUI (optional)
 For deaf people it would be very helpful if Blue included a touchscreen on which the user can see what Blue is saying. It should also have inputs with answers the user can give to the robot. This way the robot can be useful for people with disabilities like deaf people.
-
-### 7.3 Final Conclusion
 
 ## References
 **Social behaviour**
@@ -453,3 +427,57 @@ For deaf people it would be very helpful if Blue included a touchscreen on which
 
 ### B Full dialogues
 ![](https://github.com/JensDijkstra/Project-NAO/tree/master/Script%20program/Speech)
+
+### C System Diagrams
+Here, all the system diagrams that were made for designing purposes of the NAO robot will be explained in detail.
+
+#### BDD
+This small block definition diagram shows all the parts used in the NAO Tai Chi master system.
+![BDD of NAO Tai Chi master system](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/BDD.png)
+
+#### IBD
+The NAO itself is made out of smaller parts. Most of which have a function of their own. These parts are all shown in the internal block diagram below.
+![IBD of the NAO robot](ROBIN PLAK HIER JE LINK)
+
+#### STM
+The State Machine Diagram. This is the main diagram of Blue. All the functions in this diagram will be further elaborated in the activity diagrams or other diagrams below. Right after Blue wakes up he will start with a greeting. After that he will ask what you want to do and listens to your response. If you just want to socialize you can also do that. If you want to immediately start training you can ask Blue to start the training. If you don't respond for more than 50 seconds, Blue will go into an idle state. He will only come out of idle if you call his name. If you still don't respond for another 50 seconds, Blue will go into the valediction state and he will say its goodbyes and shut down. Blue will also shut down if the user says goodbye first.
+
+![State machine diagram of the NAO](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/STM%20NAO.png)
+
+#### Greeting
+In the greeting state Blue will look at your face to see if he recognizes you. If he does, he greets you. If he doesn't he will try to learn your face. This is explained further in the face learning diagram.
+
+![Activity diagram of greeting](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Greeting%20ACT.png)
+
+#### Face learning
+When Blue goes into the learn face state he will first ask your name. He does this because a name needs to be linked to your face in the database. After you say your name, he will greet you and simultaneously scan for any faces in front of him. If the face scan is successful, Blue will give a success massage and continue. If he fails the face scan he will give an error and you can try again. If this process fails more than ten times the program will shut down.
+
+![Activity diagram of face learning](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Learning%20Face%20ACT.png)
+
+#### Teaching & socializing
+After the greeting, Blue will ask what you want to do. You can respond to this with socializing or teaching. If you say something he doesn't understand, he will give an error and try again.
+
+![Activity diagram of teaching & socializing](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Listen%20ACT.png)
+
+#### Teaching
+If you choose to go for teaching you will get three options: you can ask for some information about Tai-Chi, you can start a full training program or you can do a single pose.
+##### Information
+If you want information you just ask Blue a question and he will answer it. If Blue doesn't understand the question or he doesn't know the answer, he will say: "Subject not known. Let's talk about something else", and you can try again.
+##### Tai-Chi
+If you want the full training you can ask for the tai chi training. Blue will begin the lesson by telling you what you will need to do. After that he will do the first pose and asks you to repeat after him. If you do the pose correctly, Blue will compliment you and then continue. If you do something wrong, Blue will say what you can improve and how to do that. This is repeated until you do the pose correctly. Blue will repeat this for every pose.
+##### Single poses
+You can also ask to do a specific pose. Blue will do the same as with the Tai-Chi training but now only with one pose and he will stop if you are done with this pose.
+
+![Activity diagram of teaching a single pose](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Teaching%20ACT.png)
+
+#### Valediction
+If you are done for the day, you can tell Blue you want to stop and he will go into the valediction state. In this state he will give you some tips on how to continue your training. He also asks if the user has any questions about the practice. The user is free to ask questions about the practice and about social topics. When asking about the training, Blue will repeat this until you don't have any questions left. After which he will say goodbye and shutdown. When asking about social related topics, NAO leaves his valediction state and goes back into the teaching/socializing state.
+
+![Activity diagram of valediction](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Valedication%20ACT.png)
+
+#### SEQ
+This sequence diagram shows the data transition within the Tai Chi master system. Most of the data being sent is joint coordinate data.
+![Sequence diagram of NAO's data](https://github.com/JensDijkstra/Project-NAO/blob/master/Diagrams/Photo's/Sequence.jpg)
+
+#### UC
+No use case diagram has been made, since the only users are the student and the NAO. These are the only two entities who actively interact with each other.
