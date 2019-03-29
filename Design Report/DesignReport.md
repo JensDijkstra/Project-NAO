@@ -396,6 +396,7 @@ The designed product is a prove of concept and not a final product. The Tai Chi 
 
 
 ### 7.3 Recommendations
+The NAO robot described in this report is merely a prototype and does not posses all the features the final product will have. In this chapter a few reccomendations, that could be added to the final product, will be discussed.
 #### Different robots
 The NAO robot is an easy robot to work with. it has an easy to understand programming language and it is very compatible with external hardware. But the NAO robot also comes with a lot of limitations. For instance the motors are not very precise and get hot really fast. The time you can work with it can be extended by cooling the robot with a fan, but at most this only ads ten minutes of work time. Using another robot which has more optimized Motors will increase the time which it can be used and will thus increase the user friendliness.
 #### Compact hardware
