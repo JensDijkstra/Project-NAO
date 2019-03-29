@@ -103,7 +103,7 @@ NAO has a few touch sensors which when touched make the robot react in different
 |    |      x     | NAO can demonstrate the postures of the Tai Chi Chuan 10-form.                                                   |   x   |          |       |
 | x |            | Transitions between the postures are fluid                                                                 |       |     x    |       |
 |    |      x     | When not performing the 10-form, the NAO looks at the user.                                                |   x   |          |       |
-### 2.3 Validating requirements (Just)
+### 2.3 Validating requirements
 All requirements have to be met at the end of the design. To test each requirement the following steps are taken:
 **1.** All possible inputs are clearly pronounced to the NAO. If it understands 3 different people clearly, this requirement is validated. To check if NAO understands everything clearly the dialog box, containing the received input, is read.
 **2.** Any kind of social interaction will suffice. For instance the user may say: "Greetings" "How are you doing?" "Do you know any jokes?". The idea is to make the NAO feel more engaging besides the training program.
@@ -260,7 +260,7 @@ If you are done for the day, you can tell Blue you want to stop and he will go i
 No use case diagram has been made, since the only users are the student and the NAO. These are the only two entities who actively interact with each other.
 
 ## 6. Elaboration
-### 6.1 Social interaction (Just)
+### 6.1 Social interaction
 Not all the ideas from the initial design involving the social interaction made it into the final product. The reason for this and what happened to replace the scrapped parts is found in this chapter along with all different social interactions.
 #### Chatbot
 The initial design had a chatbot incorporated in it. This way the social interactions of Blue would be endless which would add to the overall experience. Including the chatbot in the final design proved to take more time than expected. Therefor it has been taken out of the final design and replaced with programming all social interactions in Choregraph.
@@ -400,7 +400,7 @@ The 10-forms aren't really stationary poses but actually a set of movement so fo
 Because programming the forms takes a lot of time and the focus of the project was more on the interactive aspects of the robot and not the movements, not all forms were implemented. This is also just a prototype and not the final product so having the robot work perfectly with only a few poses was more than good enough.
 
 ## 7. Conclusion
-### 7.1 Results (Just)
+### 7.1 Results
 These are all the tests performed to check if the requirements are met and the final outcome. These are the results as of writing the report and not for the finished product. Some results may change.
 
 || Requirements | Test | Results | Pass/Fail |
@@ -415,7 +415,7 @@ These are all the tests performed to check if the requirements are met and the f
 | 8 | The vision software is able to measure the distance from the camera to the user (+/- 100mm) | Measuring the distance to the user is validated by manually measuring the distance and comparing it to the distance given by the camera. | Kinect sees in 3D, so measuring distance is automatically applied to everything it senses. During evaluation of user movements an X, Y and Z coordinate is applied do every joint. The Z axis is the distance from the camera to the user. After measurement tests the average deviation is XXX mm | PASS |
 | 9 | NAO can demonstrate the postures of the Tai Chi Chuan 10-form | Demonstrating the postures of the Tai Chi Chuan 10-form requires the NAO not to fall over during the performance. If all 10 poses are performed without the NAO falling (Does not have to be one after the other), this requirement is met. | This requirement has not been met. During the project a decision has been made to make a prove of concept rather than a finished product. With this decision some poses had to be scraped due to time problems. To date there are five poses that can be performed. These all work without the NAO falling over. The original requirement has not been met with four poses, but given that the project is now a prove of concept, the general concept of this requirement works. Therefor a pass can be given. | PASS* |
 | 10 | Transitions between the postures are fluid | The NAO does not have to return to a fixed position to transition from one form to the next. This transition only has to be fluid for the next form in the 10-form. This means form 1 to form 2, form 4 to form 5 and so on. | Every programmed posture/form can fluidly transition into the next one. As of writing this report form 1-2 and 8-9-10 can be performed without returning to a fixed position. Read the results from requirement 9 for further details as to why not all poses are possible. | PASS |
-| 11 | When not performing the 10-form, the NAO looks at the user | To make the NAO feel more human-like, it looks at the user when not performing the 10-form. This is tested by walking around and following the NAO's head movements. | This could be done with both sound and visuals. The NAO can look at the direction it hears a voice or detect faces and look at them. While these functions work separately, they have not been tested together. Work is still being done on combining these functions for an even more immersive experience. Since the NAO is able to follow user's faces and sounds, this requirement is met. | PASS | 
+| 11 | When not performing the 10-form, the NAO looks at the user | To make the NAO feel more human-like, it looks at the user when not performing the 10-form. This is tested by walking around and following the NAO's head movements. | This could be done with both sound and visuals. The NAO can look at the direction it hears a voice or detect faces and look at them. While these functions work separately, they have not been tested together. Work is still being done on combining these functions for an even more immersive experience. Since the NAO is able to follow user's faces and sounds, this requirement is met. | PASS |
 
 In total eight out of the eleven requirements have been met. One of the requirements has been graded with a fail. The other two requirements involve parts that are not finished yet, but are expected to get a pass when the demonstration is due.
 
