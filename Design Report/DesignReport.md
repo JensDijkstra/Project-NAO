@@ -2,17 +2,30 @@
 *The personal home trainer for Tai Chi*
 
 ## Abstract
-An urban upmarket health club needs a personal robot that its clients can take home to practice the Tai Chi 10-form. The robot that the prototype uses is a NAO from SolidBank. Research has been done on how to implement a vision system for the NAO and communication. After carefully considering what aspects are most important for a Tai Chi teacher a final concept has been worked out.
+An urban upmarket health club needs a personal robot that its clients can take home to practice the Tai Chi 10-form. The robot that the prototype uses is a NAO from SolidBank. Research has been done on how to implement a vision system for the NAO and communication. After carefully considering what aspects are most important for a Tai Chi teacher a final concept has been worked out. This is not a finished product, but a prove of concept.
 
 This concept has the following features:
-  - The NAO tries to mimic human behaviour
-  - NAO responds to its given name: Blue
+  - The NAO mimics human behaviour
+  - The NAO responds to its given name: Blue
   - Blue is a happy young robot
-  - Both the 10-form and extra information about Tai Chi can be taught
-  - Blue uses a Kinect to give feedback on your position
-  - Chatbot Snips and Choregraph are used for conversations
+  - Five forms of the 10-form can be taught and forms have fluent transitions
+  - Blue uses a Kinect to give feedback on your position and summarizes it's evaluation at the and of the training
+  - Blue is able to recognize and remember the faces of it's users
+  - The NAO understands Tai Chi related sentences in multiple ways. This way foreign users who's first language is not English can use the NAO without problems.
 
-State machine and activity diagrams have been made to show the functions the robot possesses. These can be found in the final concept.
+State machine and activity diagrams have been made to show the functions the robot possesses. These can be found in appendix A.
+
+Results of all the requirements are as follows:
+  * Total requirements:   11
+  * Pass:                 8
+  * Fail:                 1 (*Wish*)
+  * Untested:             2 (*Expected to pass for the demonstration*)
+
+The two most important recommendations for a finished user friendly product are:
+**Different robots**
+The NAO robot overheats too fast. When used for training, without any ways of cooling it, the NAO can be used for about ten minutes before it's joints get too lose to have it to perform the 10-form.
+**Compact hardware**
+Right now a program is run on a laptop and RaspberryPi and the Kinect camera needs to be placed on the ground near the robot. For every user this is a pain to setup correctly. Therefor it is recommended to combine all these components into a small box with every program running on the RaspberryPi. This way the user only has to plug the box into a power outlet and optionally into an internet router and the setup is done.
 
 ## Table of contents
 - [NAO Design report](#nao-design-report)
@@ -413,7 +426,7 @@ In total eight out of the eleven requirements have been met. One of the requirem
 #### Different robots
 The NAO robot is an easy robot to work with. it has an easy to understand programming language and it is very compatible with external hardware. But the NAO robot also comes with a lot of limitations. For instance the motors are not very precise and get hot really fast. The time you can work with it can be extended by cooling the robot with a fan, but at most this only ads ten minutes of work time. Using another robot which has more optimized Motors will increase the time which it can be used and will thus increase the user friendliness.
 #### Compact hardware
-Right now the python program is run on a laptop and the Kinect camera needs to be placed on the ground near the robot. This is not very user friendly and can be improved on. A good way of doing this is to include all the hardware outside the robot in a single box. This box will include a Raspberry Pi which runs the program instead of a laptop and the camera, which will be a different camera than the Kinect. This box can be plugged in the wall with a single cable and it should work fine.
+Right now a program is run on a laptop and RaspberryPi and the Kinect camera needs to be placed on the ground near the robot. For every user this is a pain to setup correctly. Therefor it is recommended to combine all these components into a small box with every program running on the RaspberryPi. This way the user only has to plug the box into a power outlet and optionally into an internet router and the setup is done.
 #### Snips AI
 A chatbot like Snips can also be added. This will highly improve interactions the robot can have with the user. Because the chatbot is an AI it can also learn the users usual behaviour and improve its own systems accordingly. This way Blue will feel a lot more personal and it will increase the users experience.
 #### Robot checks for space
