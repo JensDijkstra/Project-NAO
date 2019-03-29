@@ -1,0 +1,15 @@
+topic: ~Greeting ()
+language: enu
+
+concept:(name) [Jens Yust Toni Tristan Robin "{Mister} {Frederik} {Cramer}" "{Mister} {Marcel} {Marosvolgy}"]  
+
+concept:(greeting) ["Nice to meet you" "Good to see you" "Good morning" "Good evening" "Good day" hello hallo hi hey]
+
+u:(~greeting) [hello hi hallo hey]
+u:({~greeting} my name is _~name)Nice to meet you $1 .
+^rand[
+    "My name is Blue and I am your personal Sifu!"
+    "I am your personal Sifu, Blue!"
+    "You can call me Blue, I'll be your Sifu for this training."
+]
+

@@ -1,0 +1,120 @@
+topic: ~trainingStart()
+language: enu
+
+concept:(jokes) ^rand["^start(animations/Stand/Gestures/YouKnowWhat_1) What smells like blue paint but isn't blue? ^wait(animations/Stand/Gestures/YouKnowWhat_1)Green paint." "^start(animations/Stand/Gestures/YouKnowWhat_1) What was David Bowie's last hit? ^wait(animations/Stand/Gestures/YouKnowWhat_1) Probably heroin."
+"^start(animations/Stand/Gestures/YouKnowWhat_1) What’s the difference between a joke and two dicks,? ^wait(animations/Stand/Gestures/YouKnowWhat_1) You can't take a joke."
+"^start(animations/Stand/Gestures/YouKnowWhat_1) What does a woman’s pussy, and a chainsaw have in common? ^wait(animations/Stand/Gestures/YouKnowWhat_1) Miss by few inches and you’re in deep shit."
+"^start(animations/Stand/Gestures/YouKnowWhat_1) Why are women like KFC? ^wait(animations/Stand/Gestures/YouKnowWhat_1) After you’ve finished with the thigh and breasts, all you have left is a greasy box to put your bone in."
+"^start(animations/Stand/Gestures/YouKnowWhat_1) What is the difference between acne and a catholic priest? ^wait(animations/Stand/Gestures/YouKnowWhat_1) Acne usually comes on a boys face after he turns 12."
+"^start(animations/Stand/Gestures/YouKnowWhat_1) My first high-school football game was a lot like my first time having sex ^wait(animations/Stand/Gestures/YouKnowWhat_1) I was bloody and sore at the end, but at least my dad came."
+"^start(animations/Stand/Gestures/YouKnowWhat_1)What is the difference between Michael Jackson and a grocery bag? ^wait(animations/Stand/Gestures/YouKnowWhat_1) One is made of plastic and is dangerous for children to play with. The other is used to carry groceries."
+"^start(animations/Stand/Gestures/YouKnowWhat_1)After death, what is the only organ in the female body which remains warm? ^wait(animations/Stand/Gestures/YouKnowWhat_1) My penis."]
+
+concept: (greeting) [hey hi hello yo] {Blue}
+concept: (greetingR) [hey hi hello yo]
+concept: (form) ["form [1 2 3 4 5 6 7 8 9 10]"]
+concept: (acknowledge) ^rand[ok okay alright alrighty sure ofcourse yes]
+concept: (commentPose) ^rand["that's a good form" "i like this one" "great choice" "I enjoy performing this one" "This form clears my mind" "This is    
+                             one of my favorites"]!
+concept: (starting) ^rand["Focus and follow my lead" "Repeat after me" "Watch closely" "I'll show you how it's done" "Pay attention to my movements"
+                          "Let me guide you"]
+concept: (fact) ^rand[fact facts fuct]
+concept: (anything) ^rand["Anything else I can help you with?" "Can I do somehting else for you?" "Do you want to do something else?" "Would you like to do something else?"]
+concept: (doing) ^rand["I feel like practising some poses today" "I feel energetic" " I feel as smooth as the soothing wind blowing through my hair, oh wait... hihi"]
+
+u: (play rock music) $formnumber = 8
+u: (play pop music) $formnumber = 9
+u: (play classic music) $formnumber = 10
+
+u:(~greeting) ~greetingR
+u:({~greeting} [
+"["i {would} want to learn" "[Could Can] you [teach show demonstrate] {me}"] {["something about" some about]} {some}{of} {the} 10 [poses pose form]" 
+"Show me ["the 10 [pose poses form]" "a pose"]"
+]{please}) 
+Do you want me to show you all forms or a specific ^rand[form pose one]? 
+    u1:({"I {would} [like want] {you} to [show demonstrate teach know] {me}"} a specific [pose one form])
+        What form ^rand["would you like to learn" "do you want to learn" "can I help you with"] ?
+        u2:([1 "{the} commencement"]) ~acknowledge . commencement, ~commentPose , ~starting , ! $formnumber = 1
+        u2:([2 "{the} reverse reeling forearms"]) ~acknowledge . reverse reeling forearms, ~commentPose , ~starting , ! $formnumber = 2
+        u2:([3 "{the} brush knee push"]) ~acknowledge . brush knee push, ~commentPose , ~starting , ! $formnumber = 3
+        u2:([4 "{the} part the wild horse’s mane"]) ~acknowledge . part the wild horse’s mane, ~commentPose , ~starting , ! $formnumber = 4
+        u2:([5 "{the} wave hands like clouds"]) ~acknowledge . wave hands like clouds, ~commentPose , ~starting , ! $formnumber = 5
+        u2:([6 "{the} rooster stands on one leg"]) ~acknowledge . rooster stands on one leg, ~commentPose , ~starting , ! $formnumber = 6
+        u2:([7 "{the} kick with heel"]) ~acknowledge . kick with heel, ~commentPose , ~starting , ! $formnumber = 7
+        u2:([8 "{the} grasp the peacock’s tail"]) ~acknowledge . grasp the peacock’s tail, ~commentPose , ~starting , ! $formnumber = 8
+        u2:([9 "{the} cross hands"]) ~acknowledge . cross hands, ~commentPose , ~starting , ! $formnumber = 9
+        u2:([10 "{the} conclusion"]) ~acknowledge . conclusion, ~commentPose , ~starting , ! $formnumber = 10
+        u2:(Numa Numa) $formnumber = 11
+
+    u1:({~greeting}I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 1" commencement]) 
+~acknowledge . commencement, ~commentPose , ~starting , ! $formnumber = 1
+    u1:({~greeting} I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 2" "reverse reeling forearms"]) 
+~acknowledge . reverse reeling forearms, ~commentPose , ~starting , ! $formnumber = 2
+    u1:({~greeting} I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 3" "brush knee push"]) 
+~acknowledge . brush knee push, ~commentPose , ~starting , ! $formnumber = 3
+    u1:({~greeting} I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 4" "part the wild horse’s mane"]) 
+~acknowledge . part the wild horse’s mane, ~commentPose , ~starting , ! $formnumber = 4
+    u1:({~greeting} I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 5" "wave hands like clouds"]) 
+~acknowledge . wave hands like clouds, ~commentPose , ~starting , ! $formnumber = 5
+    u1:({~greeting} I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 6" "rooster stands on one leg"]) 
+~acknowledge . rooster stands on one leg, ~commentPose , ~starting , ! $formnumber = 6
+    u1:({~greeting} I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 7" "kick with heel"]) 
+~acknowledge . kick with heel, ~commentPose , ~starting , ! $formnumber = 7
+    u1:({~greeting} I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 8" "grasp the peacock’s tail"]) 
+~acknowledge . grasp the peacock’s tail, ~commentPose , ~starting , ! $formnumber = 8
+    u1:({~greeting} I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 9" "cross hands"]) 
+~acknowledge . cross hands, ~commentPose , ~starting , ! $formnumber = 9
+    u1:({~greeting} I {would} [like want] {you} to [show demonstrate teach know] {me} ["form 10" conclusion]) 
+~acknowledge . conclusion, ~commentPose , ~starting , ! $formnumber = 10
+    u1:(all forms) All forms? ~acknowledge , ^rand["I'll be tired after this excersize." "I need to concentrate real hard for this." "Watch me closely"] $formnumber = 11
+
+u:({~greeting} ["i{would} want to learn" "Could you [teach show demonstrate] {me}"] _~form) ok.
+
+u:({~greeting} {[can could] you} teach me {some} Tai Chi?) Do you want me to teach you facts, or the 10 form?
+    u1:({["I [would like want] {want} to learn" "teach me {some}"]} facts, [please]) ~fact , Would you like to hear another fact?
+        u2:(~acknowledge)~fact , ~anything
+            u3:(_~acknowledge) $1
+            u3:(no) $shutdown = 1
+        u2:(no) ~acknowledge ,I get it, learning ^rand["is exhausting" "drains my battery too"] 
+    u1:(["["I [would like want] {want} to learn" "teach me"] {some} [poses "10 form" forms], [please]" "10 form"]) What form ^rand["would you like to learn" "do you want to learn" "can I help you with"] ?
+        u2:([1 "{the} commencement"]) ~acknowledge . commencement, ~commentPose , ~starting , ! $formnumber = 1
+        u2:([2 "{the} reverse reeling forearms"]) ~acknowledge . reverse reeling forearms, ~commentPose , ~starting , ! $formnumber = 2
+        u2:([3 "{the} brush knee push"]) ~acknowledge . brush knee push, ~commentPose , ~starting , ! $formnumber = 3
+        u2:([4 "{the} part the wild horse’s mane"]) ~acknowledge . part the wild horse’s mane, ~commentPose , ~starting , ! $formnumber = 4
+        u2:([5 "{the} wave hands like clouds"]) ~acknowledge . wave hands like clouds, ~commentPose , ~starting , ! $formnumber = 5
+        u2:([6 "{the} rooster stands on one leg"]) ~acknowledge . rooster stands on one leg, ~commentPose , ~starting , ! $formnumber = 6
+        u2:([7 "{the} kick with heel"]) ~acknowledge . kick with heel, ~commentPose , ~starting , ! $formnumber = 7
+        u2:([8 "{the} grasp the peacock’s tail"]) ~acknowledge . grasp the peacock’s tail, ~commentPose , ~starting , ! $formnumber = 8
+        u2:([9 "{the} cross hands"]) ~acknowledge . cross hands, ~commentPose , ~starting , ! $formnumber = 9
+        u2:([10 "{the} conclusion"]) ~acknowledge . conclusion, ~commentPose , ~starting , ! $formnumber = 10
+        u2:(all {["of them" "{of the}[forms poses]"]}) All of them? ~acknowledge , ^rand["I'll be tired after this excersize." "I need to concentrate real hard for this." "Watch me closely"] $formnumber = 11
+        u2:(numa numa) $formnumber = 777
+
+        
+u:({~greeting} ["i{would} want to [learn know]" "Could you [teach tell] {me}"] {["something about" some about]} "tai chi{chuan}" {please}?) What would you like to ^rand[learn know] about tai chi?
+    u1:(form) you still need to program this
+    u1:(facts) you still need to program this
+    
+
+u:({~greeting} ["i{would} want to [learn know]" "Could you [teach tell] {me}"] {["something about" some about]}) yeah.
+
+u:(I like _*) I like $1 ^rand[too aswell]!
+u:(Do you like tai chi {chuan}) ^rand["I love tai chi" "I'm a big fan of tai chi" "Yes, I like tai chi" "I really like tai chi" "My mind is always on tai chi" "One day I want to be the best tai chi teacher in the world"]
+u:(Do you like me) ^rand["You have potential" "I do" "That's a secret" "I think you're a [great good amazing nice] student"]
+u:(Do you like _*) ^rand["I love $1" "I'm a big fan of $1" "No, I do not like $1" "Yes, I like $1" maybe "I am unsure" "I don't know" "That is a secret" "I really like $1" "I'm not a big of $1" "My mind is always on $1" "One day I would like a $1 of my own"]
+
+u:(What is your name {again}) $blue=1
+
+u: (How are you {doing} {today}) ~doing
+
+u:(["{[Could Can] you} tell me a joke" "Do you [like enjoy know]{any} {good} jokes"]) 
+    I know some jokes, but are you sure you want to hear them, my robot humor may be a little strange for you.?
+    u1: (~acknowledge) ~jokes , would you like to hear another one? 
+        u2:(~acknowledge) ~jokes
+    u1: (no {[thanks "thank you"]}) alright then 
+
+u:({~greeting}, ["Where [are you do] you {come} from?" "Where [are were] you [born made assembled]?" "Who made you"]) I am from Aldebaran's factory, but Team Blue from Geeky Solutions ^rand["made me into who I am today" "are the ones who raised me" "tought me all these cool Tai Chi moves"], Do you think they did a good job?
+    u1: (~acknowledge) ^rand["^rand[Hihihi awww], thank you. ,You're my favorite student." "I know right, I'm really cool!"]
+    u1: (no, {"They did not"}) ^rand["You dont like me?" "Am I not a good teacher?" "Am I that bad as a teacher?" "Dont you like my jokes?"] ,Luckily I am programmed to always be happy! Words cannot hurt me, but pushing me can, so please do not act violently around me. ,That is not the way of Tai Chi Chuan.
+
+u:(Cloatviol) No, you are

@@ -1,0 +1,17 @@
+topic: ~trainingStart()
+language: enu
+
+concept: (greeting) [hey hi hello yo] {Blue}
+concept: (form) ["form [1 2 3 4 5 6 7 8 9 10]"
+
+u:({~greeting} ["i{would} want to learn" "Could you [teach show demonstrate] {me}"] {["something about" some about]} {some}{of} ["{the} 10 [poses pose form]"] {please}) 
+Do you want me to show you all forms or a specific form? 
+
+u:{~greeting} ["i{would} want to learn" "Could you [teach show demonstrate] {me}"] _~form)
+
+u:({~greeting} ["i{would} want to [learn know]" "Could you [teach tell] {me}"] {["something about" some about]} "tai chi{chuan} {please})
+What would you like to ^rand[learn know] about tai chi?
+
+u:({~greeting} ["i{would} want to [learn know]" "Could you [teach tell] {me}"] {["something about" some about]
+
+u:(I like _*) I like $1 too!

@@ -1,0 +1,25 @@
+topic: ~Bier ()
+language:enu
+
+concept:(greetingsR) ^rand[hi hello "hey there"] student
+concept:(greetingsH) ^rand[hi hello "hey there"] 
+
+concept:(formNumber) form [1 2 3 4 5 6 7 8 9 10]
+concept:(formName) [commencement "reverse reeling forearms" "brush knee push"  "Part the wild horse’s mane" "wave hands like clouds" "rooster stands on one leg" "kick with heel" "grasp the peacock’s tail" "cross hands" conclusion]
+
+concept:(jokes) ^rand["^start(animations/Stand/Gestures/YouKnowWhat_1) What smells like blue paint but isn't blue? ^wait(animations/Stand/Gestures/YouKnowWhat_1)Green paint." "^start(animations/Stand/Gestures/YouKnowWhat_1) What was David Bowie's last hit? ^wait(animations/Stand/Gestures/YouKnowWhat_1) Probably heroin."
+"^start(animations/Stand/Gestures/YouKnowWhat_1) What’s the difference between a joke and two dicks? ^wait(animations/Stand/Gestures/YouKnowWhat_1) You can't take a joke."
+"^start(animations/Stand/Gestures/YouKnowWhat_1) What does a woman’s pussy and a chainsaw have in common? ^wait(animations/Stand/Gestures/YouKnowWhat_1) Miss by few inches and you’re in deep shit."
+"^start(animations/Stand/Gestures/YouKnowWhat_1) Why are women like KFC? ^wait(animations/Stand/Gestures/YouKnowWhat_1) After you’ve finished with the thigh and breasts, all you have left is a greasy box to put your bone in."
+"^start(animations/Stand/Gestures/YouKnowWhat_1) What is the difference between acne and a catholic priest? ^wait(animations/Stand/Gestures/YouKnowWhat_1) Acne usually comes on a boys face after he turns 12."
+"^start(animations/Stand/Gestures/YouKnowWhat_1)My first high-school football game was a lot like my first time having sex ^wait(animations/Stand/Gestures/YouKnowWhat_1) I was bloody and sore at the end, but at least my dad came."
+"^start(animations/Stand/Gestures/YouKnowWhat_1)What is the difference between Michael Jackson and a grocery bag? ^wait(animations/Stand/Gestures/YouKnowWhat_1) One is made of plastic and is dangerous for children to play with. The other is used to carry groceries."
+"^start(animations/Stand/Gestures/YouKnowWhat_1)After death, what is the only organ in the female body which remains warm? ^wait(animations/Stand/Gestures/YouKnowWhat_1) My penis."]
+
+u:(~greetingsH) ~greetingsR
+u:([could can] you [teach show] me _[~formNumber ~formName]) Yes, I can show you $1
+
+u:(["What is your name?" "What [do can] I call you?"]) My name is Blue. You can call me Sifu Blue.
+u:({[can could] you}[teach tell] me something about Tai Chi {chuan}.) Of course I can! That's what I'm programmed to do. Would you like to know somehting about the 10 form, or do you want some extra 
+
+u:({[Could Can] you} tell me a joke?) ~jokes 
